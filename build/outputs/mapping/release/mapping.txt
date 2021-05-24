@@ -1,0 +1,632 @@
+# compiler: R8
+# compiler_version: 2.1.86
+# pg_map_id: ea906e3
+# common_typos_disable
+android.app.AndroidAppHelper -> android.app.AndroidAppHelper:
+    39:45:void <clinit>() -> <clinit>
+    32:32:void <init>() -> <init>
+    116:116:void addActiveResource(java.lang.String,float,boolean,android.content.res.Resources) -> addActiveResource
+    121:146:void addActiveResource(java.lang.String,android.content.res.Resources) -> addActiveResource
+    64:69:java.lang.Object createResourcesKey(java.lang.String,float) -> createResourcesKey
+    77:84:java.lang.Object createResourcesKey(java.lang.String,int,android.content.res.Configuration,float) -> createResourcesKey
+    92:99:java.lang.Object createResourcesKey(java.lang.String,int,android.content.res.Configuration,float,android.os.IBinder) -> createResourcesKey
+    107:109:java.lang.Object createResourcesKey(java.lang.String,java.lang.String[],java.lang.String[],java.lang.String[],int,android.content.res.Configuration,android.content.res.CompatibilityInfo) -> createResourcesKey
+    200:200:android.app.Application currentApplication() -> currentApplication
+    169:177:android.content.pm.ApplicationInfo currentApplicationInfo() -> currentApplicationInfo
+    188:189:java.lang.String currentPackageName() -> currentPackageName
+    155:155:java.lang.String currentProcessName() -> currentProcessName
+    213:213:android.content.SharedPreferences getDefaultSharedPreferencesForPackage(java.lang.String) -> getDefaultSharedPreferencesForPackage
+    50:57:java.util.Map getResourcesMap(android.app.ActivityThread) -> getResourcesMap
+    207:207:android.content.SharedPreferences getSharedPreferencesForPackage(java.lang.String,java.lang.String,int) -> getSharedPreferencesForPackage
+    219:220:void reloadSharedPreferencesIfNeeded(android.content.SharedPreferences) -> reloadSharedPreferencesIfNeeded
+android.content.res.XModuleResources -> android.content.res.XModuleResources:
+    16:16:void <init>(android.content.res.AssetManager,android.util.DisplayMetrics,android.content.res.Configuration) -> <init>
+    33:44:android.content.res.XModuleResources createInstance(java.lang.String,android.content.res.XResources) -> createInstance
+    52:52:android.content.res.XResForwarder fwd(int) -> fwd
+android.content.res.XResForwarder -> android.content.res.XResForwarder:
+    20:22:void <init>(android.content.res.Resources,int) -> <init>
+    32:32:int getId() -> getId
+    27:27:android.content.res.Resources getResources() -> getResources
+android.content.res.XResources -> android.content.res.XResources:
+    56:77:void <clinit>() -> <clinit>
+    84:84:void <init>(java.lang.ClassLoader) -> <init>
+    55:55:java.util.WeakHashMap access$000() -> access$000
+    55:55:java.lang.ThreadLocal access$100() -> access$100
+    55:55:java.lang.Object access$400(android.content.res.XResources,int) -> access$400
+    55:55:android.util.SparseArray access$500() -> access$500
+    1232:1236:int addResource(android.content.res.Resources,int) -> addResource
+    636:653:android.content.res.XmlResourceParser getAnimation(int) -> getAnimation
+    659:667:boolean getBoolean(int) -> getBoolean
+    673:681:int getColor(int) -> getColor
+    687:705:android.content.res.ColorStateList getColorStateList(int) -> getColorStateList
+    711:719:float getDimension(int) -> getDimension
+    725:733:int getDimensionPixelOffset(int) -> getDimensionPixelOffset
+    739:747:int getDimensionPixelSize(int) -> getDimensionPixelSize
+    754:773:android.graphics.drawable.Drawable getDrawable(int) -> getDrawable
+    780:799:android.graphics.drawable.Drawable getDrawable(int,android.content.res.Resources$Theme) -> getDrawable
+    806:825:android.graphics.drawable.Drawable getDrawable(int,android.content.res.Resources$Theme,boolean) -> getDrawable
+    832:851:android.graphics.drawable.Drawable getDrawableForDensity(int,int) -> getDrawableForDensity
+    858:877:android.graphics.drawable.Drawable getDrawableForDensity(int,int,android.content.res.Resources$Theme) -> getDrawableForDensity
+    884:903:android.graphics.drawable.Drawable getDrawableForDensity(int,int,android.content.res.Resources$Theme,boolean) -> getDrawableForDensity
+    1198:1198:int getFakeResId(java.lang.String) -> getFakeResId
+    1213:1213:int getFakeResId(android.content.res.Resources,int) -> getFakeResId
+    909:915:float getFraction(int,int,int) -> getFraction
+    935:943:int[] getIntArray(int) -> getIntArray
+    921:929:int getInteger(int) -> getInteger
+    950:1010:android.content.res.XmlResourceParser getLayout(int) -> getLayout
+    1020:1026:android.graphics.Movie getMovie(int) -> getMovie
+    151:151:java.lang.String getPackageName() -> getPackageName
+    159:183:java.lang.String getPackageName(java.lang.String) -> getPackageName
+    199:203:java.lang.String getPackageNameDuringConstruction() -> getPackageNameDuringConstruction
+    1032:1038:java.lang.CharSequence getQuantityText(int,int) -> getQuantityText
+    609:630:java.lang.Object getReplacement(int) -> getReplacement
+    304:308:android.content.res.XResources$ResourceNames getResourceNames(int) -> getResourceNames
+    1047:1055:java.lang.String[] getStringArray(int) -> getStringArray
+    312:317:android.content.res.XResources$ResourceNames getSystemResourceNames(int) -> getSystemResourceNames
+    1061:1069:java.lang.CharSequence getText(int) -> getText
+    1078:1086:java.lang.CharSequence getText(int,java.lang.CharSequence) -> getText
+    1092:1100:java.lang.CharSequence[] getTextArray(int) -> getTextArray
+    1106:1123:android.content.res.XmlResourceParser getXml(int) -> getXml
+    1603:1603:cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook hookLayout(int,cn.hishi.android.scrm.callbacks.XC_LayoutInflated) -> hookLayout
+    1618:1621:cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook hookLayout(java.lang.String,cn.hishi.android.scrm.callbacks.XC_LayoutInflated) -> hookLayout
+    1637:1640:cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook hookLayout(java.lang.String,java.lang.String,java.lang.String,cn.hishi.android.scrm.callbacks.XC_LayoutInflated) -> hookLayout
+    1704:1728:cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook hookLayoutInternal(java.lang.String,int,android.content.res.XResources$ResourceNames,cn.hishi.android.scrm.callbacks.XC_LayoutInflated) -> hookLayoutInternal
+    1653:1654:cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook hookSystemWideLayout(int,cn.hishi.android.scrm.callbacks.XC_LayoutInflated) -> hookSystemWideLayout
+    1670:1673:cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook hookSystemWideLayout(java.lang.String,cn.hishi.android.scrm.callbacks.XC_LayoutInflated) -> hookSystemWideLayout
+    1696:1699:cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook hookSystemWideLayout(java.lang.String,java.lang.String,java.lang.String,cn.hishi.android.scrm.callbacks.XC_LayoutInflated) -> hookSystemWideLayout
+    208:264:void init(java.lang.ThreadLocal) -> init
+    94:110:void initObject(java.lang.String) -> initObject
+    115:137:boolean isFirstLoad() -> isFirstLoad
+    1127:1133:boolean isXmlCached(android.content.res.Resources,int) -> isXmlCached
+    321:331:void putResourceNames(java.lang.String,android.content.res.XResources$ResourceNames) -> putResourceNames
+    142:144:void setPackageNameForResDir(java.lang.String,java.lang.String) -> setPackageNameForResDir
+    345:345:void setReplacement(int,java.lang.Object) -> setReplacement
+    359:362:void setReplacement(java.lang.String,java.lang.Object) -> setReplacement
+    504:507:void setReplacement(java.lang.String,java.lang.String,java.lang.String,java.lang.Object) -> setReplacement
+    566:595:void setReplacement(int,java.lang.Object,android.content.res.XResources) -> setReplacement
+    518:518:void setSystemWideReplacement(int,java.lang.Object) -> setSystemWideReplacement
+    533:536:void setSystemWideReplacement(java.lang.String,java.lang.Object) -> setSystemWideReplacement
+    559:562:void setSystemWideReplacement(java.lang.String,java.lang.String,java.lang.String,java.lang.Object) -> setSystemWideReplacement
+    1244:1249:int translateAttrId(java.lang.String,android.content.res.XResources) -> translateAttrId
+    1149:1182:int translateResId(int,android.content.res.XResources,android.content.res.Resources) -> translateResId
+    1734:1747:void unhookLayout(java.lang.String,int,cn.hishi.android.scrm.callbacks.XC_LayoutInflated) -> unhookLayout
+android.content.res.XResources$1 -> android.content.res.XResources$1:
+    68:68:void <init>() -> <init>
+    68:68:java.lang.Object initialValue() -> initialValue
+    71:71:java.util.LinkedList initialValue() -> initialValue
+android.content.res.XResources$2 -> android.content.res.XResources$2:
+    210:210:void <init>() -> <init>
+    213:226:void afterHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam) -> afterHookedMethod
+android.content.res.XResources$3 -> android.content.res.XResources$3:
+    231:231:void <init>() -> <init>
+    239:253:void afterHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam) -> afterHookedMethod
+    234:234:void beforeHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam) -> beforeHookedMethod
+android.content.res.XResources$DimensionReplacement -> android.content.res.XResources$DimensionReplacement:
+    1552:1554:void <init>(float,int) -> <init>
+    1559:1559:float getDimension(android.util.DisplayMetrics) -> getDimension
+    1564:1564:int getDimensionPixelOffset(android.util.DisplayMetrics) -> getDimensionPixelOffset
+    1569:1572:int getDimensionPixelSize(android.util.DisplayMetrics) -> getDimensionPixelSize
+android.content.res.XResources$DrawableLoader -> android.content.res.XResources$DrawableLoader:
+    1505:1505:void <init>() -> <init>
+    1529:1529:android.graphics.drawable.Drawable newDrawableForDensity(android.content.res.XResources,int,int) -> newDrawableForDensity
+android.content.res.XResources$ResourceNames -> android.content.res.XResources$ResourceNames:
+    272:272:void <init>(int,java.lang.String,java.lang.String,java.lang.String,android.content.res.XResources$1) -> <init>
+    284:289:void <init>(int,java.lang.String,java.lang.String,java.lang.String) -> <init>
+    296:298:boolean equals(java.lang.String,java.lang.String,java.lang.String,int) -> equals
+android.content.res.XResources$XMLInstanceDetails -> android.content.res.XResources$XMLInstanceDetails:
+    1582:1582:void <init>(android.content.res.XResources,android.content.res.XResources$ResourceNames,java.lang.String,cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet,android.content.res.XResources$1) -> <init>
+    1586:1591:void <init>(android.content.res.XResources,android.content.res.XResources$ResourceNames,java.lang.String,cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet) -> <init>
+android.content.res.XResources$XTypedArray -> android.content.res.XResources$XTypedArray:
+    1265:1265:void <init>(android.content.res.Resources) -> <init>
+    1276:1284:boolean getBoolean(int,boolean) -> getBoolean
+    1289:1297:int getColor(int,int) -> getColor
+    1302:1320:android.content.res.ColorStateList getColorStateList(int) -> getColorStateList
+    1325:1331:float getDimension(int,float) -> getDimension
+    1336:1342:int getDimensionPixelOffset(int,int) -> getDimensionPixelOffset
+    1347:1353:int getDimensionPixelSize(int,int) -> getDimensionPixelSize
+    1358:1374:android.graphics.drawable.Drawable getDrawable(int) -> getDrawable
+    1379:1386:float getFloat(int,float) -> getFloat
+    1391:1398:float getFraction(int,int,int,float) -> getFraction
+    1403:1411:int getInt(int,int) -> getInt
+    1416:1424:int getInteger(int,int) -> getInteger
+    1429:1435:int getLayoutDimension(int,int) -> getLayoutDimension
+    1440:1446:int getLayoutDimension(int,java.lang.String) -> getLayoutDimension
+    1451:1459:java.lang.String getString(int) -> getString
+    1464:1472:java.lang.CharSequence getText(int) -> getText
+    1477:1485:java.lang.CharSequence[] getTextArray(int) -> getTextArray
+cn.hishi.android.scrm.DexCreator -> cn.hishi.android.scrm.DexCreator:
+    23:23:void <clinit>() -> <clinit>
+    234:234:void <init>() -> <init>
+    107:178:byte[] create(java.lang.String,java.lang.String) -> create
+    35:42:java.io.File ensure(java.lang.String,java.lang.Class,java.lang.Class) -> ensure
+    48:48:java.io.File ensure(java.lang.String,java.lang.Class) -> ensure
+    58:72:java.io.File ensure(java.io.File,java.lang.String,java.lang.String) -> ensure
+    27:27:java.io.File getDefaultFile(java.lang.String) -> getDefaultFile
+    81:97:boolean matches(byte[],java.lang.String,java.lang.String) -> matches
+    226:231:byte[] stringToBytes(java.lang.String) -> stringToBytes
+    195:201:void updateChecksum(byte[]) -> updateChecksum
+    185:189:void updateSignature(byte[]) -> updateSignature
+    213:216:void writeInt(java.io.OutputStream,int) -> writeInt
+    220:222:void writeMapItem(java.io.OutputStream,int,int,int) -> writeMapItem
+    206:209:void writeUleb128(java.io.OutputStream,int) -> writeUleb128
+cn.hishi.android.scrm.IXposedHookCmdInit$StartupParam -> cn.hishi.android.scrm.IXposedHookCmdInit$StartupParam:
+    20:20:void <init>() -> <init>
+cn.hishi.android.scrm.IXposedHookInitPackageResources$Wrapper -> cn.hishi.android.scrm.IXposedHookInitPackageResources$Wrapper:
+    30:32:void <init>(cn.hishi.android.scrm.IXposedHookInitPackageResources,java.lang.String) -> <init>
+    42:42:java.lang.String getApkPath() -> getApkPath
+    37:37:void handleInitPackageResources(cn.hishi.android.scrm.callbacks.XC_InitPackageResources$InitPackageResourcesParam) -> handleInitPackageResources
+cn.hishi.android.scrm.IXposedHookLoadPackage$Wrapper -> cn.hishi.android.scrm.IXposedHookLoadPackage$Wrapper:
+    31:33:void <init>(cn.hishi.android.scrm.IXposedHookLoadPackage,java.lang.String) -> <init>
+    42:42:java.lang.String getApkPath() -> getApkPath
+    37:37:void handleLoadPackage(cn.hishi.android.scrm.callbacks.XC_LoadPackage$LoadPackageParam) -> handleLoadPackage
+cn.hishi.android.scrm.IXposedHookZygoteInit$StartupParam -> cn.hishi.android.scrm.IXposedHookZygoteInit$StartupParam:
+    27:27:void <init>() -> <init>
+    34:34:void <init>(cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet) -> <init>
+cn.hishi.android.scrm.IXposedHookZygoteInit$Wrapper -> cn.hishi.android.scrm.IXposedHookZygoteInit$Wrapper:
+    54:56:void <init>(cn.hishi.android.scrm.IXposedHookZygoteInit,cn.hishi.android.scrm.IXposedHookZygoteInit$StartupParam) -> <init>
+    68:68:java.lang.String getApkPath() -> getApkPath
+    63:63:void initZygote(cn.hishi.android.scrm.IXposedHookZygoteInit$StartupParam) -> initZygote
+cn.hishi.android.scrm.MethodHooker -> cn.hishi.android.scrm.MethodHooker:
+    15:18:void <init>(cn.hishi.android.scrm.XposedBridge$AdditionalHookInfo,java.lang.reflect.Member,java.lang.reflect.Method) -> <init>
+    27:110:java.lang.Object handleHookedMethod(java.lang.Object[]) -> handleHookedMethod
+    22:22:java.lang.Object invokeOriginalMethod(java.lang.Object,java.lang.Object[]) -> invokeOriginalMethod
+cn.hishi.android.scrm.PendingHooks -> cn.hishi.android.scrm.PendingHooks:
+    15:15:void <clinit>() -> <clinit>
+    11:11:void <init>() -> <init>
+    42:42:void cleanUp() -> cleanUp
+    18:22:void hookPendingMethod(java.lang.Class) -> hookPendingMethod
+    28:38:void recordPendingMethod(java.lang.reflect.Method,cn.hishi.android.scrm.XposedBridge$AdditionalHookInfo) -> recordPendingMethod
+cn.hishi.android.scrm.PendingHooks$1 -> cn.hishi.android.scrm.PendingHooks$1:
+    30:30:void <init>() -> <init>
+    30:30:java.lang.Object apply(java.lang.Object) -> apply
+    33:33:java.util.concurrent.ConcurrentHashMap apply(java.lang.Class) -> apply
+cn.hishi.android.scrm.SELinuxHelper -> cn.hishi.android.scrm.SELinuxHelper:
+    92:92:void <clinit>() -> <clinit>
+    16:16:void <init>() -> <init>
+    83:85:cn.hishi.android.scrm.services.BaseService getAppDataFileService() -> getAppDataFileService
+    71:71:java.lang.String getContext() -> getContext
+    97:97:void initOnce() -> initOnce
+    24:24:boolean isSELinuxEnabled() -> isSELinuxEnabled
+    33:57:boolean isSELinuxEnforced() -> isSELinuxEnforced
+cn.hishi.android.scrm.XC_MethodHook -> cn.hishi.android.scrm.XC_MethodHook:
+    20:20:void <init>() -> <init>
+    34:34:void <init>(int) -> <init>
+    68:68:void callAfterHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam) -> callAfterHookedMethod
+    51:51:void callBeforeHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam) -> callBeforeHookedMethod
+cn.hishi.android.scrm.XC_MethodHook$MethodHookParam -> cn.hishi.android.scrm.XC_MethodHook$MethodHookParam:
+    78:92:void <init>() -> <init>
+    96:96:java.lang.Object getResult() -> getResult
+    133:135:java.lang.Object getResultOrThrowable() -> getResultOrThrowable
+    112:112:java.lang.Throwable getThrowable() -> getThrowable
+    117:117:boolean hasThrowable() -> hasThrowable
+    105:107:void setResult(java.lang.Object) -> setResult
+    126:128:void setThrowable(java.lang.Throwable) -> setThrowable
+cn.hishi.android.scrm.XC_MethodHook$Unhook -> cn.hishi.android.scrm.XC_MethodHook$Unhook:
+    145:146:void <init>(cn.hishi.android.scrm.XC_MethodHook,java.lang.reflect.Member) -> <init>
+    142:142:java.lang.Object getCallback() -> getCallback
+    158:158:cn.hishi.android.scrm.XC_MethodHook getCallback() -> getCallback
+    153:153:java.lang.reflect.Member getHookedMethod() -> getHookedMethod
+    164:164:void unhook() -> unhook
+cn.hishi.android.scrm.XC_MethodReplacement -> cn.hishi.android.scrm.XC_MethodReplacement:
+    57:57:void <clinit>() -> <clinit>
+    13:13:void <init>() -> <init>
+    22:22:void <init>(int) -> <init>
+    29:33:void beforeHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam) -> beforeHookedMethod
+    70:70:cn.hishi.android.scrm.XC_MethodReplacement returnConstant(java.lang.Object) -> returnConstant
+    80:80:cn.hishi.android.scrm.XC_MethodReplacement returnConstant(int,java.lang.Object) -> returnConstant
+cn.hishi.android.scrm.XC_MethodReplacement$1 -> cn.hishi.android.scrm.XC_MethodReplacement$1:
+    57:57:void <init>(int) -> <init>
+cn.hishi.android.scrm.XC_MethodReplacement$2 -> cn.hishi.android.scrm.XC_MethodReplacement$2:
+    80:80:void <init>(int,java.lang.Object) -> <init>
+    83:83:java.lang.Object replaceHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam) -> replaceHookedMethod
+cn.hishi.android.scrm.XSharedPreferences -> cn.hishi.android.scrm.XSharedPreferences:
+    42:44:void <clinit>() -> <clinit>
+    47:117:void <init>(java.io.File) -> <init>
+    127:127:void <init>(java.lang.String) -> <init>
+    47:169:void <init>(java.lang.String,java.lang.String) -> <init>
+    40:40:java.nio.file.WatchService access$000() -> access$000
+    40:40:java.nio.file.WatchService access$002(java.nio.file.WatchService) -> access$002
+    40:40:java.util.HashMap access$100() -> access$100
+    40:40:java.util.HashMap access$200(cn.hishi.android.scrm.XSharedPreferences) -> access$200
+    40:40:void access$300(cn.hishi.android.scrm.XSharedPreferences) -> access$300
+    40:40:java.lang.String access$400(cn.hishi.android.scrm.XSharedPreferences) -> access$400
+    40:40:long access$500(java.lang.String) -> access$500
+    40:40:byte[] access$600(java.lang.String) -> access$600
+    378:380:void awaitLoadedLocked() -> awaitLoadedLocked
+    475:478:boolean contains(java.lang.String) -> contains
+    487:487:android.content.SharedPreferences$Editor edit() -> edit
+    391:394:java.util.Map getAll() -> getAll
+    463:467:boolean getBoolean(java.lang.String,boolean) -> getBoolean
+    286:286:java.io.File getFile() -> getFile
+    451:455:float getFloat(java.lang.String,float) -> getFloat
+    427:431:int getInt(java.lang.String,int) -> getInt
+    439:443:long getLong(java.lang.String,long) -> getLong
+    402:406:java.lang.String getString(java.lang.String,java.lang.String) -> getString
+    415:419:java.util.Set getStringSet(java.lang.String,java.util.Set) -> getStringSet
+    366:372:boolean hasFileChanged() -> hasFileChanged
+    219:219:void init() -> init
+    57:106:void initWatcherDaemon() -> initWatcherDaemon
+    305:345:void loadFromDiskLocked() -> loadFromDiskLocked
+    259:274:boolean makeWorldReadable() -> makeWorldReadable
+    501:507:void registerOnSharedPreferenceChangeListener(android.content.SharedPreferences$OnSharedPreferenceChangeListener) -> registerOnSharedPreferenceChangeListener
+    354:355:void reload() -> reload
+    290:300:void startLoadFromDisk() -> startLoadFromDisk
+    232:242:byte[] tryGetFileHash(java.lang.String) -> tryGetFileHash
+    224:224:long tryGetFileSize(java.lang.String) -> tryGetFileSize
+    173:196:void tryRegisterWatcher() -> tryRegisterWatcher
+    200:215:void tryUnregisterWatcher() -> tryUnregisterWatcher
+    518:522:void unregisterOnSharedPreferenceChangeListener(android.content.SharedPreferences$OnSharedPreferenceChangeListener) -> unregisterOnSharedPreferenceChangeListener
+cn.hishi.android.scrm.XSharedPreferences$1 -> cn.hishi.android.scrm.XSharedPreferences$1:
+    57:57:void <init>() -> <init>
+    64:100:void run() -> run
+cn.hishi.android.scrm.XSharedPreferences$2 -> cn.hishi.android.scrm.XSharedPreferences$2:
+    293:293:void <init>(cn.hishi.android.scrm.XSharedPreferences,java.lang.String) -> <init>
+    296:298:void run() -> run
+cn.hishi.android.scrm.XSharedPreferences$PrefsData -> cn.hishi.android.scrm.XSharedPreferences$PrefsData:
+    530:533:void <init>(cn.hishi.android.scrm.XSharedPreferences) -> <init>
+    537:550:boolean hasChanged() -> hasChanged
+cn.hishi.android.scrm.XposedBridge -> cn.hishi.android.scrm.XposedBridge:
+    49:96:void <clinit>() -> <clinit>
+    77:77:void <init>() -> <init>
+    42:42:java.lang.Object[] access$100() -> access$100
+    449:449:void callInitZygotes() -> callInitZygotes
+    453:455:void clearAllCallbacks() -> clearAllCallbacks
+    431:433:void clearInitPackageResources() -> clearInitPackageResources
+    443:445:void clearInitZygotes() -> clearInitZygotes
+    410:412:void clearLoadedPackages() -> clearLoadedPackages
+    539:542:java.lang.Object cloneToSubclass(java.lang.Object,java.lang.Class) -> cloneToSubclass
+    310:391:java.lang.Object handleHookedMethod(java.lang.reflect.Member,long,java.lang.Object,java.lang.Object,java.lang.Object[]) -> handleHookedMethod
+    299:301:java.util.Set hookAllConstructors(java.lang.Class,cn.hishi.android.scrm.XC_MethodHook) -> hookAllConstructors
+    283:286:java.util.Set hookAllMethods(java.lang.Class,java.lang.String,cn.hishi.android.scrm.XC_MethodHook) -> hookAllMethods
+    425:427:void hookInitPackageResources(cn.hishi.android.scrm.callbacks.XC_InitPackageResources) -> hookInitPackageResources
+    437:439:void hookInitZygote(cn.hishi.android.scrm.callbacks.XC_InitZygote) -> hookInitZygote
+    404:406:void hookLoadPackage(cn.hishi.android.scrm.callbacks.XC_LoadPackage) -> hookLoadPackage
+    195:247:cn.hishi.android.scrm.XC_MethodHook$Unhook hookMethod(java.lang.reflect.Member,cn.hishi.android.scrm.XC_MethodHook) -> hookMethod
+    464:464:void hookMethodNative(java.lang.reflect.Member,java.lang.Class,int,java.lang.Object) -> hookMethodNative
+    100:132:void initXResources() -> initXResources
+    503:522:java.lang.Object invokeOriginalMethod(java.lang.reflect.Member,java.lang.Object,java.lang.Object[]) -> invokeOriginalMethod
+    472:472:java.lang.Object invokeOriginalMethodNative(java.lang.reflect.Member,long,java.lang.Class[],java.lang.Class,java.lang.Object,java.lang.Object[]) -> invokeOriginalMethodNative
+    161:164:void log(java.lang.String) -> log
+    176:176:void log(java.lang.Throwable) -> log
+    548:548:void removeFinalFlagNative(java.lang.Class) -> removeFinalFlagNative
+    526:529:void setObjectClass(java.lang.Object,java.lang.Class) -> setObjectClass
+    261:268:void unhookMethod(java.lang.reflect.Member,cn.hishi.android.scrm.XC_MethodHook) -> unhookMethod
+cn.hishi.android.scrm.XposedBridge$AdditionalHookInfo -> cn.hishi.android.scrm.XposedBridge$AdditionalHookInfo:
+    604:604:void <init>(cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet,java.lang.Class[],java.lang.Class,cn.hishi.android.scrm.XposedBridge$1) -> <init>
+    609:612:void <init>(cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet,java.lang.Class[],java.lang.Class) -> <init>
+cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet -> cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet:
+    557:558:void <init>() -> <init>
+    562:570:boolean add(java.lang.Object) -> add
+    600:600:void clear() -> clear
+    596:596:java.lang.Object[] getSnapshot() -> getSnapshot
+    588:589:int indexOf(java.lang.Object) -> indexOf
+    576:583:boolean remove(java.lang.Object) -> remove
+cn.hishi.android.scrm.XposedHelpers -> cn.hishi.android.scrm.XposedHelpers:
+    42:46:void <clinit>() -> <clinit>
+    40:40:void <init>() -> <init>
+    1527:1527:byte[] assetAsByteArray(android.content.res.Resources,java.lang.String) -> assetAsByteArray
+    1263:1271:java.lang.Object callMethod(java.lang.Object,java.lang.String,java.lang.Object[]) -> callMethod
+    1284:1292:java.lang.Object callMethod(java.lang.Object,java.lang.String,java.lang.Class[],java.lang.Object[]) -> callMethod
+    1308:1316:java.lang.Object callStaticMethod(java.lang.Class,java.lang.String,java.lang.Object[]) -> callStaticMethod
+    1329:1337:java.lang.Object callStaticMethod(java.lang.Class,java.lang.String,java.lang.Class[],java.lang.Object[]) -> callStaticMethod
+    1548:1548:void closeSilently(java.io.Closeable) -> closeSilently
+    1559:1559:void closeSilently(dalvik.system.DexFile) -> closeSilently
+    1570:1570:void closeSilently(java.util.zip.ZipFile) -> closeSilently
+    1620:1620:int decrementMethodDepth(java.lang.String) -> decrementMethodDepth
+    1655:1665:boolean fileContains(java.io.File,java.lang.String) -> fileContains
+    617:623:cn.hishi.android.scrm.XC_MethodHook$Unhook findAndHookConstructor(java.lang.Class,java.lang.Object[]) -> findAndHookConstructor
+    631:631:cn.hishi.android.scrm.XC_MethodHook$Unhook findAndHookConstructor(java.lang.String,java.lang.ClassLoader,java.lang.Object[]) -> findAndHookConstructor
+    181:187:cn.hishi.android.scrm.XC_MethodHook$Unhook findAndHookMethod(java.lang.Class,java.lang.String,java.lang.Object[]) -> findAndHookMethod
+    260:260:cn.hishi.android.scrm.XC_MethodHook$Unhook findAndHookMethod(java.lang.String,java.lang.ClassLoader,java.lang.String,java.lang.Object[]) -> findAndHookMethod
+    67:71:java.lang.Class findClass(java.lang.String,java.lang.ClassLoader) -> findClass
+    85:85:java.lang.Class findClassIfExists(java.lang.String,java.lang.ClassLoader) -> findClassIfExists
+    640:677:java.lang.reflect.Constructor findConstructorBestMatch(java.lang.Class,java.lang.Class[]) -> findConstructorBestMatch
+    688:688:java.lang.reflect.Constructor findConstructorBestMatch(java.lang.Class,java.lang.Object[]) -> findConstructorBestMatch
+    700:707:java.lang.reflect.Constructor findConstructorBestMatch(java.lang.Class,java.lang.Class[],java.lang.Object[]) -> findConstructorBestMatch
+    552:552:java.lang.reflect.Constructor findConstructorExact(java.lang.Class,java.lang.Object[]) -> findConstructorExact
+    572:572:java.lang.reflect.Constructor findConstructorExact(java.lang.String,java.lang.ClassLoader,java.lang.Object[]) -> findConstructorExact
+    592:608:java.lang.reflect.Constructor findConstructorExact(java.lang.Class,java.lang.Class[]) -> findConstructorExact
+    561:561:java.lang.reflect.Constructor findConstructorExactIfExists(java.lang.Class,java.lang.Object[]) -> findConstructorExactIfExists
+    581:581:java.lang.reflect.Constructor findConstructorExactIfExists(java.lang.String,java.lang.ClassLoader,java.lang.Object[]) -> findConstructorExactIfExists
+    100:116:java.lang.reflect.Field findField(java.lang.Class,java.lang.String) -> findField
+    130:130:java.lang.reflect.Field findFieldIfExists(java.lang.Class,java.lang.String) -> findFieldIfExists
+    138:149:java.lang.reflect.Field findFieldRecursiveImpl(java.lang.Class,java.lang.String) -> findFieldRecursiveImpl
+    165:173:java.lang.reflect.Field findFirstFieldByExactType(java.lang.Class,java.lang.Class) -> findFirstFieldByExactType
+    400:445:java.lang.reflect.Method findMethodBestMatch(java.lang.Class,java.lang.String,java.lang.Class[]) -> findMethodBestMatch
+    456:456:java.lang.reflect.Method findMethodBestMatch(java.lang.Class,java.lang.String,java.lang.Object[]) -> findMethodBestMatch
+    468:475:java.lang.reflect.Method findMethodBestMatch(java.lang.Class,java.lang.String,java.lang.Class[],java.lang.Object[]) -> findMethodBestMatch
+    268:268:java.lang.reflect.Method findMethodExact(java.lang.Class,java.lang.String,java.lang.Object[]) -> findMethodExact
+    299:299:java.lang.reflect.Method findMethodExact(java.lang.String,java.lang.ClassLoader,java.lang.String,java.lang.Object[]) -> findMethodExact
+    328:344:java.lang.reflect.Method findMethodExact(java.lang.Class,java.lang.String,java.lang.Class[]) -> findMethodExact
+    277:277:java.lang.reflect.Method findMethodExactIfExists(java.lang.Class,java.lang.String,java.lang.Object[]) -> findMethodExactIfExists
+    315:315:java.lang.reflect.Method findMethodExactIfExists(java.lang.String,java.lang.ClassLoader,java.lang.String,java.lang.Object[]) -> findMethodExactIfExists
+    360:383:java.lang.reflect.Method[] findMethodsByExactParameters(java.lang.Class,java.lang.Class,java.lang.Class[]) -> findMethodsByExactParameters
+    1447:1460:java.lang.Object getAdditionalInstanceField(java.lang.Object,java.lang.String) -> getAdditionalInstanceField
+    1495:1495:java.lang.Object getAdditionalStaticField(java.lang.Object,java.lang.String) -> getAdditionalStaticField
+    1510:1510:java.lang.Object getAdditionalStaticField(java.lang.Class,java.lang.String) -> getAdditionalStaticField
+    913:919:boolean getBooleanField(java.lang.Object,java.lang.String) -> getBooleanField
+    926:932:byte getByteField(java.lang.Object,java.lang.String) -> getByteField
+    939:945:char getCharField(java.lang.Object,java.lang.String) -> getCharField
+    952:958:double getDoubleField(java.lang.Object,java.lang.String) -> getDoubleField
+    736:743:int getFirstParameterIndexByType(java.lang.reflect.Member,java.lang.Class) -> getFirstParameterIndexByType
+    965:971:float getFloatField(java.lang.Object,java.lang.String) -> getFloatField
+    978:984:int getIntField(java.lang.Object,java.lang.String) -> getIntField
+    991:997:long getLongField(java.lang.Object,java.lang.String) -> getLongField
+    1580:1590:java.lang.String getMD5Sum(java.lang.String) -> getMD5Sum
+    1631:1631:int getMethodDepth(java.lang.String) -> getMethodDepth
+    1635:1647:java.lang.ThreadLocal getMethodDepthCounter(java.lang.String) -> getMethodDepthCounter
+    894:900:java.lang.Object getObjectField(java.lang.Object,java.lang.String) -> getObjectField
+    1676:1694:java.lang.reflect.Method getOverriddenMethod(java.lang.reflect.Method) -> getOverriddenMethod
+    1704:1708:java.util.Set getOverriddenMethods(java.lang.Class) -> getOverriddenMethods
+    495:517:java.lang.Class[] getParameterClasses(java.lang.ClassLoader,java.lang.Object[]) -> getParameterClasses
+    753:768:int getParameterIndexByType(java.lang.reflect.Member,java.lang.Class) -> getParameterIndexByType
+    482:484:java.lang.Class[] getParameterTypes(java.lang.Object[]) -> getParameterTypes
+    530:544:java.lang.String getParametersString(java.lang.Class[]) -> getParametersString
+    1004:1010:short getShortField(java.lang.Object,java.lang.String) -> getShortField
+    1149:1155:boolean getStaticBooleanField(java.lang.Class,java.lang.String) -> getStaticBooleanField
+    1162:1168:byte getStaticByteField(java.lang.Class,java.lang.String) -> getStaticByteField
+    1175:1181:char getStaticCharField(java.lang.Class,java.lang.String) -> getStaticCharField
+    1188:1194:double getStaticDoubleField(java.lang.Class,java.lang.String) -> getStaticDoubleField
+    1201:1207:float getStaticFloatField(java.lang.Class,java.lang.String) -> getStaticFloatField
+    1214:1220:int getStaticIntField(java.lang.Class,java.lang.String) -> getStaticIntField
+    1227:1233:long getStaticLongField(java.lang.Class,java.lang.String) -> getStaticLongField
+    1136:1142:java.lang.Object getStaticObjectField(java.lang.Class,java.lang.String) -> getStaticObjectField
+    1240:1246:short getStaticShortField(java.lang.Class,java.lang.String) -> getStaticShortField
+    906:906:java.lang.Object getSurroundingThis(java.lang.Object) -> getSurroundingThis
+    1609:1609:int incrementMethodDepth(java.lang.String) -> incrementMethodDepth
+    1531:1539:byte[] inputStreamToByteArray(java.io.InputStream) -> inputStreamToByteArray
+    1370:1380:java.lang.Object newInstance(java.lang.Class,java.lang.Object[]) -> newInstance
+    1393:1403:java.lang.Object newInstance(java.lang.Class,java.lang.Class[],java.lang.Object[]) -> newInstance
+    1472:1485:java.lang.Object removeAdditionalInstanceField(java.lang.Object,java.lang.String) -> removeAdditionalInstanceField
+    1500:1500:java.lang.Object removeAdditionalStaticField(java.lang.Object,java.lang.String) -> removeAdditionalStaticField
+    1515:1515:java.lang.Object removeAdditionalStaticField(java.lang.Class,java.lang.String) -> removeAdditionalStaticField
+    1420:1435:java.lang.Object setAdditionalInstanceField(java.lang.Object,java.lang.String,java.lang.Object) -> setAdditionalInstanceField
+    1490:1490:java.lang.Object setAdditionalStaticField(java.lang.Object,java.lang.String,java.lang.Object) -> setAdditionalStaticField
+    1505:1505:java.lang.Object setAdditionalStaticField(java.lang.Class,java.lang.String,java.lang.Object) -> setAdditionalStaticField
+    789:795:void setBooleanField(java.lang.Object,java.lang.String,boolean) -> setBooleanField
+    802:808:void setByteField(java.lang.Object,java.lang.String,byte) -> setByteField
+    815:821:void setCharField(java.lang.Object,java.lang.String,char) -> setCharField
+    828:834:void setDoubleField(java.lang.Object,java.lang.String,double) -> setDoubleField
+    841:847:void setFloatField(java.lang.Object,java.lang.String,float) -> setFloatField
+    854:860:void setIntField(java.lang.Object,java.lang.String,int) -> setIntField
+    867:873:void setLongField(java.lang.Object,java.lang.String,long) -> setLongField
+    776:782:void setObjectField(java.lang.Object,java.lang.String,java.lang.Object) -> setObjectField
+    880:886:void setShortField(java.lang.Object,java.lang.String,short) -> setShortField
+    1031:1037:void setStaticBooleanField(java.lang.Class,java.lang.String,boolean) -> setStaticBooleanField
+    1044:1050:void setStaticByteField(java.lang.Class,java.lang.String,byte) -> setStaticByteField
+    1057:1063:void setStaticCharField(java.lang.Class,java.lang.String,char) -> setStaticCharField
+    1070:1076:void setStaticDoubleField(java.lang.Class,java.lang.String,double) -> setStaticDoubleField
+    1083:1089:void setStaticFloatField(java.lang.Class,java.lang.String,float) -> setStaticFloatField
+    1096:1102:void setStaticIntField(java.lang.Class,java.lang.String,int) -> setStaticIntField
+    1109:1115:void setStaticLongField(java.lang.Class,java.lang.String,long) -> setStaticLongField
+    1018:1024:void setStaticObjectField(java.lang.Class,java.lang.String,java.lang.Object) -> setStaticObjectField
+    1122:1128:void setStaticShortField(java.lang.Class,java.lang.String,short) -> setStaticShortField
+cn.hishi.android.scrm.XposedHelpers$1 -> cn.hishi.android.scrm.XposedHelpers$1:
+    1638:1638:void <init>() -> <init>
+    1638:1638:java.lang.Object initialValue() -> initialValue
+    1641:1641:java.util.concurrent.atomic.AtomicInteger initialValue() -> initialValue
+cn.hishi.android.scrm.XposedHelpers$ClassNotFoundError -> cn.hishi.android.scrm.XposedHelpers$ClassNotFoundError:
+    720:720:void <init>(java.lang.Throwable) -> <init>
+    725:725:void <init>(java.lang.String,java.lang.Throwable) -> <init>
+cn.hishi.android.scrm.XposedHelpers$InvocationTargetError -> cn.hishi.android.scrm.XposedHelpers$InvocationTargetError:
+    1353:1353:void <init>(java.lang.Throwable) -> <init>
+cn.hishi.android.scrm.XposedInit -> cn.hishi.android.scrm.XposedInit:
+    68:515:void <clinit>() -> <clinit>
+    71:71:void <init>() -> <init>
+    61:61:android.content.res.XResources access$000(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam,java.lang.String) -> access$000
+    280:301:android.content.res.XResources cloneToXResources(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam,java.lang.String) -> cloneToXResources
+    319:321:android.util.ArraySet getLoadedModules() -> getLoadedModules
+    98:275:void hookResources() -> hookResources
+    81:93:void initForZygote(boolean) -> initForZygote
+    397:512:boolean loadModule(java.lang.String,java.lang.ClassLoader,boolean) -> loadModule
+    325:358:boolean loadModules(boolean) -> loadModules
+    364:389:void pruneCallbacks(java.util.Set) -> pruneCallbacks
+cn.hishi.android.scrm.XposedInit$1 -> cn.hishi.android.scrm.XposedInit$1:
+    109:109:void <init>() -> <init>
+    112:114:void beforeHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam) -> beforeHookedMethod
+cn.hishi.android.scrm.XposedInit$2 -> cn.hishi.android.scrm.XposedInit$2:
+    147:147:void <init>(java.lang.Class) -> <init>
+    151:170:void afterHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam) -> afterHookedMethod
+cn.hishi.android.scrm.XposedInit$3 -> cn.hishi.android.scrm.XposedInit$3:
+    174:174:void <init>(java.lang.ThreadLocal) -> <init>
+    177:177:void afterHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam) -> afterHookedMethod
+cn.hishi.android.scrm.XposedInit$4 -> cn.hishi.android.scrm.XposedInit$4:
+    181:181:void <init>(java.lang.ThreadLocal) -> <init>
+    189:212:void afterHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam) -> afterHookedMethod
+    184:184:void beforeHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam) -> beforeHookedMethod
+cn.hishi.android.scrm.XposedInit$5 -> cn.hishi.android.scrm.XposedInit$5:
+    218:218:void <init>() -> <init>
+    221:222:void afterHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam) -> afterHookedMethod
+cn.hishi.android.scrm.XposedInit$6 -> cn.hishi.android.scrm.XposedInit$6:
+    248:248:void <init>() -> <init>
+    251:264:void afterHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam) -> afterHookedMethod
+cn.hishi.android.scrm.annotation.Level -> cn.hishi.android.scrm.annotation.Level:
+    3:4:void <clinit>() -> <clinit>
+    6:6:void <init>(java.lang.String,int) -> <init>
+    3:3:cn.hishi.android.scrm.annotation.Level valueOf(java.lang.String) -> valueOf
+    3:3:cn.hishi.android.scrm.annotation.Level[] values() -> values
+cn.hishi.android.scrm.callbacks.XC_InitPackageResources -> cn.hishi.android.scrm.callbacks.XC_InitPackageResources:
+    19:19:void <init>() -> <init>
+    29:29:void <init>(int) -> <init>
+    54:55:void call(cn.hishi.android.scrm.callbacks.XCallback$Param) -> call
+cn.hishi.android.scrm.callbacks.XC_InitPackageResources$InitPackageResourcesParam -> cn.hishi.android.scrm.callbacks.XC_InitPackageResources$InitPackageResourcesParam:
+    38:38:void <init>(cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet) -> <init>
+cn.hishi.android.scrm.callbacks.XC_InitZygote -> cn.hishi.android.scrm.callbacks.XC_InitZygote:
+    18:18:void <init>() -> <init>
+    28:28:void <init>(int) -> <init>
+    36:37:void call(cn.hishi.android.scrm.callbacks.XCallback$Param) -> call
+cn.hishi.android.scrm.callbacks.XC_LayoutInflated -> cn.hishi.android.scrm.callbacks.XC_LayoutInflated:
+    19:19:void <init>() -> <init>
+    28:28:void <init>(int) -> <init>
+    56:57:void call(cn.hishi.android.scrm.callbacks.XCallback$Param) -> call
+cn.hishi.android.scrm.callbacks.XC_LayoutInflated$LayoutInflatedParam -> cn.hishi.android.scrm.callbacks.XC_LayoutInflated$LayoutInflatedParam:
+    37:37:void <init>(cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet) -> <init>
+cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook -> cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook:
+    76:78:void <init>(cn.hishi.android.scrm.callbacks.XC_LayoutInflated,java.lang.String,int) -> <init>
+    71:71:java.lang.Object getCallback() -> getCallback
+    90:90:cn.hishi.android.scrm.callbacks.XC_LayoutInflated getCallback() -> getCallback
+    85:85:int getId() -> getId
+    95:95:void unhook() -> unhook
+cn.hishi.android.scrm.callbacks.XC_LoadPackage -> cn.hishi.android.scrm.callbacks.XC_LoadPackage:
+    19:19:void <init>() -> <init>
+    29:29:void <init>(int) -> <init>
+    60:61:void call(cn.hishi.android.scrm.callbacks.XCallback$Param) -> call
+cn.hishi.android.scrm.callbacks.XC_LoadPackage$LoadPackageParam -> cn.hishi.android.scrm.callbacks.XC_LoadPackage$LoadPackageParam:
+    38:38:void <init>(cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet) -> <init>
+cn.hishi.android.scrm.callbacks.XCallback -> cn.hishi.android.scrm.callbacks.XCallback:
+    32:33:void <init>() -> <init>
+    37:38:void <init>(int) -> <init>
+    105:118:void callAll(cn.hishi.android.scrm.callbacks.XCallback$Param) -> callAll
+    19:19:int compareTo(java.lang.Object) -> compareTo
+    137:140:int compareTo(cn.hishi.android.scrm.callbacks.XCallback) -> compareTo
+cn.hishi.android.scrm.callbacks.XCallback$Param -> cn.hishi.android.scrm.callbacks.XCallback$Param:
+    51:52:void <init>() -> <init>
+    56:57:void <init>(cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet) -> <init>
+    70:72:android.os.Bundle getExtra() -> getExtra
+    79:81:java.lang.Object getObjectExtra(java.lang.String) -> getObjectExtra
+    90:90:void setObjectExtra(java.lang.String,java.lang.Object) -> setObjectExtra
+cn.hishi.android.scrm.callbacks.XCallback$Param$SerializeWrapper -> cn.hishi.android.scrm.callbacks.XCallback$Param$SerializeWrapper:
+    96:97:void <init>(java.lang.Object) -> <init>
+    93:93:java.lang.Object access$000(cn.hishi.android.scrm.callbacks.XCallback$Param$SerializeWrapper) -> access$000
+cn.hishi.android.scrm.services.BaseService -> cn.hishi.android.scrm.services.BaseService:
+    156:156:void <init>() -> <init>
+    51:51:boolean checkFileExists(java.lang.String) -> checkFileExists
+    159:160:void ensureAbsolutePath(java.lang.String) -> ensureAbsolutePath
+    132:132:java.io.InputStream getFileInputStream(java.lang.String) -> getFileInputStream
+    148:151:cn.hishi.android.scrm.services.FileResult getFileInputStream(java.lang.String,long,long) -> getFileInputStream
+    82:82:long getFileModificationTime(java.lang.String) -> getFileModificationTime
+    71:71:long getFileSize(java.lang.String) -> getFileSize
+    168:176:void throwCommonIOException(int,java.lang.String,java.lang.String,java.lang.String) -> throwCommonIOException
+cn.hishi.android.scrm.services.BinderService -> cn.hishi.android.scrm.services.BinderService:
+    156:157:void <clinit>() -> <clinit>
+    160:164:void <init>(int) -> <init>
+    35:54:boolean checkFileAccess(java.lang.String,int) -> checkFileAccess
+    22:30:cn.hishi.android.scrm.services.BinderService getService(int) -> getService
+    89:89:byte[] readFile(java.lang.String) -> readFile
+    94:94:cn.hishi.android.scrm.services.FileResult readFile(java.lang.String,long,long) -> readFile
+    100:144:cn.hishi.android.scrm.services.FileResult readFile(java.lang.String,int,int,long,long) -> readFile
+    60:84:cn.hishi.android.scrm.services.FileResult statFile(java.lang.String) -> statFile
+cn.hishi.android.scrm.services.DirectAccessService -> cn.hishi.android.scrm.services.DirectAccessService:
+    10:10:void <init>() -> <init>
+    19:23:boolean checkFileAccess(java.lang.String,int) -> checkFileAccess
+    29:29:boolean checkFileExists(java.lang.String) -> checkFileExists
+    97:97:java.io.InputStream getFileInputStream(java.lang.String) -> getFileInputStream
+    106:111:cn.hishi.android.scrm.services.FileResult getFileInputStream(java.lang.String,long,long) -> getFileInputStream
+    40:44:byte[] readFile(java.lang.String) -> readFile
+    50:55:cn.hishi.android.scrm.services.FileResult readFile(java.lang.String,long,long) -> readFile
+    60:88:cn.hishi.android.scrm.services.FileResult readFile(java.lang.String,int,int,long,long) -> readFile
+    34:35:cn.hishi.android.scrm.services.FileResult statFile(java.lang.String) -> statFile
+cn.hishi.android.scrm.services.FileResult -> cn.hishi.android.scrm.services.FileResult:
+    18:22:void <init>(long,long) -> <init>
+    25:29:void <init>(byte[],long,long) -> <init>
+    32:36:void <init>(java.io.InputStream,long,long) -> <init>
+    42:58:java.lang.String toString() -> toString
+cn.hishi.android.scrm.services.ZygoteService -> cn.hishi.android.scrm.services.ZygoteService:
+    8:8:void <init>() -> <init>
+    21:24:cn.hishi.android.scrm.services.FileResult readFile(java.lang.String,long,long) -> readFile
+    30:52:cn.hishi.android.scrm.services.FileResult readFile(java.lang.String,int,int,long,long) -> readFile
+com.elderdrivers.riru.edxp.config.EdXpConfigGlobal -> com.elderdrivers.riru.edxp.config.EdXpConfigGlobal:
+    11:14:com.elderdrivers.riru.edxp.config.EdxpConfig getConfig() -> getConfig
+    18:21:com.elderdrivers.riru.edxp.hook.HookProvider getHookProvider() -> getHookProvider
+com.elderdrivers.riru.edxp.util.MetaDataReader -> com.elderdrivers.riru.edxp.util.MetaDataReader:
+    16:34:void <init>(java.io.File) -> <init>
+    15:15:java.util.HashMap access$000(com.elderdrivers.riru.edxp.util.MetaDataReader) -> access$000
+    110:112:int extractIntPart(java.lang.String) -> extractIntPart
+    38:47:byte[] getBytesFromInputStream(java.io.InputStream) -> getBytesFromInputStream
+    19:19:java.util.Map getMetaData(java.io.File) -> getMetaData
+com.elderdrivers.riru.edxp.util.MetaDataReader$1 -> com.elderdrivers.riru.edxp.util.MetaDataReader$1:
+    27:27:void <init>(com.elderdrivers.riru.edxp.util.MetaDataReader) -> <init>
+    30:31:pxb.android.axml.NodeVisitor child(java.lang.String,java.lang.String) -> child
+com.elderdrivers.riru.edxp.util.MetaDataReader$ManifestTagVisitor -> com.elderdrivers.riru.edxp.util.MetaDataReader$ManifestTagVisitor:
+    53:54:void <init>(com.elderdrivers.riru.edxp.util.MetaDataReader,pxb.android.axml.NodeVisitor) -> <init>
+    59:61:pxb.android.axml.NodeVisitor child(java.lang.String,java.lang.String) -> child
+com.elderdrivers.riru.edxp.util.MetaDataReader$ManifestTagVisitor$ApplicationTagVisitor -> com.elderdrivers.riru.edxp.util.MetaDataReader$ManifestTagVisitor$ApplicationTagVisitor:
+    67:68:void <init>(com.elderdrivers.riru.edxp.util.MetaDataReader$ManifestTagVisitor,pxb.android.axml.NodeVisitor) -> <init>
+    73:75:pxb.android.axml.NodeVisitor child(java.lang.String,java.lang.String) -> child
+com.elderdrivers.riru.edxp.util.MetaDataReader$MetaDataVisitor -> com.elderdrivers.riru.edxp.util.MetaDataReader$MetaDataVisitor:
+    83:86:void <init>(com.elderdrivers.riru.edxp.util.MetaDataReader,pxb.android.axml.NodeVisitor) -> <init>
+    91:97:void attr(java.lang.String,java.lang.String,int,int,java.lang.Object) -> attr
+    102:105:void end() -> end
+external.org.apache.commons.lang3.ArrayUtils -> external.org.apache.commons.lang3.ArrayUtils:
+    50:54:void <clinit>() -> <clinit>
+    1196:1196:boolean isSameLength(java.lang.Object[],java.lang.Object[]) -> isSameLength
+external.org.apache.commons.lang3.ClassUtils -> external.org.apache.commons.lang3.ClassUtils:
+    53:126:void <clinit>() -> <clinit>
+    111:112:void addAbbreviation(java.lang.String,java.lang.String) -> addAbbreviation
+    819:840:java.lang.Class getClass(java.lang.ClassLoader,java.lang.String,boolean) -> getClass
+    509:519:boolean isAssignable(java.lang.Class[],java.lang.Class[],boolean) -> isAssignable
+    589:589:boolean isAssignable(java.lang.Class,java.lang.Class) -> isAssignable
+    625:689:boolean isAssignable(java.lang.Class,java.lang.Class,boolean) -> isAssignable
+    706:707:java.lang.Class primitiveToWrapper(java.lang.Class) -> primitiveToWrapper
+    954:969:java.lang.String toCanonicalName(java.lang.String) -> toCanonicalName
+    755:755:java.lang.Class wrapperToPrimitive(java.lang.Class) -> wrapperToPrimitive
+external.org.apache.commons.lang3.JavaVersion -> external.org.apache.commons.lang3.JavaVersion:
+    27:72:void <clinit>() -> <clinit>
+    89:91:void <init>(java.lang.String,int,float,java.lang.String) -> <init>
+    105:105:boolean atLeast(external.org.apache.commons.lang3.JavaVersion) -> atLeast
+    132:149:external.org.apache.commons.lang3.JavaVersion get(java.lang.String) -> get
+    165:165:java.lang.String toString() -> toString
+    27:27:external.org.apache.commons.lang3.JavaVersion valueOf(java.lang.String) -> valueOf
+    27:27:external.org.apache.commons.lang3.JavaVersion[] values() -> values
+external.org.apache.commons.lang3.StringUtils -> external.org.apache.commons.lang3.StringUtils:
+    148:148:void <clinit>() -> <clinit>
+    3554:3568:java.lang.String deleteWhitespace(java.lang.String) -> deleteWhitespace
+    184:184:boolean isEmpty(java.lang.CharSequence) -> isEmpty
+external.org.apache.commons.lang3.SystemUtils -> external.org.apache.commons.lang3.SystemUtils:
+    89:1224:void <clinit>() -> <clinit>
+    1265:1265:boolean getJavaVersionMatches(java.lang.String) -> getJavaVersionMatches
+    1276:1276:boolean getOSMatches(java.lang.String,java.lang.String) -> getOSMatches
+    1286:1286:boolean getOSMatchesName(java.lang.String) -> getOSMatchesName
+    1304:1307:java.lang.String getSystemProperty(java.lang.String) -> getSystemProperty
+    1371:1371:boolean isJavaVersionAtLeast(external.org.apache.commons.lang3.JavaVersion) -> isJavaVersionAtLeast
+    1390:1390:boolean isJavaVersionMatch(java.lang.String,java.lang.String) -> isJavaVersionMatch
+    1409:1409:boolean isOSMatch(java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> isOSMatch
+    1426:1426:boolean isOSNameMatch(java.lang.String,java.lang.String) -> isOSNameMatch
+external.org.apache.commons.lang3.reflect.MemberUtils -> external.org.apache.commons.lang3.reflect.MemberUtils:
+    39:39:void <clinit>() -> <clinit>
+    100:101:int compareParameterTypes(java.lang.Class[],java.lang.Class[],java.lang.Class[]) -> compareParameterTypes
+    132:147:float getObjectTransformationCost(java.lang.Class,java.lang.Class) -> getObjectTransformationCost
+    169:178:float getPrimitivePromotionCost(java.lang.Class,java.lang.Class) -> getPrimitivePromotionCost
+    114:118:float getTotalTransformationCost(java.lang.Class[],java.lang.Class[]) -> getTotalTransformationCost
+pxb.android.StringItems -> pxb.android.StringItems:
+    31:61:java.lang.String[] read(java.nio.ByteBuffer) -> read
+    67:69:int u16length(java.nio.ByteBuffer) -> u16length
+    75:77:int u8length(java.nio.ByteBuffer) -> u8length
+pxb.android.axml.AxmlParser -> pxb.android.axml.AxmlParser:
+    72:72:void <init>(byte[]) -> <init>
+    54:77:void <init>(java.nio.ByteBuffer) -> <init>
+    81:81:int getAttrCount() -> getAttrCount
+    89:90:java.lang.String getAttrName(int) -> getAttrName
+    95:96:java.lang.String getAttrNs(int) -> getAttrNs
+    100:102:java.lang.String getAttrRawString(int) -> getAttrRawString
+    108:111:int getAttrResId(int) -> getAttrResId
+    118:118:int getAttrType(int) -> getAttrType
+    122:138:java.lang.Object getAttrValue(int) -> getAttrValue
+    143:143:int getLineNumber() -> getLineNumber
+    147:147:java.lang.String getName() -> getName
+    151:151:java.lang.String getNamespacePrefix() -> getNamespacePrefix
+    155:155:java.lang.String getNamespaceUri() -> getNamespaceUri
+    159:159:java.lang.String getText() -> getText
+    163:269:int next() -> next
+pxb.android.axml.AxmlReader -> pxb.android.axml.AxmlReader:
+    37:37:void <clinit>() -> <clinit>
+    48:49:void <init>(byte[]) -> <init>
+    53:90:void accept(pxb.android.axml.AxmlVisitor) -> accept
+pxb.android.axml.AxmlReader$1 -> pxb.android.axml.AxmlReader$1:
+    37:37:void <init>() -> <init>
+pxb.android.axml.AxmlVisitor -> pxb.android.axml.AxmlVisitor:
+    26:26:void <init>() -> <init>
+    42:43:void ns(java.lang.String,java.lang.String,int) -> ns
+pxb.android.axml.NodeVisitor -> pxb.android.axml.NodeVisitor:
+    28:28:void <init>() -> <init>
+    32:33:void <init>(pxb.android.axml.NodeVisitor) -> <init>
+    48:49:void attr(java.lang.String,java.lang.String,int,int,java.lang.Object) -> attr
+    61:62:pxb.android.axml.NodeVisitor child(java.lang.String,java.lang.String) -> child
+    71:72:void end() -> end
+    82:83:void line(int) -> line
+    93:94:void text(int,java.lang.String) -> text
+pxb.android.axml.ValueWrapper -> pxb.android.axml.ValueWrapper:
+    13:13:void <init>(int,int,java.lang.String) -> <init>
+    32:32:pxb.android.axml.ValueWrapper wrapClass(int,java.lang.String) -> wrapClass
+    24:24:pxb.android.axml.ValueWrapper wrapId(int,java.lang.String) -> wrapId
+    28:28:pxb.android.axml.ValueWrapper wrapStyle(int,java.lang.String) -> wrapStyle

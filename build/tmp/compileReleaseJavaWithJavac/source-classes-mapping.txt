@@ -1,0 +1,240 @@
+external/org/apache/commons/lang3/builder/ReflectionToStringBuilder.java
+ external.org.apache.commons.lang3.builder.ReflectionToStringBuilder
+external/org/apache/commons/lang3/exception/CloneFailedException.java
+ external.org.apache.commons.lang3.exception.CloneFailedException
+cn/hishi/android/scrm/services/DirectAccessService.java
+ cn.hishi.android.scrm.services.DirectAccessService
+android/content/res/XModuleResources.java
+ android.content.res.XModuleResources
+pxb/android/ResConst.java
+ pxb.android.ResConst
+cn/hishi/android/scrm/XposedBridge.java
+ cn.hishi.android.scrm.XposedBridge
+ cn.hishi.android.scrm.XposedBridge$1
+ cn.hishi.android.scrm.XposedBridge$AdditionalHookInfo
+ cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet
+pxb/android/axml/AxmlVisitor.java
+ pxb.android.axml.AxmlVisitor
+cn/hishi/android/scrm/XC_MethodHook.java
+ cn.hishi.android.scrm.XC_MethodHook
+ cn.hishi.android.scrm.XC_MethodHook$MethodHookParam
+ cn.hishi.android.scrm.XC_MethodHook$Unhook
+cn/hishi/android/scrm/callbacks/IXUnhook.java
+ cn.hishi.android.scrm.callbacks.IXUnhook
+cn/hishi/android/scrm/DexCreator.java
+ cn.hishi.android.scrm.DexCreator
+pxb/android/StringItems.java
+ pxb.android.StringItems
+cn/hishi/android/scrm/annotation/Level.java
+ cn.hishi.android.scrm.annotation.Level
+android/app/AndroidAppHelper.java
+ android.app.AndroidAppHelper
+com/elderdrivers/riru/edxp/hook/HookProvider.java
+ com.elderdrivers.riru.edxp.hook.HookProvider
+external/org/apache/commons/lang3/ObjectUtils.java
+ external.org.apache.commons.lang3.ObjectUtils
+ external.org.apache.commons.lang3.ObjectUtils$Null
+com/elderdrivers/riru/edxp/bridge/BuildConfig.java
+ com.elderdrivers.riru.edxp.bridge.BuildConfig
+external/org/apache/commons/lang3/mutable/Mutable.java
+ external.org.apache.commons.lang3.mutable.Mutable
+pxb/android/arsc/ArscDumper.java
+ pxb.android.arsc.ArscDumper
+external/org/apache/commons/lang3/StringUtils.java
+ external.org.apache.commons.lang3.StringUtils
+ external.org.apache.commons.lang3.StringUtils$InitStripAccents
+android/content/res/XResources.java
+ android.content.res.XResources
+ android.content.res.XResources$1
+ android.content.res.XResources$2
+ android.content.res.XResources$3
+ android.content.res.XResources$DimensionReplacement
+ android.content.res.XResources$DrawableLoader
+ android.content.res.XResources$ResourceNames
+ android.content.res.XResources$XMLInstanceDetails
+ android.content.res.XResources$XTypedArray
+pxb/android/arsc/ResSpec.java
+ pxb.android.arsc.ResSpec
+pxb/android/arsc/ArscWriter.java
+ pxb.android.arsc.ArscWriter
+ pxb.android.arsc.ArscWriter$1
+ pxb.android.arsc.ArscWriter$PkgCtx
+external/org/apache/commons/lang3/builder/EqualsBuilder.java
+ external.org.apache.commons.lang3.builder.EqualsBuilder
+cn/hishi/android/scrm/services/package-info.java
+ cn.hishi.android.scrm.services.package-info
+cn/hishi/android/scrm/callbacks/XCallback.java
+ cn.hishi.android.scrm.callbacks.XCallback
+ cn.hishi.android.scrm.callbacks.XCallback$Param
+ cn.hishi.android.scrm.callbacks.XCallback$Param$SerializeWrapper
+com/elderdrivers/riru/edxp/config/EdXpConfigGlobal.java
+ com.elderdrivers.riru.edxp.config.EdXpConfigGlobal
+com/elderdrivers/riru/edxp/util/MetaDataReader.java
+ com.elderdrivers.riru.edxp.util.MetaDataReader
+ com.elderdrivers.riru.edxp.util.MetaDataReader$1
+ com.elderdrivers.riru.edxp.util.MetaDataReader$ManifestTagVisitor
+ com.elderdrivers.riru.edxp.util.MetaDataReader$ManifestTagVisitor$ApplicationTagVisitor
+ com.elderdrivers.riru.edxp.util.MetaDataReader$MetaDataVisitor
+pxb/android/axml/NodeVisitor.java
+ pxb.android.axml.NodeVisitor
+pxb/android/axml/ValueWrapper.java
+ pxb.android.axml.ValueWrapper
+pxb/android/axml/AxmlReader.java
+ pxb.android.axml.AxmlReader
+ pxb.android.axml.AxmlReader$1
+android/app/package-info.java
+ android.app.package-info
+pxb/android/arsc/Config.java
+ pxb.android.arsc.Config
+android/content/res/package-info.java
+ android.content.res.package-info
+external/org/apache/commons/lang3/reflect/MethodUtils.java
+ external.org.apache.commons.lang3.reflect.MethodUtils
+pxb/android/axml/Axml.java
+ pxb.android.axml.Axml
+ pxb.android.axml.Axml$Node
+ pxb.android.axml.Axml$Node$Attr
+ pxb.android.axml.Axml$Node$Text
+ pxb.android.axml.Axml$Ns
+pxb/android/arsc/Type.java
+ pxb.android.arsc.Type
+pxb/android/arsc/Value.java
+ pxb.android.arsc.Value
+external/org/apache/commons/lang3/builder/Builder.java
+ external.org.apache.commons.lang3.builder.Builder
+cn/hishi/android/scrm/callbacks/XC_LoadPackage.java
+ cn.hishi.android.scrm.callbacks.XC_LoadPackage
+ cn.hishi.android.scrm.callbacks.XC_LoadPackage$LoadPackageParam
+cn/hishi/android/scrm/MethodHooker.java
+ cn.hishi.android.scrm.MethodHooker
+cn/hishi/android/scrm/annotation/ApiSensitive.java
+ cn.hishi.android.scrm.annotation.ApiSensitive
+cn/hishi/android/scrm/callbacks/package-info.java
+ cn.hishi.android.scrm.callbacks.package-info
+pxb/android/arsc/Pkg.java
+ pxb.android.arsc.Pkg
+pxb/android/arsc/BagValue.java
+ pxb.android.arsc.BagValue
+cn/hishi/android/scrm/services/ZygoteService.java
+ cn.hishi.android.scrm.services.ZygoteService
+external/org/apache/commons/lang3/builder/ToStringBuilder.java
+ external.org.apache.commons.lang3.builder.ToStringBuilder
+cn/hishi/android/scrm/IXposedHookZygoteInit.java
+ cn.hishi.android.scrm.IXposedHookZygoteInit
+ cn.hishi.android.scrm.IXposedHookZygoteInit$StartupParam
+ cn.hishi.android.scrm.IXposedHookZygoteInit$Wrapper
+pxb/android/axml/DumpAdapter.java
+ pxb.android.axml.DumpAdapter
+pxb/android/arsc/ResEntry.java
+ pxb.android.arsc.ResEntry
+external/org/apache/commons/lang3/builder/CompareToBuilder.java
+ external.org.apache.commons.lang3.builder.CompareToBuilder
+cn/hishi/android/scrm/services/BaseService.java
+ cn.hishi.android.scrm.services.BaseService
+external/org/apache/commons/lang3/mutable/MutableInt.java
+ external.org.apache.commons.lang3.mutable.MutableInt
+cn/hishi/android/scrm/PendingHooks.java
+ cn.hishi.android.scrm.PendingHooks
+ cn.hishi.android.scrm.PendingHooks$1
+pxb/android/arsc/ArscParser.java
+ pxb.android.arsc.ArscParser
+ pxb.android.arsc.ArscParser$Chunk
+cn/hishi/android/scrm/IXposedHookCmdInit.java
+ cn.hishi.android.scrm.IXposedHookCmdInit
+ cn.hishi.android.scrm.IXposedHookCmdInit$StartupParam
+cn/hishi/android/scrm/services/FileResult.java
+ cn.hishi.android.scrm.services.FileResult
+cn/hishi/android/scrm/XC_MethodReplacement.java
+ cn.hishi.android.scrm.XC_MethodReplacement
+ cn.hishi.android.scrm.XC_MethodReplacement$1
+ cn.hishi.android.scrm.XC_MethodReplacement$2
+pxb/android/axml/AxmlParser.java
+ pxb.android.axml.AxmlParser
+external/org/apache/commons/lang3/JavaVersion.java
+ external.org.apache.commons.lang3.JavaVersion
+pxb/android/StringItem.java
+ pxb.android.StringItem
+external/org/apache/commons/lang3/ArrayUtils.java
+ external.org.apache.commons.lang3.ArrayUtils
+cn/hishi/android/scrm/XposedHelpers.java
+ cn.hishi.android.scrm.XposedHelpers
+ cn.hishi.android.scrm.XposedHelpers$1
+ cn.hishi.android.scrm.XposedHelpers$ClassNotFoundError
+ cn.hishi.android.scrm.XposedHelpers$InvocationTargetError
+external/org/apache/commons/lang3/builder/ToStringStyle.java
+ external.org.apache.commons.lang3.builder.ToStringStyle
+ external.org.apache.commons.lang3.builder.ToStringStyle$DefaultToStringStyle
+ external.org.apache.commons.lang3.builder.ToStringStyle$MultiLineToStringStyle
+ external.org.apache.commons.lang3.builder.ToStringStyle$NoFieldNameToStringStyle
+ external.org.apache.commons.lang3.builder.ToStringStyle$ShortPrefixToStringStyle
+ external.org.apache.commons.lang3.builder.ToStringStyle$SimpleToStringStyle
+external/org/apache/commons/lang3/reflect/MemberUtils.java
+ external.org.apache.commons.lang3.reflect.MemberUtils
+external/org/apache/commons/lang3/SystemUtils.java
+ external.org.apache.commons.lang3.SystemUtils
+external/org/apache/commons/lang3/builder/HashCodeBuilder.java
+ external.org.apache.commons.lang3.builder.HashCodeBuilder
+cn/hishi/android/scrm/callbacks/XC_InitPackageResources.java
+ cn.hishi.android.scrm.callbacks.XC_InitPackageResources
+ cn.hishi.android.scrm.callbacks.XC_InitPackageResources$InitPackageResourcesParam
+cn/hishi/android/scrm/services/BinderService.java
+ cn.hishi.android.scrm.services.BinderService
+cn/hishi/android/scrm/XposedInit.java
+ cn.hishi.android.scrm.XposedInit
+ cn.hishi.android.scrm.XposedInit$1
+ cn.hishi.android.scrm.XposedInit$2
+ cn.hishi.android.scrm.XposedInit$3
+ cn.hishi.android.scrm.XposedInit$4
+ cn.hishi.android.scrm.XposedInit$5
+ cn.hishi.android.scrm.XposedInit$6
+cn/hishi/android/scrm/SELinuxHelper.java
+ cn.hishi.android.scrm.SELinuxHelper
+external/org/apache/commons/lang3/CharUtils.java
+ external.org.apache.commons.lang3.CharUtils
+external/org/apache/commons/lang3/Validate.java
+ external.org.apache.commons.lang3.Validate
+pxb/android/axml/AxmlWriter.java
+ pxb.android.axml.AxmlWriter
+ pxb.android.axml.AxmlWriter$1
+ pxb.android.axml.AxmlWriter$Attr
+ pxb.android.axml.AxmlWriter$NodeImpl
+ pxb.android.axml.AxmlWriter$Ns
+external/org/apache/commons/lang3/tuple/Pair.java
+ external.org.apache.commons.lang3.tuple.Pair
+android/content/res/XResForwarder.java
+ android.content.res.XResForwarder
+external/org/apache/commons/lang3/builder/IDKey.java
+ external.org.apache.commons.lang3.builder.IDKey
+cn/hishi/android/scrm/callbacks/XC_LayoutInflated.java
+ cn.hishi.android.scrm.callbacks.XC_LayoutInflated
+ cn.hishi.android.scrm.callbacks.XC_LayoutInflated$LayoutInflatedParam
+ cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook
+cn/hishi/android/scrm/IModuleContext.java
+ cn.hishi.android.scrm.IModuleContext
+cn/hishi/android/scrm/IXposedHookInitPackageResources.java
+ cn.hishi.android.scrm.IXposedHookInitPackageResources
+ cn.hishi.android.scrm.IXposedHookInitPackageResources$Wrapper
+external/org/apache/commons/lang3/ClassUtils.java
+ external.org.apache.commons.lang3.ClassUtils
+pxb/android/axml/Util.java
+ pxb.android.axml.Util
+cn/hishi/android/scrm/package-info.java
+ cn.hishi.android.scrm.package-info
+cn/hishi/android/scrm/IXposedHookLoadPackage.java
+ cn.hishi.android.scrm.IXposedHookLoadPackage
+ cn.hishi.android.scrm.IXposedHookLoadPackage$Wrapper
+cn/hishi/android/scrm/XSharedPreferences.java
+ cn.hishi.android.scrm.XSharedPreferences
+ cn.hishi.android.scrm.XSharedPreferences$1
+ cn.hishi.android.scrm.XSharedPreferences$2
+ cn.hishi.android.scrm.XSharedPreferences$PrefsData
+com/elderdrivers/riru/edxp/config/EdxpConfig.java
+ com.elderdrivers.riru.edxp.config.EdxpConfig
+external/org/apache/commons/lang3/tuple/ImmutablePair.java
+ external.org.apache.commons.lang3.tuple.ImmutablePair
+cn/hishi/android/scrm/callbacks/XC_InitZygote.java
+ cn.hishi.android.scrm.callbacks.XC_InitZygote
+external/org/apache/commons/lang3/CharSequenceUtils.java
+ external.org.apache.commons.lang3.CharSequenceUtils
+cn/hishi/android/scrm/IXposedMod.java
+ cn.hishi.android.scrm.IXposedMod

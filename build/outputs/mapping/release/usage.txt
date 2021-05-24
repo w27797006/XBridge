@@ -1,0 +1,631 @@
+external.org.apache.commons.lang3.ClassUtils:
+    public void <init>()
+    public static java.lang.String getShortClassName(java.lang.Object,java.lang.String)
+    public static java.lang.String getShortClassName(java.lang.Class)
+    public static java.lang.String getShortClassName(java.lang.String)
+    public static java.lang.String getSimpleName(java.lang.Class)
+    public static java.lang.String getSimpleName(java.lang.Object,java.lang.String)
+    public static java.lang.String getPackageName(java.lang.Object,java.lang.String)
+    public static java.lang.String getPackageName(java.lang.Class)
+    public static java.lang.String getPackageName(java.lang.String)
+    public static java.util.List getAllSuperclasses(java.lang.Class)
+    public static java.util.List getAllInterfaces(java.lang.Class)
+    private static void getAllInterfaces(java.lang.Class,java.util.HashSet)
+    public static java.util.List convertClassNamesToClasses(java.util.List)
+    public static java.util.List convertClassesToClassNames(java.util.List)
+    public static varargs boolean isAssignable(java.lang.Class[],java.lang.Class[])
+    public static boolean isPrimitiveOrWrapper(java.lang.Class)
+    public static boolean isPrimitiveWrapper(java.lang.Class)
+    public static varargs java.lang.Class[] primitivesToWrappers(java.lang.Class[])
+    public static varargs java.lang.Class[] wrappersToPrimitives(java.lang.Class[])
+    public static boolean isInnerClass(java.lang.Class)
+    public static java.lang.Class getClass(java.lang.ClassLoader,java.lang.String)
+    public static java.lang.Class getClass(java.lang.String)
+    public static java.lang.Class getClass(java.lang.String,boolean)
+    public static varargs java.lang.reflect.Method getPublicMethod(java.lang.Class,java.lang.String,java.lang.Class[])
+    public static varargs java.lang.Class[] toClass(java.lang.Object[])
+    public static java.lang.String getShortCanonicalName(java.lang.Object,java.lang.String)
+    public static java.lang.String getShortCanonicalName(java.lang.Class)
+    public static java.lang.String getShortCanonicalName(java.lang.String)
+    public static java.lang.String getPackageCanonicalName(java.lang.Object,java.lang.String)
+    public static java.lang.String getPackageCanonicalName(java.lang.Class)
+    public static java.lang.String getPackageCanonicalName(java.lang.String)
+    private static java.lang.String getCanonicalName(java.lang.String)
+    public static final char PACKAGE_SEPARATOR_CHAR
+    public static final char INNER_CLASS_SEPARATOR_CHAR
+pxb.android.axml.NodeVisitor:
+    public static final int TYPE_FIRST_INT
+    public static final int TYPE_INT_BOOLEAN
+    public static final int TYPE_INT_HEX
+    public static final int TYPE_REFERENCE
+    public static final int TYPE_STRING
+external.org.apache.commons.lang3.tuple.ImmutablePair
+pxb.android.axml.Axml
+external.org.apache.commons.lang3.reflect.MethodUtils
+pxb.android.arsc.Pkg
+external.org.apache.commons.lang3.builder.ToStringBuilder
+external.org.apache.commons.lang3.CharUtils
+external.org.apache.commons.lang3.CharSequenceUtils
+com.elderdrivers.riru.edxp.config.EdxpConfig:
+    public abstract java.lang.String getConfigPath(java.lang.String)
+    public abstract java.lang.String getDataPathPrefix()
+    public abstract java.lang.String getInstallerPackageName()
+    public abstract java.lang.String getLibSandHookName()
+    public abstract boolean isSELinuxEnforced()
+    public abstract boolean isBlackWhiteListMode()
+pxb.android.arsc.ArscDumper
+external.org.apache.commons.lang3.ObjectUtils
+pxb.android.axml.Util
+external.org.apache.commons.lang3.builder.ToStringStyle
+pxb.android.StringItem
+external.org.apache.commons.lang3.mutable.MutableInt
+external.org.apache.commons.lang3.ArrayUtils:
+    public void <init>()
+    public static java.lang.String toString(java.lang.Object)
+    public static java.lang.String toString(java.lang.Object,java.lang.String)
+    public static int hashCode(java.lang.Object)
+    public static boolean isEquals(java.lang.Object,java.lang.Object)
+    public static java.util.Map toMap(java.lang.Object[])
+    public static varargs java.lang.Object[] toArray(java.lang.Object[])
+    public static java.lang.Object[] clone(java.lang.Object[])
+    public static long[] clone(long[])
+    public static int[] clone(int[])
+    public static short[] clone(short[])
+    public static char[] clone(char[])
+    public static byte[] clone(byte[])
+    public static double[] clone(double[])
+    public static float[] clone(float[])
+    public static boolean[] clone(boolean[])
+    public static java.lang.Object[] nullToEmpty(java.lang.Object[])
+    public static java.lang.String[] nullToEmpty(java.lang.String[])
+    public static long[] nullToEmpty(long[])
+    public static int[] nullToEmpty(int[])
+    public static short[] nullToEmpty(short[])
+    public static char[] nullToEmpty(char[])
+    public static byte[] nullToEmpty(byte[])
+    public static double[] nullToEmpty(double[])
+    public static float[] nullToEmpty(float[])
+    public static boolean[] nullToEmpty(boolean[])
+    public static java.lang.Long[] nullToEmpty(java.lang.Long[])
+    public static java.lang.Integer[] nullToEmpty(java.lang.Integer[])
+    public static java.lang.Short[] nullToEmpty(java.lang.Short[])
+    public static java.lang.Character[] nullToEmpty(java.lang.Character[])
+    public static java.lang.Byte[] nullToEmpty(java.lang.Byte[])
+    public static java.lang.Double[] nullToEmpty(java.lang.Double[])
+    public static java.lang.Float[] nullToEmpty(java.lang.Float[])
+    public static java.lang.Boolean[] nullToEmpty(java.lang.Boolean[])
+    public static java.lang.Object[] subarray(java.lang.Object[],int,int)
+    public static long[] subarray(long[],int,int)
+    public static int[] subarray(int[],int,int)
+    public static short[] subarray(short[],int,int)
+    public static char[] subarray(char[],int,int)
+    public static byte[] subarray(byte[],int,int)
+    public static double[] subarray(double[],int,int)
+    public static float[] subarray(float[],int,int)
+    public static boolean[] subarray(boolean[],int,int)
+    public static boolean isSameLength(long[],long[])
+    public static boolean isSameLength(int[],int[])
+    public static boolean isSameLength(short[],short[])
+    public static boolean isSameLength(char[],char[])
+    public static boolean isSameLength(byte[],byte[])
+    public static boolean isSameLength(double[],double[])
+    public static boolean isSameLength(float[],float[])
+    public static boolean isSameLength(boolean[],boolean[])
+    public static int getLength(java.lang.Object)
+    public static boolean isSameType(java.lang.Object,java.lang.Object)
+    public static void reverse(java.lang.Object[])
+    public static void reverse(long[])
+    public static void reverse(int[])
+    public static void reverse(short[])
+    public static void reverse(char[])
+    public static void reverse(byte[])
+    public static void reverse(double[])
+    public static void reverse(float[])
+    public static void reverse(boolean[])
+    public static int indexOf(java.lang.Object[],java.lang.Object)
+    public static int indexOf(java.lang.Object[],java.lang.Object,int)
+    public static int lastIndexOf(java.lang.Object[],java.lang.Object)
+    public static int lastIndexOf(java.lang.Object[],java.lang.Object,int)
+    public static boolean contains(java.lang.Object[],java.lang.Object)
+    public static int indexOf(long[],long)
+    public static int indexOf(long[],long,int)
+    public static int lastIndexOf(long[],long)
+    public static int lastIndexOf(long[],long,int)
+    public static boolean contains(long[],long)
+    public static int indexOf(int[],int)
+    public static int indexOf(int[],int,int)
+    public static int lastIndexOf(int[],int)
+    public static int lastIndexOf(int[],int,int)
+    public static boolean contains(int[],int)
+    public static int indexOf(short[],short)
+    public static int indexOf(short[],short,int)
+    public static int lastIndexOf(short[],short)
+    public static int lastIndexOf(short[],short,int)
+    public static boolean contains(short[],short)
+    public static int indexOf(char[],char)
+    public static int indexOf(char[],char,int)
+    public static int lastIndexOf(char[],char)
+    public static int lastIndexOf(char[],char,int)
+    public static boolean contains(char[],char)
+    public static int indexOf(byte[],byte)
+    public static int indexOf(byte[],byte,int)
+    public static int lastIndexOf(byte[],byte)
+    public static int lastIndexOf(byte[],byte,int)
+    public static boolean contains(byte[],byte)
+    public static int indexOf(double[],double)
+    public static int indexOf(double[],double,double)
+    public static int indexOf(double[],double,int)
+    public static int indexOf(double[],double,int,double)
+    public static int lastIndexOf(double[],double)
+    public static int lastIndexOf(double[],double,double)
+    public static int lastIndexOf(double[],double,int)
+    public static int lastIndexOf(double[],double,int,double)
+    public static boolean contains(double[],double)
+    public static boolean contains(double[],double,double)
+    public static int indexOf(float[],float)
+    public static int indexOf(float[],float,int)
+    public static int lastIndexOf(float[],float)
+    public static int lastIndexOf(float[],float,int)
+    public static boolean contains(float[],float)
+    public static int indexOf(boolean[],boolean)
+    public static int indexOf(boolean[],boolean,int)
+    public static int lastIndexOf(boolean[],boolean)
+    public static int lastIndexOf(boolean[],boolean,int)
+    public static boolean contains(boolean[],boolean)
+    public static char[] toPrimitive(java.lang.Character[])
+    public static char[] toPrimitive(java.lang.Character[],char)
+    public static java.lang.Character[] toObject(char[])
+    public static long[] toPrimitive(java.lang.Long[])
+    public static long[] toPrimitive(java.lang.Long[],long)
+    public static java.lang.Long[] toObject(long[])
+    public static int[] toPrimitive(java.lang.Integer[])
+    public static int[] toPrimitive(java.lang.Integer[],int)
+    public static java.lang.Integer[] toObject(int[])
+    public static short[] toPrimitive(java.lang.Short[])
+    public static short[] toPrimitive(java.lang.Short[],short)
+    public static java.lang.Short[] toObject(short[])
+    public static byte[] toPrimitive(java.lang.Byte[])
+    public static byte[] toPrimitive(java.lang.Byte[],byte)
+    public static java.lang.Byte[] toObject(byte[])
+    public static double[] toPrimitive(java.lang.Double[])
+    public static double[] toPrimitive(java.lang.Double[],double)
+    public static java.lang.Double[] toObject(double[])
+    public static float[] toPrimitive(java.lang.Float[])
+    public static float[] toPrimitive(java.lang.Float[],float)
+    public static java.lang.Float[] toObject(float[])
+    public static boolean[] toPrimitive(java.lang.Boolean[])
+    public static boolean[] toPrimitive(java.lang.Boolean[],boolean)
+    public static java.lang.Boolean[] toObject(boolean[])
+    public static boolean isEmpty(java.lang.Object[])
+    public static boolean isEmpty(long[])
+    public static boolean isEmpty(int[])
+    public static boolean isEmpty(short[])
+    public static boolean isEmpty(char[])
+    public static boolean isEmpty(byte[])
+    public static boolean isEmpty(double[])
+    public static boolean isEmpty(float[])
+    public static boolean isEmpty(boolean[])
+    public static boolean isNotEmpty(java.lang.Object[])
+    public static boolean isNotEmpty(long[])
+    public static boolean isNotEmpty(int[])
+    public static boolean isNotEmpty(short[])
+    public static boolean isNotEmpty(char[])
+    public static boolean isNotEmpty(byte[])
+    public static boolean isNotEmpty(double[])
+    public static boolean isNotEmpty(float[])
+    public static boolean isNotEmpty(boolean[])
+    public static varargs java.lang.Object[] addAll(java.lang.Object[],java.lang.Object[])
+    public static varargs boolean[] addAll(boolean[],boolean[])
+    public static varargs char[] addAll(char[],char[])
+    public static varargs byte[] addAll(byte[],byte[])
+    public static varargs short[] addAll(short[],short[])
+    public static varargs int[] addAll(int[],int[])
+    public static varargs long[] addAll(long[],long[])
+    public static varargs float[] addAll(float[],float[])
+    public static varargs double[] addAll(double[],double[])
+    public static java.lang.Object[] add(java.lang.Object[],java.lang.Object)
+    public static boolean[] add(boolean[],boolean)
+    public static byte[] add(byte[],byte)
+    public static char[] add(char[],char)
+    public static double[] add(double[],double)
+    public static float[] add(float[],float)
+    public static int[] add(int[],int)
+    public static long[] add(long[],long)
+    public static short[] add(short[],short)
+    private static java.lang.Object copyArrayGrow1(java.lang.Object,java.lang.Class)
+    public static java.lang.Object[] add(java.lang.Object[],int,java.lang.Object)
+    public static boolean[] add(boolean[],int,boolean)
+    public static char[] add(char[],int,char)
+    public static byte[] add(byte[],int,byte)
+    public static short[] add(short[],int,short)
+    public static int[] add(int[],int,int)
+    public static long[] add(long[],int,long)
+    public static float[] add(float[],int,float)
+    public static double[] add(double[],int,double)
+    private static java.lang.Object add(java.lang.Object,int,java.lang.Object,java.lang.Class)
+    public static java.lang.Object[] remove(java.lang.Object[],int)
+    public static java.lang.Object[] removeElement(java.lang.Object[],java.lang.Object)
+    public static boolean[] remove(boolean[],int)
+    public static boolean[] removeElement(boolean[],boolean)
+    public static byte[] remove(byte[],int)
+    public static byte[] removeElement(byte[],byte)
+    public static char[] remove(char[],int)
+    public static char[] removeElement(char[],char)
+    public static double[] remove(double[],int)
+    public static double[] removeElement(double[],double)
+    public static float[] remove(float[],int)
+    public static float[] removeElement(float[],float)
+    public static int[] remove(int[],int)
+    public static int[] removeElement(int[],int)
+    public static long[] remove(long[],int)
+    public static long[] removeElement(long[],long)
+    public static short[] remove(short[],int)
+    public static short[] removeElement(short[],short)
+    private static java.lang.Object remove(java.lang.Object,int)
+    public static varargs java.lang.Object[] removeAll(java.lang.Object[],int[])
+    public static varargs java.lang.Object[] removeElements(java.lang.Object[],java.lang.Object[])
+    public static varargs byte[] removeAll(byte[],int[])
+    public static varargs byte[] removeElements(byte[],byte[])
+    public static varargs short[] removeAll(short[],int[])
+    public static varargs short[] removeElements(short[],short[])
+    public static varargs int[] removeAll(int[],int[])
+    public static varargs int[] removeElements(int[],int[])
+    public static varargs char[] removeAll(char[],int[])
+    public static varargs char[] removeElements(char[],char[])
+    public static varargs long[] removeAll(long[],int[])
+    public static varargs long[] removeElements(long[],long[])
+    public static varargs float[] removeAll(float[],int[])
+    public static varargs float[] removeElements(float[],float[])
+    public static varargs double[] removeAll(double[],int[])
+    public static varargs double[] removeElements(double[],double[])
+    public static varargs boolean[] removeAll(boolean[],int[])
+    public static varargs boolean[] removeElements(boolean[],boolean[])
+    private static varargs java.lang.Object removeAll(java.lang.Object,int[])
+    private static int[] extractIndices(java.util.HashSet)
+    public static final int INDEX_NOT_FOUND
+pxb.android.axml.AxmlVisitor:
+    public void <init>(pxb.android.axml.NodeVisitor)
+external.org.apache.commons.lang3.builder.ToStringStyle$ShortPrefixToStringStyle
+pxb.android.ResConst
+pxb.android.arsc.ArscWriter$PkgCtx
+external.org.apache.commons.lang3.builder.IDKey
+pxb.android.arsc.ArscWriter
+external.org.apache.commons.lang3.builder.ToStringStyle$SimpleToStringStyle
+pxb.android.axml.DumpAdapter
+external.org.apache.commons.lang3.StringUtils:
+    public void <init>()
+    public static boolean isNotEmpty(java.lang.CharSequence)
+    public static boolean isBlank(java.lang.CharSequence)
+    public static boolean isNotBlank(java.lang.CharSequence)
+    public static java.lang.String trim(java.lang.String)
+    public static java.lang.String trimToNull(java.lang.String)
+    public static java.lang.String trimToEmpty(java.lang.String)
+    public static java.lang.String strip(java.lang.String)
+    public static java.lang.String stripToNull(java.lang.String)
+    public static java.lang.String stripToEmpty(java.lang.String)
+    public static java.lang.String strip(java.lang.String,java.lang.String)
+    public static java.lang.String stripStart(java.lang.String,java.lang.String)
+    public static java.lang.String stripEnd(java.lang.String,java.lang.String)
+    public static varargs java.lang.String[] stripAll(java.lang.String[])
+    public static java.lang.String[] stripAll(java.lang.String[],java.lang.String)
+    public static java.lang.String stripAccents(java.lang.String)
+    private static java.lang.String removeAccentsJava6(java.lang.CharSequence)
+    private static java.lang.String removeAccentsSUN(java.lang.CharSequence)
+    public static boolean equals(java.lang.CharSequence,java.lang.CharSequence)
+    public static boolean equalsIgnoreCase(java.lang.CharSequence,java.lang.CharSequence)
+    public static int indexOf(java.lang.CharSequence,int)
+    public static int indexOf(java.lang.CharSequence,int,int)
+    public static int indexOf(java.lang.CharSequence,java.lang.CharSequence)
+    public static int indexOf(java.lang.CharSequence,java.lang.CharSequence,int)
+    public static int ordinalIndexOf(java.lang.CharSequence,java.lang.CharSequence,int)
+    private static int ordinalIndexOf(java.lang.CharSequence,java.lang.CharSequence,int,boolean)
+    public static int indexOfIgnoreCase(java.lang.CharSequence,java.lang.CharSequence)
+    public static int indexOfIgnoreCase(java.lang.CharSequence,java.lang.CharSequence,int)
+    public static int lastIndexOf(java.lang.CharSequence,int)
+    public static int lastIndexOf(java.lang.CharSequence,int,int)
+    public static int lastIndexOf(java.lang.CharSequence,java.lang.CharSequence)
+    public static int lastOrdinalIndexOf(java.lang.CharSequence,java.lang.CharSequence,int)
+    public static int lastIndexOf(java.lang.CharSequence,java.lang.CharSequence,int)
+    public static int lastIndexOfIgnoreCase(java.lang.CharSequence,java.lang.CharSequence)
+    public static int lastIndexOfIgnoreCase(java.lang.CharSequence,java.lang.CharSequence,int)
+    public static boolean contains(java.lang.CharSequence,int)
+    public static boolean contains(java.lang.CharSequence,java.lang.CharSequence)
+    public static boolean containsIgnoreCase(java.lang.CharSequence,java.lang.CharSequence)
+    public static boolean containsWhitespace(java.lang.CharSequence)
+    public static varargs int indexOfAny(java.lang.CharSequence,char[])
+    public static int indexOfAny(java.lang.CharSequence,java.lang.String)
+    public static varargs boolean containsAny(java.lang.CharSequence,char[])
+    public static boolean containsAny(java.lang.CharSequence,java.lang.CharSequence)
+    public static varargs int indexOfAnyBut(java.lang.CharSequence,char[])
+    public static int indexOfAnyBut(java.lang.CharSequence,java.lang.CharSequence)
+    public static varargs boolean containsOnly(java.lang.CharSequence,char[])
+    public static boolean containsOnly(java.lang.CharSequence,java.lang.String)
+    public static varargs boolean containsNone(java.lang.CharSequence,char[])
+    public static boolean containsNone(java.lang.CharSequence,java.lang.String)
+    public static varargs int indexOfAny(java.lang.CharSequence,java.lang.CharSequence[])
+    public static varargs int lastIndexOfAny(java.lang.CharSequence,java.lang.CharSequence[])
+    public static java.lang.String substring(java.lang.String,int)
+    public static java.lang.String substring(java.lang.String,int,int)
+    public static java.lang.String left(java.lang.String,int)
+    public static java.lang.String right(java.lang.String,int)
+    public static java.lang.String mid(java.lang.String,int,int)
+    public static java.lang.String substringBefore(java.lang.String,java.lang.String)
+    public static java.lang.String substringAfter(java.lang.String,java.lang.String)
+    public static java.lang.String substringBeforeLast(java.lang.String,java.lang.String)
+    public static java.lang.String substringAfterLast(java.lang.String,java.lang.String)
+    public static java.lang.String substringBetween(java.lang.String,java.lang.String)
+    public static java.lang.String substringBetween(java.lang.String,java.lang.String,java.lang.String)
+    public static java.lang.String[] substringsBetween(java.lang.String,java.lang.String,java.lang.String)
+    public static java.lang.String[] split(java.lang.String)
+    public static java.lang.String[] split(java.lang.String,char)
+    public static java.lang.String[] split(java.lang.String,java.lang.String)
+    public static java.lang.String[] split(java.lang.String,java.lang.String,int)
+    public static java.lang.String[] splitByWholeSeparator(java.lang.String,java.lang.String)
+    public static java.lang.String[] splitByWholeSeparator(java.lang.String,java.lang.String,int)
+    public static java.lang.String[] splitByWholeSeparatorPreserveAllTokens(java.lang.String,java.lang.String)
+    public static java.lang.String[] splitByWholeSeparatorPreserveAllTokens(java.lang.String,java.lang.String,int)
+    private static java.lang.String[] splitByWholeSeparatorWorker(java.lang.String,java.lang.String,int,boolean)
+    public static java.lang.String[] splitPreserveAllTokens(java.lang.String)
+    public static java.lang.String[] splitPreserveAllTokens(java.lang.String,char)
+    private static java.lang.String[] splitWorker(java.lang.String,char,boolean)
+    public static java.lang.String[] splitPreserveAllTokens(java.lang.String,java.lang.String)
+    public static java.lang.String[] splitPreserveAllTokens(java.lang.String,java.lang.String,int)
+    private static java.lang.String[] splitWorker(java.lang.String,java.lang.String,int,boolean)
+    public static java.lang.String[] splitByCharacterType(java.lang.String)
+    public static java.lang.String[] splitByCharacterTypeCamelCase(java.lang.String)
+    private static java.lang.String[] splitByCharacterType(java.lang.String,boolean)
+    public static varargs java.lang.String join(java.lang.Object[])
+    public static java.lang.String join(java.lang.Object[],char)
+    public static java.lang.String join(java.lang.Object[],char,int,int)
+    public static java.lang.String join(java.lang.Object[],java.lang.String)
+    public static java.lang.String join(java.lang.Object[],java.lang.String,int,int)
+    public static java.lang.String join(java.util.Iterator,char)
+    public static java.lang.String join(java.util.Iterator,java.lang.String)
+    public static java.lang.String join(java.lang.Iterable,char)
+    public static java.lang.String join(java.lang.Iterable,java.lang.String)
+    public static java.lang.String removeStart(java.lang.String,java.lang.String)
+    public static java.lang.String removeStartIgnoreCase(java.lang.String,java.lang.String)
+    public static java.lang.String removeEnd(java.lang.String,java.lang.String)
+    public static java.lang.String removeEndIgnoreCase(java.lang.String,java.lang.String)
+    public static java.lang.String remove(java.lang.String,java.lang.String)
+    public static java.lang.String remove(java.lang.String,char)
+    public static java.lang.String replaceOnce(java.lang.String,java.lang.String,java.lang.String)
+    public static java.lang.String replace(java.lang.String,java.lang.String,java.lang.String)
+    public static java.lang.String replace(java.lang.String,java.lang.String,java.lang.String,int)
+    public static java.lang.String replaceEach(java.lang.String,java.lang.String[],java.lang.String[])
+    public static java.lang.String replaceEachRepeatedly(java.lang.String,java.lang.String[],java.lang.String[])
+    private static java.lang.String replaceEach(java.lang.String,java.lang.String[],java.lang.String[],boolean,int)
+    public static java.lang.String replaceChars(java.lang.String,char,char)
+    public static java.lang.String replaceChars(java.lang.String,java.lang.String,java.lang.String)
+    public static java.lang.String overlay(java.lang.String,java.lang.String,int,int)
+    public static java.lang.String chomp(java.lang.String)
+    public static java.lang.String chomp(java.lang.String,java.lang.String)
+    public static java.lang.String chop(java.lang.String)
+    public static java.lang.String repeat(java.lang.String,int)
+    public static java.lang.String repeat(java.lang.String,java.lang.String,int)
+    public static java.lang.String repeat(char,int)
+    public static java.lang.String rightPad(java.lang.String,int)
+    public static java.lang.String rightPad(java.lang.String,int,char)
+    public static java.lang.String rightPad(java.lang.String,int,java.lang.String)
+    public static java.lang.String leftPad(java.lang.String,int)
+    public static java.lang.String leftPad(java.lang.String,int,char)
+    public static java.lang.String leftPad(java.lang.String,int,java.lang.String)
+    public static int length(java.lang.CharSequence)
+    public static java.lang.String center(java.lang.String,int)
+    public static java.lang.String center(java.lang.String,int,char)
+    public static java.lang.String center(java.lang.String,int,java.lang.String)
+    public static java.lang.String upperCase(java.lang.String)
+    public static java.lang.String upperCase(java.lang.String,java.util.Locale)
+    public static java.lang.String lowerCase(java.lang.String)
+    public static java.lang.String lowerCase(java.lang.String,java.util.Locale)
+    public static java.lang.String capitalize(java.lang.String)
+    public static java.lang.String uncapitalize(java.lang.String)
+    public static java.lang.String swapCase(java.lang.String)
+    public static int countMatches(java.lang.CharSequence,java.lang.CharSequence)
+    public static boolean isAlpha(java.lang.CharSequence)
+    public static boolean isAlphaSpace(java.lang.CharSequence)
+    public static boolean isAlphanumeric(java.lang.CharSequence)
+    public static boolean isAlphanumericSpace(java.lang.CharSequence)
+    public static boolean isAsciiPrintable(java.lang.CharSequence)
+    public static boolean isNumeric(java.lang.CharSequence)
+    public static boolean isNumericSpace(java.lang.CharSequence)
+    public static boolean isWhitespace(java.lang.CharSequence)
+    public static boolean isAllLowerCase(java.lang.CharSequence)
+    public static boolean isAllUpperCase(java.lang.CharSequence)
+    public static java.lang.String defaultString(java.lang.String)
+    public static java.lang.String defaultString(java.lang.String,java.lang.String)
+    public static java.lang.CharSequence defaultIfBlank(java.lang.CharSequence,java.lang.CharSequence)
+    public static java.lang.CharSequence defaultIfEmpty(java.lang.CharSequence,java.lang.CharSequence)
+    public static java.lang.String reverse(java.lang.String)
+    public static java.lang.String reverseDelimited(java.lang.String,char)
+    public static java.lang.String abbreviate(java.lang.String,int)
+    public static java.lang.String abbreviate(java.lang.String,int,int)
+    public static java.lang.String abbreviateMiddle(java.lang.String,java.lang.String,int)
+    public static java.lang.String difference(java.lang.String,java.lang.String)
+    public static int indexOfDifference(java.lang.CharSequence,java.lang.CharSequence)
+    public static varargs int indexOfDifference(java.lang.CharSequence[])
+    public static varargs java.lang.String getCommonPrefix(java.lang.String[])
+    public static int getLevenshteinDistance(java.lang.CharSequence,java.lang.CharSequence)
+    public static int getLevenshteinDistance(java.lang.CharSequence,java.lang.CharSequence,int)
+    public static boolean startsWith(java.lang.CharSequence,java.lang.CharSequence)
+    public static boolean startsWithIgnoreCase(java.lang.CharSequence,java.lang.CharSequence)
+    private static boolean startsWith(java.lang.CharSequence,java.lang.CharSequence,boolean)
+    public static varargs boolean startsWithAny(java.lang.CharSequence,java.lang.CharSequence[])
+    public static boolean endsWith(java.lang.CharSequence,java.lang.CharSequence)
+    public static boolean endsWithIgnoreCase(java.lang.CharSequence,java.lang.CharSequence)
+    private static boolean endsWith(java.lang.CharSequence,java.lang.CharSequence,boolean)
+    public static java.lang.String normalizeSpace(java.lang.String)
+    public static varargs boolean endsWithAny(java.lang.CharSequence,java.lang.CharSequence[])
+    public static java.lang.String toString(byte[],java.lang.String)
+    public static final java.lang.String EMPTY
+    public static final int INDEX_NOT_FOUND
+    private static final int PAD_LIMIT
+pxb.android.axml.Axml$Ns
+external.org.apache.commons.lang3.builder.Builder
+pxb.android.arsc.ArscParser
+pxb.android.axml.AxmlParser:
+    public int getAttributeCount()
+    public static final int END_FILE
+    public static final int END_NS
+    public static final int END_TAG
+    public static final int START_FILE
+    public static final int START_NS
+    public static final int START_TAG
+    public static final int TEXT
+external.org.apache.commons.lang3.JavaVersion:
+    static external.org.apache.commons.lang3.JavaVersion getJavaVersion(java.lang.String)
+external.org.apache.commons.lang3.reflect.MemberUtils:
+    public void <init>()
+    static void setAccessibleWorkaround(java.lang.reflect.AccessibleObject)
+    static boolean isPackageAccess(int)
+    static boolean isAccessible(java.lang.reflect.Member)
+    private static final int ACCESS_TEST
+pxb.android.arsc.ResSpec
+com.elderdrivers.riru.edxp.bridge.BuildConfig
+external.org.apache.commons.lang3.builder.ToStringStyle$MultiLineToStringStyle
+external.org.apache.commons.lang3.builder.ReflectionToStringBuilder
+external.org.apache.commons.lang3.StringUtils$InitStripAccents
+external.org.apache.commons.lang3.tuple.Pair
+pxb.android.axml.Axml$Node$Attr
+external.org.apache.commons.lang3.ObjectUtils$Null
+pxb.android.arsc.ArscParser$Chunk
+pxb.android.arsc.BagValue
+pxb.android.axml.AxmlWriter$1
+pxb.android.axml.AxmlWriter
+pxb.android.axml.ValueWrapper:
+    public pxb.android.axml.ValueWrapper replaceRaw(java.lang.String)
+    public static final int ID
+    public static final int STYLE
+    public static final int CLASS
+external.org.apache.commons.lang3.mutable.Mutable
+external.org.apache.commons.lang3.SystemUtils:
+    public static java.io.File getJavaHome()
+    public static java.io.File getJavaIoTmpDir()
+    public static java.io.File getUserDir()
+    public static java.io.File getUserHome()
+    public static boolean isJavaAwtHeadless()
+    public void <init>()
+    private static final java.lang.String OS_NAME_WINDOWS_PREFIX
+    private static final java.lang.String USER_HOME_KEY
+    private static final java.lang.String USER_DIR_KEY
+    private static final java.lang.String JAVA_IO_TMPDIR_KEY
+    private static final java.lang.String JAVA_HOME_KEY
+pxb.android.arsc.ResEntry
+pxb.android.axml.Axml$Node$Text
+com.elderdrivers.riru.edxp.hook.HookProvider:
+    public abstract java.lang.Object findMethodNative(java.lang.Class,java.lang.String,java.lang.String)
+    public abstract void deoptMethodNative(java.lang.Object)
+    public abstract boolean methodHooked(java.lang.reflect.Member)
+pxb.android.arsc.Config
+pxb.android.arsc.Value
+pxb.android.axml.AxmlWriter$Ns
+external.org.apache.commons.lang3.builder.CompareToBuilder
+external.org.apache.commons.lang3.Validate
+pxb.android.axml.Axml$Node
+pxb.android.axml.AxmlWriter$Attr
+external.org.apache.commons.lang3.builder.ToStringStyle$DefaultToStringStyle
+pxb.android.arsc.Type
+com.elderdrivers.riru.edxp.config.EdXpConfigGlobal:
+    public void <init>()
+external.org.apache.commons.lang3.builder.HashCodeBuilder
+pxb.android.arsc.ArscWriter$1
+external.org.apache.commons.lang3.builder.ToStringStyle$NoFieldNameToStringStyle
+pxb.android.StringItems:
+    public void <init>()
+    public int getSize()
+    public void prepare()
+    public void write(java.nio.ByteBuffer)
+    byte[] stringData
+    private boolean useUTF8
+    private static final int UTF8_FLAG
+pxb.android.axml.AxmlWriter$NodeImpl
+external.org.apache.commons.lang3.exception.CloneFailedException
+external.org.apache.commons.lang3.builder.EqualsBuilder
+external.org.apache.commons.lang3.ClassUtils:
+    public static final java.lang.String PACKAGE_SEPARATOR
+    public static final java.lang.String INNER_CLASS_SEPARATOR
+external.org.apache.commons.lang3.ArrayUtils:
+    public static final java.lang.String[] EMPTY_STRING_ARRAY
+    public static final long[] EMPTY_LONG_ARRAY
+    public static final java.lang.Long[] EMPTY_LONG_OBJECT_ARRAY
+    public static final int[] EMPTY_INT_ARRAY
+    public static final java.lang.Integer[] EMPTY_INTEGER_OBJECT_ARRAY
+    public static final short[] EMPTY_SHORT_ARRAY
+    public static final java.lang.Short[] EMPTY_SHORT_OBJECT_ARRAY
+    public static final byte[] EMPTY_BYTE_ARRAY
+    public static final java.lang.Byte[] EMPTY_BYTE_OBJECT_ARRAY
+    public static final double[] EMPTY_DOUBLE_ARRAY
+    public static final java.lang.Double[] EMPTY_DOUBLE_OBJECT_ARRAY
+    public static final float[] EMPTY_FLOAT_ARRAY
+    public static final java.lang.Float[] EMPTY_FLOAT_OBJECT_ARRAY
+    public static final boolean[] EMPTY_BOOLEAN_ARRAY
+    public static final java.lang.Boolean[] EMPTY_BOOLEAN_OBJECT_ARRAY
+    public static final char[] EMPTY_CHAR_ARRAY
+    public static final java.lang.Character[] EMPTY_CHARACTER_OBJECT_ARRAY
+external.org.apache.commons.lang3.StringUtils:
+    private static final java.util.regex.Pattern WHITESPACE_BLOCK
+pxb.android.axml.ValueWrapper:
+    public final int type
+    public final java.lang.String raw
+    public final int ref
+external.org.apache.commons.lang3.SystemUtils:
+    public static final java.lang.String AWT_TOOLKIT
+    public static final java.lang.String FILE_ENCODING
+    public static final java.lang.String FILE_SEPARATOR
+    public static final java.lang.String JAVA_AWT_FONTS
+    public static final java.lang.String JAVA_AWT_GRAPHICSENV
+    public static final java.lang.String JAVA_AWT_HEADLESS
+    public static final java.lang.String JAVA_AWT_PRINTERJOB
+    public static final java.lang.String JAVA_CLASS_PATH
+    public static final java.lang.String JAVA_CLASS_VERSION
+    public static final java.lang.String JAVA_COMPILER
+    public static final java.lang.String JAVA_ENDORSED_DIRS
+    public static final java.lang.String JAVA_EXT_DIRS
+    public static final java.lang.String JAVA_HOME
+    public static final java.lang.String JAVA_IO_TMPDIR
+    public static final java.lang.String JAVA_LIBRARY_PATH
+    public static final java.lang.String JAVA_RUNTIME_NAME
+    public static final java.lang.String JAVA_RUNTIME_VERSION
+    public static final java.lang.String JAVA_SPECIFICATION_NAME
+    public static final java.lang.String JAVA_SPECIFICATION_VENDOR
+    public static final java.lang.String JAVA_UTIL_PREFS_PREFERENCES_FACTORY
+    public static final java.lang.String JAVA_VENDOR
+    public static final java.lang.String JAVA_VENDOR_URL
+    public static final java.lang.String JAVA_VERSION
+    public static final java.lang.String JAVA_VM_INFO
+    public static final java.lang.String JAVA_VM_NAME
+    public static final java.lang.String JAVA_VM_SPECIFICATION_NAME
+    public static final java.lang.String JAVA_VM_SPECIFICATION_VENDOR
+    public static final java.lang.String JAVA_VM_SPECIFICATION_VERSION
+    public static final java.lang.String JAVA_VM_VENDOR
+    public static final java.lang.String JAVA_VM_VERSION
+    public static final java.lang.String LINE_SEPARATOR
+    public static final java.lang.String OS_ARCH
+    public static final java.lang.String PATH_SEPARATOR
+    public static final java.lang.String USER_COUNTRY
+    public static final java.lang.String USER_DIR
+    public static final java.lang.String USER_HOME
+    public static final java.lang.String USER_LANGUAGE
+    public static final java.lang.String USER_NAME
+    public static final java.lang.String USER_TIMEZONE
+    public static final boolean IS_JAVA_1_1
+    public static final boolean IS_JAVA_1_2
+    public static final boolean IS_JAVA_1_3
+    public static final boolean IS_JAVA_1_4
+    public static final boolean IS_JAVA_1_5
+    public static final boolean IS_JAVA_1_6
+    public static final boolean IS_JAVA_1_7
+    public static final boolean IS_OS_MAC
+    public static final boolean IS_OS_OS2
+    public static final boolean IS_OS_UNIX
+    public static final boolean IS_OS_WINDOWS
+    public static final boolean IS_OS_WINDOWS_2000
+    public static final boolean IS_OS_WINDOWS_2003
+    public static final boolean IS_OS_WINDOWS_2008
+    public static final boolean IS_OS_WINDOWS_95
+    public static final boolean IS_OS_WINDOWS_98
+    public static final boolean IS_OS_WINDOWS_ME
+    public static final boolean IS_OS_WINDOWS_NT
+    public static final boolean IS_OS_WINDOWS_XP
+    public static final boolean IS_OS_WINDOWS_VISTA
+    public static final boolean IS_OS_WINDOWS_7

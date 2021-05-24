@@ -1,0 +1,721 @@
+cn.hishi.android.scrm.XC_MethodReplacement
+android.content.res.XResources$1
+cn.hishi.android.scrm.XC_MethodHook$Unhook: void unhook()
+cn.hishi.android.scrm.XposedHelpers: byte getByteField(java.lang.Object,java.lang.String)
+android.content.res.XResources$XTypedArray: int getInteger(int,int)
+android.app.AndroidAppHelper: void addActiveResource(java.lang.String,android.content.res.Resources)
+android.content.res.XResources$ResourceNames: XResources$ResourceNames(int,java.lang.String,java.lang.String,java.lang.String,android.content.res.XResources$1)
+cn.hishi.android.scrm.XposedBridge$AdditionalHookInfo: java.lang.Class[] parameterTypes
+android.content.res.XResources: android.graphics.drawable.Drawable getDrawable(int)
+cn.hishi.android.scrm.XposedInit: android.util.ArraySet getLoadedModules()
+cn.hishi.android.scrm.services.BinderService
+android.content.res.XResources$2
+cn.hishi.android.scrm.XSharedPreferences: void init()
+android.app.AndroidAppHelper: android.content.pm.ApplicationInfo currentApplicationInfo()
+android.content.res.XResources$3: XResources$3()
+cn.hishi.android.scrm.XposedHelpers$InvocationTargetError
+cn.hishi.android.scrm.services.DirectAccessService: cn.hishi.android.scrm.services.FileResult readFile(java.lang.String,int,int,long,long)
+android.content.res.XResources: boolean getBoolean(int)
+cn.hishi.android.scrm.IXposedHookInitPackageResources$Wrapper: java.lang.String apkPath
+cn.hishi.android.scrm.callbacks.XCallback: java.lang.String getApkPath()
+cn.hishi.android.scrm.XSharedPreferences: java.nio.file.WatchKey mWatchKey
+cn.hishi.android.scrm.SELinuxHelper: void initOnce()
+android.content.res.XResources$3
+android.content.res.XResources$DimensionReplacement: int getDimensionPixelOffset(android.util.DisplayMetrics)
+cn.hishi.android.scrm.XposedHelpers: byte[] inputStreamToByteArray(java.io.InputStream)
+cn.hishi.android.scrm.XposedHelpers: java.lang.reflect.Method getOverriddenMethod(java.lang.reflect.Method)
+android.content.res.XResources: java.lang.CharSequence getQuantityText(int,int)
+cn.hishi.android.scrm.IXposedHookZygoteInit: void initZygote(cn.hishi.android.scrm.IXposedHookZygoteInit$StartupParam)
+cn.hishi.android.scrm.services.DirectAccessService: cn.hishi.android.scrm.services.FileResult statFile(java.lang.String)
+cn.hishi.android.scrm.IXposedHookInitPackageResources$Wrapper
+cn.hishi.android.scrm.services.BinderService: int READ_FILE_TRANSACTION
+cn.hishi.android.scrm.XSharedPreferences: java.lang.Thread sWatcherDaemon
+cn.hishi.android.scrm.MethodHooker
+android.app.AndroidAppHelper: android.content.SharedPreferences getDefaultSharedPreferencesForPackage(java.lang.String)
+android.app.AndroidAppHelper: void reloadSharedPreferencesIfNeeded(android.content.SharedPreferences)
+cn.hishi.android.scrm.XSharedPreferences: void awaitLoadedLocked()
+cn.hishi.android.scrm.services.BaseService: boolean checkFileExists(java.lang.String)
+android.content.res.XResources: cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook hookSystemWideLayout(int,cn.hishi.android.scrm.callbacks.XC_LayoutInflated)
+android.content.res.XResources$DrawableLoader
+cn.hishi.android.scrm.services.ZygoteService: byte[] readFile(java.lang.String)
+android.app.AndroidAppHelper: boolean HAS_THEME_CONFIG_PARAMETER
+android.content.res.XResources: void setReplacement(int,java.lang.Object)
+android.content.res.XResources: java.lang.ThreadLocal access$100()
+cn.hishi.android.scrm.XposedHelpers: cn.hishi.android.scrm.XC_MethodHook$Unhook findAndHookMethod(java.lang.String,java.lang.ClassLoader,java.lang.String,java.lang.Object[])
+cn.hishi.android.scrm.XSharedPreferences$1
+android.content.res.XResources$2: XResources$2()
+cn.hishi.android.scrm.XposedHelpers: java.lang.Object callStaticMethod(java.lang.Class,java.lang.String,java.lang.Object[])
+android.content.res.XResources: void init(java.lang.ThreadLocal)
+cn.hishi.android.scrm.DexCreator
+cn.hishi.android.scrm.XSharedPreferences$2
+cn.hishi.android.scrm.XSharedPreferences: java.lang.String mFilename
+cn.hishi.android.scrm.IXposedHookZygoteInit$Wrapper: void initZygote(cn.hishi.android.scrm.IXposedHookZygoteInit$StartupParam)
+cn.hishi.android.scrm.IXposedHookLoadPackage$Wrapper: java.lang.String getApkPath()
+android.content.res.XResources$DimensionReplacement: float mValue
+cn.hishi.android.scrm.XC_MethodHook$MethodHookParam: boolean returnEarly
+android.content.res.XResources$XMLInstanceDetails: java.lang.String variant
+android.content.res.XResources: android.content.res.ColorStateList getColorStateList(int)
+android.content.res.XModuleResources: android.content.res.XResForwarder fwd(int)
+cn.hishi.android.scrm.services.FileResult: java.io.InputStream stream
+cn.hishi.android.scrm.IXposedHookCmdInit: void initCmdApp(cn.hishi.android.scrm.IXposedHookCmdInit$StartupParam)
+cn.hishi.android.scrm.MethodHooker: java.lang.reflect.Method backup
+cn.hishi.android.scrm.PendingHooks: void recordPendingMethodNative(java.lang.reflect.Method,java.lang.Class)
+cn.hishi.android.scrm.services.BinderService: BinderService(int)
+cn.hishi.android.scrm.XposedHelpers: java.lang.Object setAdditionalInstanceField(java.lang.Object,java.lang.String,java.lang.Object)
+android.app.AndroidAppHelper
+cn.hishi.android.scrm.XC_MethodReplacement$2
+cn.hishi.android.scrm.XposedHelpers: java.lang.Object callMethod(java.lang.Object,java.lang.String,java.lang.Class[],java.lang.Object[])
+cn.hishi.android.scrm.callbacks.XCallback$Param: XCallback$Param()
+cn.hishi.android.scrm.XC_MethodReplacement: cn.hishi.android.scrm.XC_MethodReplacement returnConstant(java.lang.Object)
+cn.hishi.android.scrm.callbacks.XC_LoadPackage$LoadPackageParam: android.content.pm.ApplicationInfo appInfo
+cn.hishi.android.scrm.XposedInit: void hookResources()
+cn.hishi.android.scrm.XposedHelpers: void closeSilently(java.io.Closeable)
+cn.hishi.android.scrm.DexCreator: java.io.File getDefaultFile(java.lang.String)
+cn.hishi.android.scrm.XposedHelpers: double getDoubleField(java.lang.Object,java.lang.String)
+cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet: boolean add(java.lang.Object)
+cn.hishi.android.scrm.XposedBridge: java.lang.Object cloneToSubclassNative(java.lang.Object,java.lang.Class)
+android.app.AndroidAppHelper: java.lang.String currentPackageName()
+cn.hishi.android.scrm.XposedHelpers: java.lang.reflect.Method findMethodExact(java.lang.String,java.lang.ClassLoader,java.lang.String,java.lang.Object[])
+android.content.res.XResources: void setReplacement(java.lang.String,java.lang.Object)
+cn.hishi.android.scrm.XposedHelpers: void setStaticByteField(java.lang.Class,java.lang.String,byte)
+cn.hishi.android.scrm.XposedHelpers$ClassNotFoundError: XposedHelpers$ClassNotFoundError(java.lang.String,java.lang.Throwable)
+android.content.res.XResources$XTypedArray: int getDimensionPixelOffset(int,int)
+cn.hishi.android.scrm.XposedBridge: void removeFinalFlagNative(java.lang.Class)
+cn.hishi.android.scrm.XposedHelpers: int incrementMethodDepth(java.lang.String)
+cn.hishi.android.scrm.callbacks.XC_InitZygote: void call(cn.hishi.android.scrm.callbacks.XCallback$Param)
+cn.hishi.android.scrm.XposedHelpers: int getStaticIntField(java.lang.Class,java.lang.String)
+cn.hishi.android.scrm.callbacks.XC_LayoutInflated$LayoutInflatedParam: XC_LayoutInflated$LayoutInflatedParam(cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet)
+cn.hishi.android.scrm.XposedHelpers: java.lang.reflect.Method findMethodExactIfExists(java.lang.String,java.lang.ClassLoader,java.lang.String,java.lang.Object[])
+android.content.res.XResources: android.graphics.drawable.Drawable getDrawableForDensity(int,int,android.content.res.Resources$Theme)
+cn.hishi.android.scrm.services.BinderService: byte[] readFile(java.lang.String)
+android.content.res.XResources$ResourceNames
+cn.hishi.android.scrm.XposedInit$5: XposedInit$5()
+cn.hishi.android.scrm.XposedHelpers: float getStaticFloatField(java.lang.Class,java.lang.String)
+cn.hishi.android.scrm.services.FileResult: FileResult(byte[],long,long)
+cn.hishi.android.scrm.services.BinderService: boolean checkFileAccess(java.lang.String,int)
+cn.hishi.android.scrm.callbacks.XCallback: int priority
+android.content.res.XResources: cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook hookSystemWideLayout(java.lang.String,java.lang.String,java.lang.String,cn.hishi.android.scrm.callbacks.XC_LayoutInflated)
+android.content.res.XResources$XMLInstanceDetails: android.content.res.XResources res
+cn.hishi.android.scrm.XposedInit$3
+external.org.apache.commons.lang3.JavaVersion: external.org.apache.commons.lang3.JavaVersion valueOf(java.lang.String)
+cn.hishi.android.scrm.XposedHelpers: java.lang.Object removeAdditionalStaticField(java.lang.Object,java.lang.String)
+cn.hishi.android.scrm.XSharedPreferences: java.util.HashMap mListeners
+cn.hishi.android.scrm.callbacks.XCallback$Param: java.lang.Object getObjectExtra(java.lang.String)
+cn.hishi.android.scrm.XposedHelpers: java.lang.reflect.Field findFieldIfExists(java.lang.Class,java.lang.String)
+cn.hishi.android.scrm.annotation.Level: cn.hishi.android.scrm.annotation.Level valueOf(java.lang.String)
+cn.hishi.android.scrm.callbacks.XCallback$Param: XCallback$Param(cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet)
+cn.hishi.android.scrm.XposedHelpers: char getCharField(java.lang.Object,java.lang.String)
+cn.hishi.android.scrm.XposedInit$6: void afterHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam)
+cn.hishi.android.scrm.callbacks.XCallback$Param: android.os.Bundle getExtra()
+android.content.res.XResources$XTypedArray: XResources$XTypedArray(android.content.res.Resources)
+cn.hishi.android.scrm.XC_MethodHook$MethodHookParam: XC_MethodHook$MethodHookParam()
+cn.hishi.android.scrm.XSharedPreferences: long getLong(java.lang.String,long)
+cn.hishi.android.scrm.services.BaseService: int X_OK
+cn.hishi.android.scrm.XSharedPreferences: XSharedPreferences(java.io.File)
+cn.hishi.android.scrm.IXposedHookInitPackageResources$Wrapper: java.lang.String getApkPath()
+cn.hishi.android.scrm.DexCreator: void writeInt(java.io.OutputStream,int)
+cn.hishi.android.scrm.XposedHelpers: java.lang.Class[] getParameterTypes(java.lang.Object[])
+cn.hishi.android.scrm.callbacks.XCallback: int PRIORITY_LOWEST
+cn.hishi.android.scrm.XC_MethodReplacement$1: java.lang.Object replaceHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam)
+cn.hishi.android.scrm.callbacks.XC_InitZygote: XC_InitZygote(int)
+cn.hishi.android.scrm.XposedInit$2: void afterHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam)
+android.content.res.XResources$DimensionReplacement: XResources$DimensionReplacement(float,int)
+android.content.res.XResources: java.lang.CharSequence[] getTextArray(int)
+cn.hishi.android.scrm.XposedHelpers$ClassNotFoundError: XposedHelpers$ClassNotFoundError(java.lang.Throwable)
+android.content.res.XResources: android.util.SparseArray sColorStateListCache
+android.content.res.XResources: java.lang.CharSequence getText(int,java.lang.CharSequence)
+cn.hishi.android.scrm.services.DirectAccessService: java.io.InputStream getFileInputStream(java.lang.String)
+cn.hishi.android.scrm.XposedHelpers: void setDoubleField(java.lang.Object,java.lang.String,double)
+android.content.res.XResources: void setSystemWideReplacement(java.lang.String,java.lang.Object)
+cn.hishi.android.scrm.SELinuxHelper: cn.hishi.android.scrm.services.BaseService sServiceAppDataFile
+cn.hishi.android.scrm.callbacks.XCallback$Param$SerializeWrapper: long serialVersionUID
+android.content.res.XResources
+cn.hishi.android.scrm.XposedBridge: java.lang.Object handleHookedMethod(java.lang.reflect.Member,long,java.lang.Object,java.lang.Object,java.lang.Object[])
+cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet: XposedBridge$CopyOnWriteSortedSet()
+cn.hishi.android.scrm.DexCreator: java.io.File ensure(java.io.File,java.lang.String,java.lang.String)
+cn.hishi.android.scrm.PendingHooks: PendingHooks()
+cn.hishi.android.scrm.XposedBridge$AdditionalHookInfo: XposedBridge$AdditionalHookInfo(cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet,java.lang.Class[],java.lang.Class,cn.hishi.android.scrm.XposedBridge$1)
+cn.hishi.android.scrm.XposedHelpers: java.lang.Object setAdditionalStaticField(java.lang.Class,java.lang.String,java.lang.Object)
+cn.hishi.android.scrm.XposedBridge: int runtime
+cn.hishi.android.scrm.callbacks.XCallback: int compareTo(java.lang.Object)
+cn.hishi.android.scrm.XposedBridge: XposedBridge()
+cn.hishi.android.scrm.IXposedHookCmdInit
+cn.hishi.android.scrm.callbacks.XC_LayoutInflated$LayoutInflatedParam: java.lang.String variant
+cn.hishi.android.scrm.services.BaseService: cn.hishi.android.scrm.services.FileResult statFile(java.lang.String)
+cn.hishi.android.scrm.XSharedPreferences: void startLoadFromDisk()
+cn.hishi.android.scrm.SELinuxHelper: void initForProcess(java.lang.String)
+cn.hishi.android.scrm.XposedBridge: void unhookMethod(java.lang.reflect.Member,cn.hishi.android.scrm.XC_MethodHook)
+cn.hishi.android.scrm.XposedHelpers: java.lang.Object getAdditionalStaticField(java.lang.Object,java.lang.String)
+cn.hishi.android.scrm.IXposedHookInitPackageResources$Wrapper: void handleInitPackageResources(cn.hishi.android.scrm.callbacks.XC_InitPackageResources$InitPackageResourcesParam)
+cn.hishi.android.scrm.IXposedHookInitPackageResources: void handleInitPackageResources(cn.hishi.android.scrm.callbacks.XC_InitPackageResources$InitPackageResourcesParam)
+cn.hishi.android.scrm.services.BinderService: int TARGET_APP
+android.content.res.XModuleResources: android.content.res.XModuleResources createInstance(java.lang.String,android.content.res.XResources)
+android.content.res.XResForwarder: XResForwarder(android.content.res.Resources,int)
+cn.hishi.android.scrm.XposedHelpers: void setIntField(java.lang.Object,java.lang.String,int)
+cn.hishi.android.scrm.XposedBridge: void setObjectClassNative(java.lang.Object,java.lang.Class)
+cn.hishi.android.scrm.callbacks.XC_LayoutInflated$LayoutInflatedParam
+android.content.res.XResources: XResources(java.lang.ClassLoader)
+android.content.res.XResources: android.util.SparseArray access$500()
+cn.hishi.android.scrm.XposedHelpers: java.lang.reflect.Method[] findMethodsByExactParameters(java.lang.Class,java.lang.Class,java.lang.Class[])
+android.content.res.XResources: java.lang.String[] getStringArray(int)
+cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet: java.lang.Object[] getSnapshot()
+android.content.res.XResources: android.content.res.XmlResourceParser getXml(int)
+cn.hishi.android.scrm.services.ZygoteService: boolean checkFileAccess(java.lang.String,int)
+cn.hishi.android.scrm.XposedInit: boolean disableResources
+android.content.res.XResources: void setSystemWideReplacement(java.lang.String,java.lang.String,java.lang.String,java.lang.Object)
+cn.hishi.android.scrm.services.BaseService: int W_OK
+cn.hishi.android.scrm.callbacks.XCallback: void call(cn.hishi.android.scrm.callbacks.XCallback$Param)
+cn.hishi.android.scrm.DexCreator: void updateSignature(byte[])
+cn.hishi.android.scrm.XposedInit$5: void afterHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam)
+cn.hishi.android.scrm.callbacks.XCallback$Param$SerializeWrapper: java.lang.Object object
+android.content.res.XResources: java.lang.String mResDir
+cn.hishi.android.scrm.XposedInit
+android.content.res.XResources: java.lang.String mPackageName
+cn.hishi.android.scrm.services.BaseService: int R_OK
+android.content.res.XResources$XTypedArray: float getDimension(int,float)
+cn.hishi.android.scrm.XSharedPreferences: boolean contains(java.lang.String)
+cn.hishi.android.scrm.XposedHelpers: java.lang.reflect.Constructor findConstructorBestMatch(java.lang.Class,java.lang.Class[],java.lang.Object[])
+android.content.res.XResources: java.lang.ThreadLocal sLatestResKey
+cn.hishi.android.scrm.XposedHelpers: java.lang.reflect.Method findMethodBestMatch(java.lang.Class,java.lang.String,java.lang.Object[])
+cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook: int id
+cn.hishi.android.scrm.IXposedHookZygoteInit$Wrapper: IXposedHookZygoteInit$Wrapper(cn.hishi.android.scrm.IXposedHookZygoteInit,cn.hishi.android.scrm.IXposedHookZygoteInit$StartupParam)
+android.content.res.XResources: java.util.HashMap sReplacementsCacheMap
+cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet: int indexOf(java.lang.Object)
+cn.hishi.android.scrm.callbacks.XC_LoadPackage$LoadPackageParam: java.lang.String processName
+cn.hishi.android.scrm.XposedHelpers: byte[] assetAsByteArray(android.content.res.Resources,java.lang.String)
+cn.hishi.android.scrm.MethodHooker: MethodHooker(cn.hishi.android.scrm.XposedBridge$AdditionalHookInfo,java.lang.reflect.Member,java.lang.reflect.Method)
+cn.hishi.android.scrm.XposedHelpers: void setStaticLongField(java.lang.Class,java.lang.String,long)
+cn.hishi.android.scrm.XposedInit$3: void afterHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam)
+android.app.AndroidAppHelper: java.lang.Object createResourcesKey(java.lang.String,java.lang.String[],java.lang.String[],java.lang.String[],int,android.content.res.Configuration,android.content.res.CompatibilityInfo)
+android.content.res.XResources: java.lang.String getPackageName(java.lang.String)
+cn.hishi.android.scrm.DexCreator: java.io.File DALVIK_CACHE
+cn.hishi.android.scrm.XSharedPreferences: byte[] access$600(java.lang.String)
+cn.hishi.android.scrm.SELinuxHelper: boolean sIsSELinuxEnabled
+cn.hishi.android.scrm.XC_MethodReplacement: void afterHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam)
+cn.hishi.android.scrm.callbacks.XC_InitPackageResources: XC_InitPackageResources()
+android.content.res.XResources: int translateAttrId(java.lang.String,android.content.res.XResources)
+cn.hishi.android.scrm.XposedHelpers: java.lang.reflect.Field findFieldRecursiveImpl(java.lang.Class,java.lang.String)
+cn.hishi.android.scrm.XC_MethodReplacement: void beforeHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam)
+cn.hishi.android.scrm.XC_MethodHook$MethodHookParam: void setResult(java.lang.Object)
+cn.hishi.android.scrm.callbacks.XC_LoadPackage
+cn.hishi.android.scrm.XSharedPreferences: java.io.File getFile()
+cn.hishi.android.scrm.IModuleContext: java.lang.String getApkPath()
+cn.hishi.android.scrm.XC_MethodHook$Unhook: XC_MethodHook$Unhook(cn.hishi.android.scrm.XC_MethodHook,java.lang.reflect.Member)
+android.content.res.XResources: android.graphics.drawable.Drawable getDrawable(int,android.content.res.Resources$Theme,boolean)
+cn.hishi.android.scrm.XposedBridge: int RUNTIME_DALVIK
+cn.hishi.android.scrm.XC_MethodHook
+android.content.res.XResources$XTypedArray: int getLayoutDimension(int,java.lang.String)
+android.content.res.XResources$XTypedArray: boolean getBoolean(int,boolean)
+cn.hishi.android.scrm.services.DirectAccessService: cn.hishi.android.scrm.services.FileResult getFileInputStream(java.lang.String,long,long)
+android.content.res.XResources: java.lang.Object getReplacement(int)
+android.content.res.XResources$ResourceNames: java.lang.String name
+cn.hishi.android.scrm.XposedBridge: void main(java.lang.String[])
+android.content.res.XResForwarder: android.content.res.Resources getResources()
+android.content.res.XResources: android.content.res.XmlResourceParser getAnimation(int)
+cn.hishi.android.scrm.XSharedPreferences: void access$300(cn.hishi.android.scrm.XSharedPreferences)
+cn.hishi.android.scrm.XSharedPreferences$1: XSharedPreferences$1()
+cn.hishi.android.scrm.XC_MethodHook$Unhook: java.lang.reflect.Member hookMethod
+cn.hishi.android.scrm.XposedInit: java.lang.String INSTANT_RUN_CLASS
+cn.hishi.android.scrm.XposedHelpers: cn.hishi.android.scrm.XC_MethodHook$Unhook findAndHookConstructor(java.lang.String,java.lang.ClassLoader,java.lang.Object[])
+cn.hishi.android.scrm.callbacks.XC_InitPackageResources$InitPackageResourcesParam: android.content.res.XResources res
+cn.hishi.android.scrm.XposedHelpers: void setObjectField(java.lang.Object,java.lang.String,java.lang.Object)
+cn.hishi.android.scrm.XposedBridge: cn.hishi.android.scrm.XC_MethodHook$Unhook hookMethod(java.lang.reflect.Member,cn.hishi.android.scrm.XC_MethodHook)
+cn.hishi.android.scrm.services.ZygoteService: cn.hishi.android.scrm.services.FileResult statFile(java.lang.String)
+cn.hishi.android.scrm.XposedHelpers: java.lang.Object getStaticObjectField(java.lang.Class,java.lang.String)
+cn.hishi.android.scrm.services.BaseService: boolean checkFileAccess(java.lang.String,int)
+cn.hishi.android.scrm.IXposedHookLoadPackage: void handleLoadPackage(cn.hishi.android.scrm.callbacks.XC_LoadPackage$LoadPackageParam)
+cn.hishi.android.scrm.annotation.Level: cn.hishi.android.scrm.annotation.Level[] $VALUES
+android.content.res.XResources: android.util.SparseArray sLayoutCallbacks
+cn.hishi.android.scrm.IXposedHookLoadPackage$Wrapper: cn.hishi.android.scrm.IXposedHookLoadPackage instance
+cn.hishi.android.scrm.XSharedPreferences: java.util.HashMap access$100()
+cn.hishi.android.scrm.PendingHooks$1: PendingHooks$1()
+cn.hishi.android.scrm.services.BinderService: android.os.IBinder mRemote
+android.content.res.XResources$ResourceNames: int id
+cn.hishi.android.scrm.XposedHelpers: void setStaticFloatField(java.lang.Class,java.lang.String,float)
+cn.hishi.android.scrm.IXposedHookCmdInit$StartupParam: java.lang.String startClassName
+cn.hishi.android.scrm.XSharedPreferences: XSharedPreferences(java.lang.String)
+cn.hishi.android.scrm.XposedBridge: int XPOSED_BRIDGE_VERSION
+android.content.res.XResources: void setReplacement(int,java.lang.Object,android.content.res.XResources)
+cn.hishi.android.scrm.XposedHelpers: java.lang.reflect.Method findMethodExactIfExists(java.lang.Class,java.lang.String,java.lang.Object[])
+android.content.res.XResources$ResourceNames: boolean equals(java.lang.String,java.lang.String,java.lang.String,int)
+cn.hishi.android.scrm.XposedBridge: java.util.Map sHookedMethodCallbacks
+cn.hishi.android.scrm.callbacks.XC_LoadPackage$LoadPackageParam: java.lang.String packageName
+cn.hishi.android.scrm.XSharedPreferences: XSharedPreferences(java.lang.String,java.lang.String)
+cn.hishi.android.scrm.XposedHelpers: java.lang.Object getObjectField(java.lang.Object,java.lang.String)
+cn.hishi.android.scrm.XposedHelpers: java.util.HashMap constructorCache
+cn.hishi.android.scrm.XposedInit: java.lang.Object moduleLoadLock
+cn.hishi.android.scrm.DexCreator: java.io.File ensure(java.lang.String,java.lang.Class,java.lang.Class)
+android.content.res.XResources: void unhookLayout(java.lang.String,int,cn.hishi.android.scrm.callbacks.XC_LayoutInflated)
+cn.hishi.android.scrm.XSharedPreferences: boolean makeWorldReadable()
+cn.hishi.android.scrm.XposedHelpers$InvocationTargetError: long serialVersionUID
+cn.hishi.android.scrm.XposedHelpers: boolean fileContains(java.io.File,java.lang.String)
+cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook: java.lang.Object getCallback()
+android.content.res.XResources$DimensionReplacement: int mUnit
+cn.hishi.android.scrm.XSharedPreferences$PrefsData: cn.hishi.android.scrm.XSharedPreferences mPrefs
+android.content.res.XResources: boolean isFirstLoad()
+cn.hishi.android.scrm.SELinuxHelper: cn.hishi.android.scrm.services.BaseService getAppDataFileService()
+cn.hishi.android.scrm.XC_MethodReplacement: XC_MethodReplacement(int)
+android.content.res.XResources$3: void afterHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam)
+cn.hishi.android.scrm.XposedHelpers: void setByteField(java.lang.Object,java.lang.String,byte)
+cn.hishi.android.scrm.IXposedHookZygoteInit$StartupParam
+cn.hishi.android.scrm.XposedHelpers: int getParameterIndexByType(java.lang.reflect.Member,java.lang.Class)
+cn.hishi.android.scrm.XC_MethodHook$MethodHookParam: java.lang.Object thisObject
+cn.hishi.android.scrm.XposedInit$4: void beforeHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam)
+cn.hishi.android.scrm.PendingHooks$1: java.util.concurrent.ConcurrentHashMap apply(java.lang.Class)
+cn.hishi.android.scrm.callbacks.XC_LoadPackage$LoadPackageParam: XC_LoadPackage$LoadPackageParam(cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet)
+cn.hishi.android.scrm.XposedBridge: void hookMethodNative(java.lang.reflect.Member,java.lang.Class,int,java.lang.Object)
+android.content.res.XResources$DimensionReplacement: int getDimensionPixelSize(android.util.DisplayMetrics)
+cn.hishi.android.scrm.XSharedPreferences: long tryGetFileSize(java.lang.String)
+android.content.res.XResources$XMLInstanceDetails: XResources$XMLInstanceDetails(android.content.res.XResources,android.content.res.XResources$ResourceNames,java.lang.String,cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet,android.content.res.XResources$1)
+cn.hishi.android.scrm.XposedBridge: java.lang.Object cloneToSubclass(java.lang.Object,java.lang.Class)
+cn.hishi.android.scrm.XposedBridge: java.lang.Object[] access$100()
+cn.hishi.android.scrm.XSharedPreferences: void tryUnregisterWatcher()
+android.content.res.XResources: void setReplacement(java.lang.String,java.lang.String,java.lang.String,java.lang.Object)
+cn.hishi.android.scrm.XposedBridge: void log(java.lang.Throwable)
+cn.hishi.android.scrm.DexCreator: boolean matches(byte[],java.lang.String,java.lang.String)
+android.app.AndroidAppHelper: java.lang.String currentProcessName()
+cn.hishi.android.scrm.services.BaseService: cn.hishi.android.scrm.services.FileResult readFile(java.lang.String,int,int,long,long)
+cn.hishi.android.scrm.XposedHelpers: long getLongField(java.lang.Object,java.lang.String)
+cn.hishi.android.scrm.XposedHelpers: void setStaticCharField(java.lang.Class,java.lang.String,char)
+cn.hishi.android.scrm.PendingHooks
+cn.hishi.android.scrm.annotation.Level: Level(java.lang.String,int)
+cn.hishi.android.scrm.SELinuxHelper: SELinuxHelper()
+android.content.res.XResources: float getDimension(int)
+android.content.res.XResForwarder: android.content.res.Resources res
+cn.hishi.android.scrm.XC_MethodHook$MethodHookParam: void setThrowable(java.lang.Throwable)
+cn.hishi.android.scrm.XposedHelpers: java.lang.reflect.Constructor findConstructorExactIfExists(java.lang.Class,java.lang.Object[])
+cn.hishi.android.scrm.XposedInit: boolean needsToCloseFilesForFork()
+cn.hishi.android.scrm.XposedInit$5
+android.content.res.XResForwarder: int getId()
+cn.hishi.android.scrm.annotation.Level: cn.hishi.android.scrm.annotation.Level LOW
+cn.hishi.android.scrm.XposedInit$4: java.lang.ThreadLocal val$latestResKey
+cn.hishi.android.scrm.XC_MethodHook$MethodHookParam
+cn.hishi.android.scrm.callbacks.XC_LayoutInflated: void handleLayoutInflated(cn.hishi.android.scrm.callbacks.XC_LayoutInflated$LayoutInflatedParam)
+cn.hishi.android.scrm.XposedHelpers: java.lang.reflect.Constructor findConstructorExact(java.lang.Class,java.lang.Object[])
+cn.hishi.android.scrm.XposedHelpers: java.lang.reflect.Constructor findConstructorExactIfExists(java.lang.String,java.lang.ClassLoader,java.lang.Object[])
+cn.hishi.android.scrm.IXposedHookZygoteInit$StartupParam: IXposedHookZygoteInit$StartupParam()
+cn.hishi.android.scrm.services.ZygoteService: ZygoteService()
+android.content.res.XResources$ResourceNames: java.lang.String fullName
+android.app.AndroidAppHelper: AndroidAppHelper()
+android.content.res.XResources$XTypedArray: int getColor(int,int)
+cn.hishi.android.scrm.XSharedPreferences: void initWatcherDaemon()
+cn.hishi.android.scrm.XC_MethodHook: XC_MethodHook(int)
+cn.hishi.android.scrm.XC_MethodHook$MethodHookParam: java.lang.Object result
+cn.hishi.android.scrm.MethodHooker: java.lang.Object handleHookedMethod(java.lang.Object[])
+cn.hishi.android.scrm.XposedBridge$AdditionalHookInfo: XposedBridge$AdditionalHookInfo(cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet,java.lang.Class[],java.lang.Class)
+android.content.res.XResources: int getInteger(int)
+cn.hishi.android.scrm.XposedBridge$AdditionalHookInfo
+cn.hishi.android.scrm.XSharedPreferences: java.util.Map mMap
+cn.hishi.android.scrm.IXposedHookZygoteInit$StartupParam: java.lang.String modulePath
+cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook: java.lang.String resDir
+android.content.res.XResources$1: XResources$1()
+android.content.res.XResources: int getDimensionPixelSize(int)
+cn.hishi.android.scrm.callbacks.XCallback$Param$SerializeWrapper: XCallback$Param$SerializeWrapper(java.lang.Object)
+android.content.res.XResources: android.content.res.XResources$ResourceNames getResourceNames(int)
+cn.hishi.android.scrm.XposedInit: boolean loadModules(boolean)
+android.app.AndroidAppHelper: java.lang.Object createResourcesKey(java.lang.String,int,android.content.res.Configuration,float,android.os.IBinder)
+cn.hishi.android.scrm.services.BaseService: java.io.InputStream getFileInputStream(java.lang.String)
+android.content.res.XResources$XMLInstanceDetails
+cn.hishi.android.scrm.IXposedHookZygoteInit$Wrapper: java.lang.String getApkPath()
+cn.hishi.android.scrm.XSharedPreferences: java.nio.file.WatchService access$000()
+cn.hishi.android.scrm.XposedHelpers: void closeSilently(dalvik.system.DexFile)
+cn.hishi.android.scrm.XposedHelpers: java.lang.Object getAdditionalInstanceField(java.lang.Object,java.lang.String)
+android.content.res.XResources: byte[] sSystemReplacementsCache
+cn.hishi.android.scrm.XposedInit$6: XposedInit$6()
+cn.hishi.android.scrm.XC_MethodReplacement: java.lang.Object replaceHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam)
+cn.hishi.android.scrm.XposedBridge: boolean isZygote
+android.content.res.XResources: int addResource(android.content.res.Resources,int)
+android.content.res.XResources: void initObject(java.lang.String)
+android.content.res.XResources: boolean isXmlCached(android.content.res.Resources,int)
+cn.hishi.android.scrm.XposedHelpers: void setShortField(java.lang.Object,java.lang.String,short)
+cn.hishi.android.scrm.annotation.Level
+cn.hishi.android.scrm.XposedInit: android.util.ArraySet loadedModules
+cn.hishi.android.scrm.XposedBridge: long BOOT_START_TIME
+cn.hishi.android.scrm.XposedHelpers: java.lang.Class[] getClassesAsArray(java.lang.Class[])
+cn.hishi.android.scrm.XposedBridge: java.lang.Object invokeOriginalMethod(java.lang.reflect.Member,java.lang.Object,java.lang.Object[])
+cn.hishi.android.scrm.services.BaseService: void ensureAbsolutePath(java.lang.String)
+cn.hishi.android.scrm.XSharedPreferences$PrefsData
+cn.hishi.android.scrm.XC_MethodReplacement: cn.hishi.android.scrm.XC_MethodReplacement returnConstant(int,java.lang.Object)
+cn.hishi.android.scrm.XposedHelpers: java.lang.Class[] getParameterClasses(java.lang.ClassLoader,java.lang.Object[])
+cn.hishi.android.scrm.XSharedPreferences: boolean mLoaded
+cn.hishi.android.scrm.XposedBridge: void hookLoadPackage(cn.hishi.android.scrm.callbacks.XC_LoadPackage)
+cn.hishi.android.scrm.XposedInit$4
+cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook: cn.hishi.android.scrm.callbacks.XC_LayoutInflated getCallback()
+cn.hishi.android.scrm.SELinuxHelper
+cn.hishi.android.scrm.XposedInit$4: XposedInit$4(java.lang.ThreadLocal)
+cn.hishi.android.scrm.XC_MethodReplacement: cn.hishi.android.scrm.XC_MethodReplacement DO_NOTHING
+android.content.res.XResources: cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook hookLayout(int,cn.hishi.android.scrm.callbacks.XC_LayoutInflated)
+cn.hishi.android.scrm.XposedInit$2: XposedInit$2(java.lang.Class)
+cn.hishi.android.scrm.XC_MethodHook: XC_MethodHook()
+cn.hishi.android.scrm.XposedInit$3: XposedInit$3(java.lang.ThreadLocal)
+cn.hishi.android.scrm.XposedBridge$AdditionalHookInfo: java.lang.Class returnType
+cn.hishi.android.scrm.IXposedHookZygoteInit
+android.content.res.XResources: int getColor(int)
+cn.hishi.android.scrm.XposedHelpers
+cn.hishi.android.scrm.XSharedPreferences: boolean getBoolean(java.lang.String,boolean)
+cn.hishi.android.scrm.XSharedPreferences$PrefsData: long mSize
+cn.hishi.android.scrm.callbacks.IXUnhook: void unhook()
+cn.hishi.android.scrm.callbacks.XCallback: XCallback()
+cn.hishi.android.scrm.XposedHelpers: long getStaticLongField(java.lang.Class,java.lang.String)
+cn.hishi.android.scrm.XSharedPreferences: int getInt(java.lang.String,int)
+cn.hishi.android.scrm.XposedInit: boolean startsSystemServer
+cn.hishi.android.scrm.XposedHelpers: java.lang.Class findClass(java.lang.String,java.lang.ClassLoader)
+cn.hishi.android.scrm.services.DirectAccessService: byte[] readFile(java.lang.String)
+cn.hishi.android.scrm.services.BinderService: cn.hishi.android.scrm.services.FileResult statFile(java.lang.String)
+cn.hishi.android.scrm.callbacks.XCallback$Param: android.os.Bundle extra
+cn.hishi.android.scrm.annotation.ApiSensitive
+cn.hishi.android.scrm.XSharedPreferences$PrefsData: byte[] mHash
+cn.hishi.android.scrm.callbacks.XCallback: int PRIORITY_DEFAULT
+android.content.res.XResources: java.lang.String getPackageName()
+cn.hishi.android.scrm.XposedHelpers: java.lang.Object callStaticMethod(java.lang.Class,java.lang.String,java.lang.Class[],java.lang.Object[])
+cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook: void unhook()
+cn.hishi.android.scrm.XposedBridge$1
+cn.hishi.android.scrm.XC_MethodReplacement: XC_MethodReplacement()
+cn.hishi.android.scrm.IXposedMod
+cn.hishi.android.scrm.services.BaseService: boolean hasDirectFileAccess()
+cn.hishi.android.scrm.XposedBridge: void initXResources()
+cn.hishi.android.scrm.XSharedPreferences: java.util.Map getAll()
+android.content.res.XResources: float getFraction(int,int,int)
+cn.hishi.android.scrm.callbacks.XC_InitPackageResources$InitPackageResourcesParam: XC_InitPackageResources$InitPackageResourcesParam(cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet)
+android.app.AndroidAppHelper: android.content.SharedPreferences getSharedPreferencesForPackage(java.lang.String,java.lang.String,int)
+cn.hishi.android.scrm.XposedHelpers: java.lang.reflect.Method findMethodBestMatch(java.lang.Class,java.lang.String,java.lang.Class[],java.lang.Object[])
+cn.hishi.android.scrm.IXposedHookInitPackageResources$Wrapper: cn.hishi.android.scrm.IXposedHookInitPackageResources instance
+cn.hishi.android.scrm.services.FileResult
+cn.hishi.android.scrm.XSharedPreferences: void registerOnSharedPreferenceChangeListener(android.content.SharedPreferences$OnSharedPreferenceChangeListener)
+cn.hishi.android.scrm.callbacks.XC_InitPackageResources$InitPackageResourcesParam
+cn.hishi.android.scrm.XSharedPreferences: java.util.HashMap sWatcherKeyInstances
+cn.hishi.android.scrm.XC_MethodHook$Unhook: java.lang.Object getCallback()
+cn.hishi.android.scrm.IXposedHookZygoteInit$StartupParam: boolean startsSystemServer
+cn.hishi.android.scrm.XposedHelpers: java.lang.reflect.Method findMethodExact(java.lang.Class,java.lang.String,java.lang.Object[])
+cn.hishi.android.scrm.callbacks.XC_LoadPackage: XC_LoadPackage()
+android.content.res.XResources$3: void beforeHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam)
+cn.hishi.android.scrm.XposedHelpers: void setStaticShortField(java.lang.Class,java.lang.String,short)
+android.content.res.XResources$DrawableLoader: XResources$DrawableLoader()
+cn.hishi.android.scrm.XposedHelpers: cn.hishi.android.scrm.XC_MethodHook$Unhook findAndHookMethod(java.lang.Class,java.lang.String,java.lang.Object[])
+cn.hishi.android.scrm.DexCreator: DexCreator()
+cn.hishi.android.scrm.IXposedHookLoadPackage$Wrapper: IXposedHookLoadPackage$Wrapper(cn.hishi.android.scrm.IXposedHookLoadPackage,java.lang.String)
+cn.hishi.android.scrm.XC_MethodHook: void callAfterHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam)
+android.content.res.XResources: cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook hookSystemWideLayout(java.lang.String,cn.hishi.android.scrm.callbacks.XC_LayoutInflated)
+cn.hishi.android.scrm.XC_MethodReplacement$2: java.lang.Object replaceHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam)
+cn.hishi.android.scrm.services.BaseService: cn.hishi.android.scrm.services.FileResult getFileInputStream(java.lang.String,long,long)
+cn.hishi.android.scrm.XC_MethodHook$MethodHookParam: java.lang.Object getResult()
+cn.hishi.android.scrm.XposedInit: void pruneCallbacks(java.util.Set)
+cn.hishi.android.scrm.XSharedPreferences: java.nio.file.WatchService sWatcher
+android.content.res.XResources$1: java.util.LinkedList initialValue()
+cn.hishi.android.scrm.XposedHelpers: java.lang.String getParametersString(java.lang.Class[])
+cn.hishi.android.scrm.callbacks.XC_LayoutInflated: XC_LayoutInflated(int)
+android.content.res.XResources$ResourceNames: java.lang.String type
+android.content.res.XResources: android.graphics.drawable.Drawable getDrawable(int,android.content.res.Resources$Theme)
+cn.hishi.android.scrm.services.DirectAccessService: boolean checkFileAccess(java.lang.String,int)
+cn.hishi.android.scrm.XposedBridge: java.lang.Object[] EMPTY_ARRAY
+cn.hishi.android.scrm.XposedHelpers: int getMethodDepth(java.lang.String)
+cn.hishi.android.scrm.SELinuxHelper: boolean isSELinuxEnabled()
+cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet: boolean remove(java.lang.Object)
+cn.hishi.android.scrm.XSharedPreferences: android.content.SharedPreferences$Editor edit()
+android.content.res.XResources: android.graphics.drawable.Drawable getDrawableForDensity(int,int,android.content.res.Resources$Theme,boolean)
+cn.hishi.android.scrm.XposedHelpers: void setFloatField(java.lang.Object,java.lang.String,float)
+cn.hishi.android.scrm.XposedHelpers$ClassNotFoundError
+cn.hishi.android.scrm.XposedHelpers: XposedHelpers()
+cn.hishi.android.scrm.XposedBridge: void dumpObjectNative(java.lang.Object)
+cn.hishi.android.scrm.XposedHelpers: int decrementMethodDepth(java.lang.String)
+cn.hishi.android.scrm.XposedInit$1: void beforeHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam)
+cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet
+cn.hishi.android.scrm.PendingHooks: void cleanUp()
+cn.hishi.android.scrm.IXposedHookZygoteInit$Wrapper: cn.hishi.android.scrm.IXposedHookZygoteInit instance
+cn.hishi.android.scrm.callbacks.XC_LayoutInflated: XC_LayoutInflated()
+cn.hishi.android.scrm.callbacks.XC_InitPackageResources$InitPackageResourcesParam: java.lang.String packageName
+cn.hishi.android.scrm.XposedHelpers$1: java.lang.Object initialValue()
+cn.hishi.android.scrm.XposedHelpers: java.lang.reflect.Field findField(java.lang.Class,java.lang.String)
+cn.hishi.android.scrm.XposedInit$3: java.lang.ThreadLocal val$latestResKey
+cn.hishi.android.scrm.XposedHelpers: void setBooleanField(java.lang.Object,java.lang.String,boolean)
+cn.hishi.android.scrm.services.DirectAccessService: boolean checkFileExists(java.lang.String)
+cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook: XC_LayoutInflated$Unhook(cn.hishi.android.scrm.callbacks.XC_LayoutInflated,java.lang.String,int)
+cn.hishi.android.scrm.XposedHelpers: void setLongField(java.lang.Object,java.lang.String,long)
+cn.hishi.android.scrm.annotation.Level: cn.hishi.android.scrm.annotation.Level[] values()
+cn.hishi.android.scrm.XposedInit: java.lang.String startClassName
+cn.hishi.android.scrm.XSharedPreferences: long access$500(java.lang.String)
+cn.hishi.android.scrm.IXposedHookLoadPackage$Wrapper: java.lang.String apkPath
+cn.hishi.android.scrm.XposedHelpers: java.lang.Object removeAdditionalStaticField(java.lang.Class,java.lang.String)
+cn.hishi.android.scrm.XSharedPreferences$2: cn.hishi.android.scrm.XSharedPreferences this$0
+cn.hishi.android.scrm.services.BaseService: int F_OK
+cn.hishi.android.scrm.services.BinderService: int TARGET_SYSTEM
+android.content.res.XResources: android.graphics.Movie getMovie(int)
+android.content.res.XResources: android.content.res.XResources$ResourceNames getSystemResourceNames(int)
+cn.hishi.android.scrm.XposedHelpers: java.lang.reflect.Method findMethodExact(java.lang.Class,java.lang.String,java.lang.Class[])
+cn.hishi.android.scrm.XposedInit$1
+cn.hishi.android.scrm.XposedHelpers: java.lang.reflect.Constructor findConstructorBestMatch(java.lang.Class,java.lang.Object[])
+cn.hishi.android.scrm.callbacks.XC_InitPackageResources: XC_InitPackageResources(int)
+android.content.res.XResources: java.lang.String EXTRA_XML_INSTANCE_DETAILS
+cn.hishi.android.scrm.XSharedPreferences: java.io.File mFile
+cn.hishi.android.scrm.callbacks.XCallback$Param: void setObjectExtra(java.lang.String,java.lang.Object)
+android.content.res.XResources: java.lang.String getPackageNameDuringConstruction()
+cn.hishi.android.scrm.callbacks.XCallback$Param
+cn.hishi.android.scrm.XposedBridge: cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet sLoadedPackageCallbacks
+cn.hishi.android.scrm.XSharedPreferences$PrefsData: boolean hasChanged()
+android.content.res.XResources: cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook hookLayout(java.lang.String,cn.hishi.android.scrm.callbacks.XC_LayoutInflated)
+cn.hishi.android.scrm.services.BaseService: long getFileModificationTime(java.lang.String)
+cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook: cn.hishi.android.scrm.callbacks.XC_LayoutInflated this$0
+android.content.res.XResources: cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook hookLayout(java.lang.String,java.lang.String,java.lang.String,cn.hishi.android.scrm.callbacks.XC_LayoutInflated)
+cn.hishi.android.scrm.services.BaseService: long getFileSize(java.lang.String)
+cn.hishi.android.scrm.XposedHelpers: java.lang.Object getAdditionalStaticField(java.lang.Class,java.lang.String)
+cn.hishi.android.scrm.callbacks.XCallback: XCallback(int)
+cn.hishi.android.scrm.XposedHelpers$InvocationTargetError: XposedHelpers$InvocationTargetError(java.lang.Throwable)
+com.elderdrivers.riru.edxp.bridge.R
+cn.hishi.android.scrm.XSharedPreferences: java.nio.file.WatchService access$002(java.nio.file.WatchService)
+android.content.res.XResources: java.util.WeakHashMap sXmlInstanceDetails
+cn.hishi.android.scrm.services.BinderService: cn.hishi.android.scrm.services.BinderService getService(int)
+cn.hishi.android.scrm.XSharedPreferences: java.lang.String access$400(cn.hishi.android.scrm.XSharedPreferences)
+cn.hishi.android.scrm.callbacks.IXUnhook: java.lang.Object getCallback()
+cn.hishi.android.scrm.XC_MethodHook$MethodHookParam: java.lang.Throwable getThrowable()
+cn.hishi.android.scrm.XposedBridge: void log(java.lang.String)
+cn.hishi.android.scrm.PendingHooks: void hookPendingMethod(java.lang.Class)
+cn.hishi.android.scrm.XSharedPreferences$2: XSharedPreferences$2(cn.hishi.android.scrm.XSharedPreferences,java.lang.String)
+cn.hishi.android.scrm.MethodHooker: cn.hishi.android.scrm.XposedBridge$AdditionalHookInfo additionalInfo
+android.content.res.XResources: java.util.HashMap sResDirLastModified
+cn.hishi.android.scrm.XposedHelpers: java.lang.reflect.Constructor findConstructorExact(java.lang.String,java.lang.ClassLoader,java.lang.Object[])
+cn.hishi.android.scrm.XSharedPreferences: byte[] tryGetFileHash(java.lang.String)
+cn.hishi.android.scrm.services.FileResult: java.lang.String toString()
+cn.hishi.android.scrm.XposedBridge: void clearInitZygotes()
+cn.hishi.android.scrm.XposedBridge: java.util.Set hookAllConstructors(java.lang.Class,cn.hishi.android.scrm.XC_MethodHook)
+cn.hishi.android.scrm.callbacks.XC_LoadPackage: void call(cn.hishi.android.scrm.callbacks.XCallback$Param)
+cn.hishi.android.scrm.XposedBridge: java.lang.String TAG
+android.content.res.XResources$DrawableLoader: android.graphics.drawable.Drawable newDrawable(android.content.res.XResources,int)
+android.app.AndroidAppHelper: boolean HAS_IS_THEMEABLE
+cn.hishi.android.scrm.XposedBridge: void clearLoadedPackages()
+cn.hishi.android.scrm.services.BinderService: java.lang.String[] SERVICE_NAMES
+android.content.res.XResources: java.lang.ThreadLocal sIncludedLayouts
+cn.hishi.android.scrm.XSharedPreferences
+cn.hishi.android.scrm.callbacks.XC_LoadPackage$LoadPackageParam: java.lang.ClassLoader classLoader
+android.content.res.XResources: int translateResId(int,android.content.res.XResources,android.content.res.Resources)
+cn.hishi.android.scrm.XposedHelpers: java.util.HashMap sMethodDepth
+cn.hishi.android.scrm.XSharedPreferences$2: void run()
+android.content.res.XResources: int getFakeResId(android.content.res.Resources,int)
+android.content.res.XResources$XTypedArray: float getFraction(int,int,int,float)
+android.content.res.XResources$XTypedArray: float getFloat(int,float)
+cn.hishi.android.scrm.XC_MethodReplacement$2: XC_MethodReplacement$2(int,java.lang.Object)
+cn.hishi.android.scrm.XposedBridge: java.lang.ClassLoader BOOTCLASSLOADER
+cn.hishi.android.scrm.XC_MethodHook$MethodHookParam: boolean hasThrowable()
+android.content.res.XResources$XTypedArray: java.lang.CharSequence[] getTextArray(int)
+cn.hishi.android.scrm.XC_MethodHook$MethodHookParam: java.lang.Object[] args
+cn.hishi.android.scrm.XposedHelpers: java.util.HashMap fieldCache
+android.content.res.XResForwarder
+cn.hishi.android.scrm.XposedBridge: java.util.Set hookAllMethods(java.lang.Class,java.lang.String,cn.hishi.android.scrm.XC_MethodHook)
+cn.hishi.android.scrm.DexCreator: byte[] stringToBytes(java.lang.String)
+android.content.res.XResources: byte[] mReplacementsCache
+cn.hishi.android.scrm.services.FileResult: long mtime
+cn.hishi.android.scrm.callbacks.XCallback: int PRIORITY_HIGHEST
+cn.hishi.android.scrm.XposedBridge: boolean disableHooks
+android.content.res.XResources$XMLInstanceDetails: cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet callbacks
+cn.hishi.android.scrm.services.BaseService: BaseService()
+android.app.AndroidAppHelper: java.lang.Object createResourcesKey(java.lang.String,float)
+cn.hishi.android.scrm.XC_MethodHook$Unhook
+android.content.res.XResources$XTypedArray: android.graphics.drawable.Drawable getDrawable(int)
+cn.hishi.android.scrm.XC_MethodHook$Unhook: java.lang.reflect.Member getHookedMethod()
+cn.hishi.android.scrm.XposedInit$2
+cn.hishi.android.scrm.XSharedPreferences: long mFileSize
+cn.hishi.android.scrm.services.DirectAccessService
+cn.hishi.android.scrm.callbacks.XC_LayoutInflated
+cn.hishi.android.scrm.callbacks.XCallback: void callAll(cn.hishi.android.scrm.callbacks.XCallback$Param)
+cn.hishi.android.scrm.XposedBridge: void hookInitPackageResources(cn.hishi.android.scrm.callbacks.XC_InitPackageResources)
+cn.hishi.android.scrm.services.DirectAccessService: boolean hasDirectFileAccess()
+android.content.res.XResources: java.util.WeakHashMap access$000()
+cn.hishi.android.scrm.services.FileResult: long size
+cn.hishi.android.scrm.XC_MethodHook$MethodHookParam: java.lang.Object getResultOrThrowable()
+cn.hishi.android.scrm.services.ZygoteService: cn.hishi.android.scrm.services.FileResult readFile(java.lang.String,long,long)
+cn.hishi.android.scrm.XC_MethodHook: void afterHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam)
+android.content.res.XResources$DrawableLoader: android.graphics.drawable.Drawable newDrawableForDensity(android.content.res.XResources,int,int)
+cn.hishi.android.scrm.MethodHooker: java.lang.reflect.Member method
+android.app.AndroidAppHelper: android.app.Application currentApplication()
+android.app.AndroidAppHelper: java.lang.Class CLASS_RESOURCES_KEY
+cn.hishi.android.scrm.XposedHelpers: void setStaticDoubleField(java.lang.Class,java.lang.String,double)
+android.content.res.XResources: android.util.SparseArray sResourceNames
+cn.hishi.android.scrm.callbacks.XC_LayoutInflated: void call(cn.hishi.android.scrm.callbacks.XCallback$Param)
+cn.hishi.android.scrm.XC_MethodHook: void callBeforeHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam)
+cn.hishi.android.scrm.XposedBridge: void callInitZygotes()
+com.elderdrivers.riru.edxp.bridge.R: R()
+cn.hishi.android.scrm.SELinuxHelper: boolean isSELinuxEnforced()
+cn.hishi.android.scrm.IXposedHookZygoteInit$Wrapper
+cn.hishi.android.scrm.XSharedPreferences: java.lang.String TAG
+cn.hishi.android.scrm.XposedInit: boolean loadModule(java.lang.String,java.lang.ClassLoader,boolean)
+cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet: void clear()
+android.app.AndroidAppHelper: java.lang.Object createResourcesKey(java.lang.String,int,android.content.res.Configuration,float)
+cn.hishi.android.scrm.callbacks.XC_InitZygote: XC_InitZygote()
+cn.hishi.android.scrm.XposedHelpers: java.lang.String getMD5Sum(java.lang.String)
+cn.hishi.android.scrm.callbacks.XC_LoadPackage$LoadPackageParam
+cn.hishi.android.scrm.DexCreator: byte[] create(java.lang.String,java.lang.String)
+android.content.res.XResources: boolean mIsObjectInited
+cn.hishi.android.scrm.IXposedHookCmdInit$StartupParam
+cn.hishi.android.scrm.XposedHelpers: short getStaticShortField(java.lang.Class,java.lang.String)
+cn.hishi.android.scrm.callbacks.XCallback
+cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet: java.lang.Object[] elements
+cn.hishi.android.scrm.IXposedHookZygoteInit$StartupParam: IXposedHookZygoteInit$StartupParam(cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet)
+cn.hishi.android.scrm.IXposedHookInitPackageResources$Wrapper: IXposedHookInitPackageResources$Wrapper(cn.hishi.android.scrm.IXposedHookInitPackageResources,java.lang.String)
+cn.hishi.android.scrm.XSharedPreferences: void reload()
+android.content.res.XResources$XTypedArray: java.lang.String getString(int)
+android.content.res.XResources: void setSystemWideReplacement(int,java.lang.Object)
+cn.hishi.android.scrm.PendingHooks: void recordPendingMethod(java.lang.reflect.Method,cn.hishi.android.scrm.XposedBridge$AdditionalHookInfo)
+android.content.res.XModuleResources: XModuleResources(android.content.res.AssetManager,android.util.DisplayMetrics,android.content.res.Configuration)
+cn.hishi.android.scrm.callbacks.XC_LayoutInflated$LayoutInflatedParam: android.content.res.XResources$ResourceNames resNames
+cn.hishi.android.scrm.XposedHelpers: void setCharField(java.lang.Object,java.lang.String,char)
+cn.hishi.android.scrm.XposedInit: XposedInit()
+cn.hishi.android.scrm.XposedHelpers: java.lang.Object removeAdditionalInstanceField(java.lang.Object,java.lang.String)
+cn.hishi.android.scrm.XposedHelpers: void setStaticBooleanField(java.lang.Class,java.lang.String,boolean)
+cn.hishi.android.scrm.DexCreator: void writeUleb128(java.io.OutputStream,int)
+cn.hishi.android.scrm.XSharedPreferences$1: void run()
+cn.hishi.android.scrm.callbacks.XC_InitPackageResources
+cn.hishi.android.scrm.XposedBridge: java.lang.ClassLoader dummyClassLoader
+cn.hishi.android.scrm.SELinuxHelper: java.lang.String getContext()
+android.content.res.XResources$1: java.lang.Object initialValue()
+cn.hishi.android.scrm.XposedInit: java.lang.String TAG
+cn.hishi.android.scrm.XSharedPreferences: void unregisterOnSharedPreferenceChangeListener(android.content.SharedPreferences$OnSharedPreferenceChangeListener)
+android.content.res.XResources: android.util.SparseArray sReplacements
+cn.hishi.android.scrm.XposedHelpers: java.lang.reflect.Constructor findConstructorBestMatch(java.lang.Class,java.lang.Class[])
+cn.hishi.android.scrm.services.DirectAccessService: cn.hishi.android.scrm.services.FileResult readFile(java.lang.String,long,long)
+cn.hishi.android.scrm.XposedHelpers: java.util.WeakHashMap additionalFields
+cn.hishi.android.scrm.MethodHooker: java.lang.Object invokeOriginalMethod(java.lang.Object,java.lang.Object[])
+cn.hishi.android.scrm.services.ZygoteService
+cn.hishi.android.scrm.services.BinderService: cn.hishi.android.scrm.services.BinderService[] sServices
+cn.hishi.android.scrm.XSharedPreferences: java.lang.Object sContent
+android.content.res.XResources: java.lang.CharSequence getText(int)
+android.content.res.XModuleResources
+android.content.res.XResForwarder: int id
+cn.hishi.android.scrm.XposedHelpers: java.lang.reflect.Method findMethodBestMatch(java.lang.Class,java.lang.String,java.lang.Class[])
+cn.hishi.android.scrm.XposedHelpers: double getStaticDoubleField(java.lang.Class,java.lang.String)
+cn.hishi.android.scrm.services.BinderService: java.lang.String INTERFACE_TOKEN
+cn.hishi.android.scrm.XposedInit$6
+cn.hishi.android.scrm.XposedHelpers: java.lang.Object newInstance(java.lang.Class,java.lang.Class[],java.lang.Object[])
+cn.hishi.android.scrm.XC_MethodHook$MethodHookParam: java.lang.Throwable throwable
+cn.hishi.android.scrm.XposedHelpers: java.lang.Object setAdditionalStaticField(java.lang.Object,java.lang.String,java.lang.Object)
+cn.hishi.android.scrm.annotation.Level: cn.hishi.android.scrm.annotation.Level HIGH
+cn.hishi.android.scrm.XposedBridge: cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet sInitZygoteCallbacks
+cn.hishi.android.scrm.XposedHelpers: java.lang.Object callMethod(java.lang.Object,java.lang.String,java.lang.Object[])
+android.content.res.XResources: android.content.res.XmlResourceParser getLayout(int)
+cn.hishi.android.scrm.XposedHelpers: java.lang.Class findClassIfExists(java.lang.String,java.lang.ClassLoader)
+cn.hishi.android.scrm.XSharedPreferences: java.util.Set getStringSet(java.lang.String,java.util.Set)
+android.content.res.XResources: void rewriteXmlReferencesNative(long,android.content.res.XResources,android.content.res.Resources)
+cn.hishi.android.scrm.IXposedHookInitPackageResources
+cn.hishi.android.scrm.services.FileResult: byte[] content
+cn.hishi.android.scrm.XposedHelpers: short getShortField(java.lang.Object,java.lang.String)
+cn.hishi.android.scrm.XposedHelpers: float getFloatField(java.lang.Object,java.lang.String)
+cn.hishi.android.scrm.PendingHooks$1: java.lang.Object apply(java.lang.Object)
+cn.hishi.android.scrm.XposedHelpers: java.util.HashMap methodCache
+cn.hishi.android.scrm.XC_MethodReplacement$1: XC_MethodReplacement$1(int)
+cn.hishi.android.scrm.callbacks.IXUnhook
+cn.hishi.android.scrm.IXposedHookLoadPackage$Wrapper
+cn.hishi.android.scrm.services.BinderService: int ACCESS_FILE_TRANSACTION
+cn.hishi.android.scrm.XposedInit: java.util.HashSet loadedPackagesInProcess
+cn.hishi.android.scrm.XposedInit: java.lang.String[] XRESOURCES_CONFLICTING_PACKAGES
+cn.hishi.android.scrm.XposedHelpers: void closeSilently(java.util.zip.ZipFile)
+cn.hishi.android.scrm.services.FileResult: FileResult(java.io.InputStream,long,long)
+cn.hishi.android.scrm.IXposedHookLoadPackage$Wrapper: void handleLoadPackage(cn.hishi.android.scrm.callbacks.XC_LoadPackage$LoadPackageParam)
+cn.hishi.android.scrm.XposedBridge: java.lang.Object invokeOriginalMethodNative(java.lang.reflect.Member,long,java.lang.Class[],java.lang.Class,java.lang.Object,java.lang.Object[])
+cn.hishi.android.scrm.annotation.ApiSensitive: cn.hishi.android.scrm.annotation.Level value()
+cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook: int getId()
+cn.hishi.android.scrm.XposedBridge
+cn.hishi.android.scrm.XC_MethodReplacement$2: java.lang.Object val$result
+cn.hishi.android.scrm.IXposedHookZygoteInit$Wrapper: cn.hishi.android.scrm.IXposedHookZygoteInit$StartupParam startupParam
+cn.hishi.android.scrm.PendingHooks: java.util.concurrent.ConcurrentHashMap sPendingHooks
+cn.hishi.android.scrm.callbacks.XC_LayoutInflated$LayoutInflatedParam: android.content.res.XResources res
+cn.hishi.android.scrm.XposedHelpers: char getStaticCharField(java.lang.Class,java.lang.String)
+cn.hishi.android.scrm.services.FileResult: FileResult(long,long)
+cn.hishi.android.scrm.services.BaseService: cn.hishi.android.scrm.services.FileResult readFile(java.lang.String,long,long)
+cn.hishi.android.scrm.callbacks.XCallback$Param: java.lang.Object[] callbacks
+cn.hishi.android.scrm.XposedHelpers: int getIntField(java.lang.Object,java.lang.String)
+cn.hishi.android.scrm.callbacks.XC_LoadPackage: XC_LoadPackage(int)
+cn.hishi.android.scrm.XposedHelpers: java.lang.Object newInstance(java.lang.Class,java.lang.Object[])
+android.app.AndroidAppHelper: void addActiveResource(java.lang.String,float,boolean,android.content.res.Resources)
+cn.hishi.android.scrm.services.BaseService: byte[] readFile(java.lang.String)
+cn.hishi.android.scrm.XposedBridge: int RUNTIME_ART
+cn.hishi.android.scrm.callbacks.XC_InitPackageResources: void call(cn.hishi.android.scrm.callbacks.XCallback$Param)
+cn.hishi.android.scrm.IXposedHookCmdInit$StartupParam: IXposedHookCmdInit$StartupParam()
+cn.hishi.android.scrm.XSharedPreferences: boolean hasFileChanged()
+cn.hishi.android.scrm.callbacks.XCallback$Param$SerializeWrapper: java.lang.Object access$000(cn.hishi.android.scrm.callbacks.XCallback$Param$SerializeWrapper)
+cn.hishi.android.scrm.callbacks.XC_LayoutInflated$LayoutInflatedParam: android.view.View view
+cn.hishi.android.scrm.XC_MethodHook: void beforeHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam)
+android.content.res.XResources$XTypedArray: int getDimensionPixelSize(int,int)
+cn.hishi.android.scrm.services.BinderService: cn.hishi.android.scrm.services.FileResult readFile(java.lang.String,int,int,long,long)
+cn.hishi.android.scrm.XSharedPreferences: void loadFromDiskLocked()
+cn.hishi.android.scrm.XposedHelpers: int getFirstParameterIndexByType(java.lang.reflect.Member,java.lang.Class)
+cn.hishi.android.scrm.XposedHelpers: java.util.Set getOverriddenMethods(java.lang.Class)
+android.content.res.XResources: void setPackageNameForResDir(java.lang.String,java.lang.String)
+android.content.res.XResources$ResourceNames: XResources$ResourceNames(int,java.lang.String,java.lang.String,java.lang.String)
+android.content.res.XResources: int[] getIntArray(int)
+cn.hishi.android.scrm.XSharedPreferences: java.util.HashMap access$200(cn.hishi.android.scrm.XSharedPreferences)
+cn.hishi.android.scrm.XposedBridge$AdditionalHookInfo: cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet callbacks
+cn.hishi.android.scrm.XposedBridge: int getXposedVersion()
+cn.hishi.android.scrm.XposedBridge: void clearAllCallbacks()
+cn.hishi.android.scrm.callbacks.XC_InitZygote
+cn.hishi.android.scrm.XposedInit: void initForZygote(boolean)
+cn.hishi.android.scrm.XposedHelpers: java.lang.reflect.Constructor findConstructorExact(java.lang.Class,java.lang.Class[])
+android.content.res.XResources$DimensionReplacement
+cn.hishi.android.scrm.services.BinderService: int STAT_FILE_TRANSACTION
+cn.hishi.android.scrm.IXposedHookCmdInit$StartupParam: java.lang.String modulePath
+cn.hishi.android.scrm.XposedHelpers: byte getStaticByteField(java.lang.Class,java.lang.String)
+cn.hishi.android.scrm.XposedHelpers$1: XposedHelpers$1()
+cn.hishi.android.scrm.services.BinderService: cn.hishi.android.scrm.services.FileResult readFile(java.lang.String,long,long)
+cn.hishi.android.scrm.XposedHelpers$1: java.util.concurrent.atomic.AtomicInteger initialValue()
+cn.hishi.android.scrm.XC_MethodHook$MethodHookParam: java.lang.reflect.Member method
+cn.hishi.android.scrm.XposedInit$1: XposedInit$1()
+android.content.res.XResources: void putResourceNames(java.lang.String,android.content.res.XResources$ResourceNames)
+android.content.res.XResources$XTypedArray: java.lang.CharSequence getText(int)
+cn.hishi.android.scrm.IXposedHookLoadPackage
+android.content.res.XResources: cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook hookLayoutInternal(java.lang.String,int,android.content.res.XResources$ResourceNames,cn.hishi.android.scrm.callbacks.XC_LayoutInflated)
+cn.hishi.android.scrm.services.ZygoteService: cn.hishi.android.scrm.services.FileResult readFile(java.lang.String,int,int,long,long)
+android.content.res.XResources$ResourceNames: java.lang.String pkg
+cn.hishi.android.scrm.annotation.Level: cn.hishi.android.scrm.annotation.Level MIDDLE
+android.content.res.XResources$XTypedArray: int getInt(int,int)
+cn.hishi.android.scrm.XposedHelpers: void setStaticIntField(java.lang.Class,java.lang.String,int)
+cn.hishi.android.scrm.callbacks.XCallback$Param$SerializeWrapper
+android.content.res.XResources: int getDimensionPixelOffset(int)
+cn.hishi.android.scrm.IModuleContext
+cn.hishi.android.scrm.XC_MethodReplacement$1
+cn.hishi.android.scrm.XSharedPreferences: void tryRegisterWatcher()
+cn.hishi.android.scrm.XposedHelpers: cn.hishi.android.scrm.XC_MethodHook$Unhook findAndHookConstructor(java.lang.Class,java.lang.Object[])
+android.app.AndroidAppHelper: java.util.Map getResourcesMap(android.app.ActivityThread)
+android.content.res.XResources$XMLInstanceDetails: XResources$XMLInstanceDetails(android.content.res.XResources,android.content.res.XResources$ResourceNames,java.lang.String,cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet)
+cn.hishi.android.scrm.XC_MethodHook$Unhook: cn.hishi.android.scrm.XC_MethodHook this$0
+cn.hishi.android.scrm.XC_MethodHook$Unhook: cn.hishi.android.scrm.XC_MethodHook getCallback()
+cn.hishi.android.scrm.XposedInit: android.content.res.XResources access$000(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam,java.lang.String)
+cn.hishi.android.scrm.XSharedPreferences$PrefsData: XSharedPreferences$PrefsData(cn.hishi.android.scrm.XSharedPreferences)
+cn.hishi.android.scrm.services.BaseService: void throwCommonIOException(int,java.lang.String,java.lang.String,java.lang.String)
+cn.hishi.android.scrm.XposedHelpers: void setStaticObjectField(java.lang.Class,java.lang.String,java.lang.Object)
+android.content.res.XResources: int getFakeResId(java.lang.String)
+cn.hishi.android.scrm.DexCreator: void writeMapItem(java.io.OutputStream,int,int,int)
+android.content.res.XResources$XTypedArray: int getLayoutDimension(int,int)
+cn.hishi.android.scrm.services.BaseService
+cn.hishi.android.scrm.XposedHelpers$1
+android.content.res.XResources$DimensionReplacement: float getDimension(android.util.DisplayMetrics)
+cn.hishi.android.scrm.DexCreator: java.io.File ensure(java.lang.String,java.lang.Class)
+cn.hishi.android.scrm.XposedBridge: void setObjectClass(java.lang.Object,java.lang.Class)
+cn.hishi.android.scrm.XposedInit: android.content.res.XResources cloneToXResources(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam,java.lang.String)
+cn.hishi.android.scrm.XSharedPreferences: long mLastModified
+cn.hishi.android.scrm.XposedInit: java.lang.String prefsBasePath
+cn.hishi.android.scrm.services.DirectAccessService: DirectAccessService()
+cn.hishi.android.scrm.XSharedPreferences: float getFloat(java.lang.String,float)
+cn.hishi.android.scrm.PendingHooks$1
+cn.hishi.android.scrm.XposedHelpers: java.lang.ThreadLocal getMethodDepthCounter(java.lang.String)
+cn.hishi.android.scrm.callbacks.XC_LayoutInflated$Unhook
+cn.hishi.android.scrm.DexCreator: void updateChecksum(byte[])
+cn.hishi.android.scrm.XposedHelpers$ClassNotFoundError: long serialVersionUID
+android.content.res.XResources$XTypedArray
+cn.hishi.android.scrm.XposedHelpers: java.lang.Object getSurroundingThis(java.lang.Object)
+android.content.res.XResources$XTypedArray: android.content.res.ColorStateList getColorStateList(int)
+android.content.res.XResources: java.util.HashMap sResDirPackageNames
+cn.hishi.android.scrm.XposedBridge: cn.hishi.android.scrm.XposedBridge$CopyOnWriteSortedSet sInitPackageResourcesCallbacks
+android.content.res.XResources$XMLInstanceDetails: android.content.res.XResources$ResourceNames resNames
+cn.hishi.android.scrm.XSharedPreferences: java.lang.String getString(java.lang.String,java.lang.String)
+cn.hishi.android.scrm.XposedHelpers: boolean getBooleanField(java.lang.Object,java.lang.String)
+cn.hishi.android.scrm.callbacks.XCallback: int compareTo(cn.hishi.android.scrm.callbacks.XCallback)
+cn.hishi.android.scrm.XposedBridge: void clearInitPackageResources()
+android.content.res.XResources: java.lang.Object access$400(android.content.res.XResources,int)
+cn.hishi.android.scrm.XposedHelpers: java.lang.reflect.Field findFirstFieldByExactType(java.lang.Class,java.lang.Class)
+cn.hishi.android.scrm.XposedInit: java.util.concurrent.atomic.AtomicBoolean modulesLoaded
+android.content.res.XResources$XMLInstanceDetails: android.content.res.XResources this$0
+android.content.res.XResources: android.graphics.drawable.Drawable getDrawableForDensity(int,int)
+cn.hishi.android.scrm.XposedInit$4: void afterHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam)
+cn.hishi.android.scrm.XposedBridge: void hookInitZygote(cn.hishi.android.scrm.callbacks.XC_InitZygote)
+android.content.res.XResources$2: void afterHookedMethod(cn.hishi.android.scrm.XC_MethodHook$MethodHookParam)
+cn.hishi.android.scrm.XposedHelpers: boolean getStaticBooleanField(java.lang.Class,java.lang.String)
+external.org.apache.commons.lang3.JavaVersion: external.org.apache.commons.lang3.JavaVersion[] values()
+cn.hishi.android.scrm.callbacks.XC_LoadPackage$LoadPackageParam: boolean isFirstApplication
+cn.hishi.android.scrm.XposedInit$2: java.lang.Class val$classResKey

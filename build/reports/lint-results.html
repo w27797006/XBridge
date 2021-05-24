@@ -1,0 +1,1211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Lint Report</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue-indigo.min.css" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+<style>
+section.section--center {
+    max-width: 860px;
+}
+.mdl-card__supporting-text + .mdl-card__actions {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+main > .mdl-layout__tab-panel {
+  padding: 8px;
+  padding-top: 48px;
+}
+
+.mdl-card__actions {
+    margin: 0;
+    padding: 4px 40px;
+    color: inherit;
+}
+.mdl-card > * {
+    height: auto;
+}
+.mdl-card__actions a {
+    color: #00BCD4;
+    margin: 0;
+}
+.error-icon {
+    color: #bb7777;
+    vertical-align: bottom;
+}
+.warning-icon {
+    vertical-align: bottom;
+}
+.mdl-layout__content section:not(:last-of-type) {
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.mdl-card .mdl-card__supporting-text {
+  margin: 40px;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0;
+  color: inherit;
+  width: calc(100% - 80px);
+}
+div.mdl-layout__drawer-button .material-icons {
+    line-height: 48px;
+}
+.mdl-card .mdl-card__supporting-text {
+    margin-top: 0px;
+}
+.chips {
+    float: right;
+    vertical-align: middle;
+}
+pre.errorlines {
+    background-color: white;
+    font-family: monospace;
+    border: 1px solid #e0e0e0;
+    line-height: 0.9rem;
+    font-size: 0.9rem;    padding: 1px 0px 1px; 1px;
+    overflow: scroll;
+}
+.prefix {
+    color: #660e7a;
+    font-weight: bold;
+}
+.attribute {
+    color: #0000ff;
+    font-weight: bold;
+}
+.value {
+    color: #008000;
+    font-weight: bold;
+}
+.tag {
+    color: #000080;
+    font-weight: bold;
+}
+.comment {
+    color: #808080;
+    font-style: italic;
+}
+.javadoc {
+    color: #808080;
+    font-style: italic;
+}
+.annotation {
+    color: #808000;
+}
+.string {
+    color: #008000;
+    font-weight: bold;
+}
+.number {
+    color: #0000ff;
+}
+.keyword {
+    color: #000080;
+    font-weight: bold;
+}
+.caretline {
+    background-color: #fffae3;
+}
+.lineno {
+    color: #999999;
+    background-color: #f0f0f0;
+}
+.error {
+    display: inline-block;
+    position:relative;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AwCFR4T/3uLMgAAADxJREFUCNdNyLERQEAABMCjL4lQwIzcjErpguAL+C9AvgKJDbeD/PRpLdm35Hm+MU+cB+tCKaJW4L4YBy+CAiLJrFs9mgAAAABJRU5ErkJggg==) bottom repeat-x;
+}
+.warning {
+    text-decoration: none;
+    background-color: #f6ebbc;
+}
+.overview {
+    padding: 10pt;
+    width: 100%;
+    overflow: auto;
+    border-collapse:collapse;
+}
+.overview tr {
+    border-bottom: solid 1px #eeeeee;
+}
+.categoryColumn a {
+     text-decoration: none;
+     color: inherit;
+}
+.countColumn {
+    text-align: right;
+    padding-right: 20px;
+    width: 50px;
+}
+.issueColumn {
+   padding-left: 16px;
+}
+.categoryColumn {
+   position: relative;
+   left: -50px;
+   padding-top: 20px;
+   padding-bottom: 5px;
+}
+</style>
+<script language="javascript" type="text/javascript"> 
+<!--
+function reveal(id) {
+if (document.getElementById) {
+document.getElementById(id).style.display = 'block';
+document.getElementById(id+'Link').style.display = 'none';
+}
+}
+function hideid(id) {
+if (document.getElementById) {
+document.getElementById(id).style.display = 'none';
+}
+}
+//--> 
+</script>
+</head>
+<body class="mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout-title">Lint Report: 33 warnings</span>
+      <div class="mdl-layout-spacer"></div>
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+Check performed at Fri May 21 15:21:25 CST 2021      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Issue Types</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="#overview"><i class="material-icons">dashboard</i>Overview</a>
+      <a class="mdl-navigation__link" href="#DefaultLocale"><i class="material-icons warning-icon">warning</i>Implied default locale in case conversion (6)</a>
+      <a class="mdl-navigation__link" href="#PrivateApi"><i class="material-icons warning-icon">warning</i>Using Private APIs (6)</a>
+      <a class="mdl-navigation__link" href="#ObsoleteSdkInt"><i class="material-icons warning-icon">warning</i>Obsolete SDK_INT Version Check (21)</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="mdl-layout__tab-panel is-active">
+<a name="overview"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="OverviewCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Overview</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<table class="overview">
+<tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Correctness">Correctness</a>
+</td></tr>
+<tr>
+<td class="countColumn">6</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#DefaultLocale">DefaultLocale</a>: Implied default locale in case conversion</td></tr>
+<tr>
+<td class="countColumn">6</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#PrivateApi">PrivateApi</a>: Using Private APIs</td></tr>
+<tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Performance">Performance</a>
+</td></tr>
+<tr>
+<td class="countColumn">21</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#ObsoleteSdkInt">ObsoleteSdkInt</a>: Obsolete SDK_INT Version Check</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#MissingIssues">Disabled Checks (37)</a>
+</td></tr></table>
+<br/>              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="OverviewCardLink" onclick="hideid('OverviewCard');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="Correctness"></a>
+<a name="DefaultLocale"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="DefaultLocaleCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Implied default locale in case conversion</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/java/pxb/android/arsc/ArscDumper.java">../../src/main/java/pxb/android/arsc/ArscDumper.java</a>:36</span>: <span class="message">Implicitly using the default locale is a common source of bugs: Use <code>String.format(Locale, ...)</code> instead</span><br /><pre class="errorlines">
+<span class="lineno"> 33 </span>  <span class="keyword">for</span> (<span class="keyword">int</span> x = <span class="number">0</span>; x &lt; pkgs.size(); x++) {
+<span class="lineno"> 34 </span>      Pkg pkg = pkgs.get(x);
+<span class="lineno"> 35 </span>
+<span class="caretline"><span class="lineno"> 36 </span>      System.out.println(<span class="warning">String.format(<span class="string">"  Package %d id=%d name=%s typeCount=%d"</span>, x, pkg.id, pkg.name,</span></span>
+<span class="lineno"> 37 </span>              pkg.types.size()));
+<span class="lineno"> 38 </span>      <span class="keyword">for</span> (Type type : pkg.types.values()) {
+<span class="lineno"> 39 </span>          System.out.println(String.format(<span class="string">"    type %d %s"</span>, type.id - <span class="number">1</span>, type.name));
+</pre>
+
+<span class="location"><a href="../../src/main/java/pxb/android/arsc/ArscDumper.java">../../src/main/java/pxb/android/arsc/ArscDumper.java</a>:39</span>: <span class="message">Implicitly using the default locale is a common source of bugs: Use <code>String.format(Locale, ...)</code> instead</span><br /><pre class="errorlines">
+<span class="lineno"> 36 </span>  System.out.println(String.format(<span class="string">"  Package %d id=%d name=%s typeCount=%d"</span>, x, pkg.id, pkg.name,
+<span class="lineno"> 37 </span>          pkg.types.size()));
+<span class="lineno"> 38 </span>  <span class="keyword">for</span> (Type type : pkg.types.values()) {
+<span class="caretline"><span class="lineno"> 39 </span>      System.out.println(<span class="warning">String.format(<span class="string">"    type %d %s"</span>, type.id - <span class="number">1</span>, type.name)</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 40 </span>
+<span class="lineno"> 41 </span>      <span class="keyword">int</span> resPrefix = pkg.id &lt;&lt; <span class="number">24</span> | type.id &lt;&lt; <span class="number">16</span>;
+<span class="lineno"> 42 </span>      <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; type.specs.length; i++) {
+</pre>
+
+<span class="location"><a href="../../src/main/java/pxb/android/axml/AxmlWriter.java">../../src/main/java/pxb/android/axml/AxmlWriter.java</a>:330</span>: <span class="message">Implicitly using the default locale is a common source of bugs: Use <code>String.format(Locale, ...)</code> instead</span><br /><pre class="errorlines">
+<span class="lineno"> 327 </span>                 e.setValue(ns);
+<span class="lineno"> 328 </span>             }
+<span class="lineno"> 329 </span>             <span class="keyword">if</span> (ns.prefix == <span class="keyword">null</span>) {
+<span class="caretline"><span class="lineno"> 330 </span>                 ns.prefix = <span class="keyword">new</span> StringItem(<span class="warning">String.format(<span class="string">"axml_auto_%02d"</span>, a++)</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 331 </span>             }
+<span class="lineno"> 332 </span>             ns.prefix = update(ns.prefix);
+<span class="lineno"> 333 </span>             ns.uri = update(ns.uri);
+</pre>
+
+<span class="location"><a href="../../src/main/java/pxb/android/StringItem.java">../../src/main/java/pxb/android/StringItem.java</a>:58</span>: <span class="message">Implicitly using the default locale is a common source of bugs: Use <code>String.format(Locale, ...)</code> instead</span><br /><pre class="errorlines">
+<span class="lineno"> 55 </span>    }
+<span class="lineno"> 56 </span>
+<span class="lineno"> 57 </span>    <span class="keyword">public</span> String toString() {
+<span class="caretline"><span class="lineno"> 58 </span>        <span class="keyword">return</span> <span class="warning">String.format(<span class="string">"S%04d %s"</span>, index, data)</span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 59 </span>    }
+<span class="lineno"> 60 </span>
+<span class="lineno"> 61 </span>}
+</pre>
+
+<span class="location"><a href="../../src/main/apacheCommonsLang/external/org/apache/commons/lang3/StringUtils.java">../../src/main/apacheCommonsLang/external/org/apache/commons/lang3/StringUtils.java</a>:4935</span>: <span class="message">Implicitly using the default locale is a common source of bugs: Use <code>toUpperCase(Locale)</code> instead. For strings meant to be internal use <code>Locale.ROOT</code>, otherwise <code>Locale.getDefault()</code>.</span><br /><pre class="errorlines">
+<span class="lineno"> 4932 </span>        <span class="keyword">if</span> (str == <span class="keyword">null</span>) {
+<span class="lineno"> 4933 </span>            <span class="keyword">return</span> <span class="keyword">null</span>;
+<span class="lineno"> 4934 </span>        }
+<span class="caretline"><span class="lineno"> 4935 </span>        <span class="keyword">return</span> str.<span class="warning">toUpperCase</span>();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 4936 </span>    }
+<span class="lineno"> 4937 </span>
+<span class="lineno"> 4938 </span>    <span class="javadoc">/**
+</span></pre>
+
+<span class="location"><a href="../../src/main/apacheCommonsLang/external/org/apache/commons/lang3/StringUtils.java">../../src/main/apacheCommonsLang/external/org/apache/commons/lang3/StringUtils.java</a>:4984</span>: <span class="message">Implicitly using the default locale is a common source of bugs: Use <code>toLowerCase(Locale)</code> instead. For strings meant to be internal use <code>Locale.ROOT</code>, otherwise <code>Locale.getDefault()</code>.</span><br /><pre class="errorlines">
+<span class="lineno"> 4981 </span>        <span class="keyword">if</span> (str == <span class="keyword">null</span>) {
+<span class="lineno"> 4982 </span>            <span class="keyword">return</span> <span class="keyword">null</span>;
+<span class="lineno"> 4983 </span>        }
+<span class="caretline"><span class="lineno"> 4984 </span>        <span class="keyword">return</span> str.<span class="warning">toLowerCase</span>();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 4985 </span>    }
+<span class="lineno"> 4986 </span>
+<span class="lineno"> 4987 </span>    <span class="javadoc">/**
+</span></pre>
+
+</div>
+<div class="metadata"><div class="explanation" id="explanationDefaultLocale" style="display: none;">
+Calling <code>String#toLowerCase()</code> or <code>#toUpperCase()</code> <b>without specifying an explicit locale</b> is a common source of bugs. The reason for that is that those methods will use the current locale on the user's device, and even though the code appears to work correctly when you are developing the app, it will fail in some locales. For example, in the Turkish locale, the uppercase replacement for <code>i</code> is <b>not</b> <code>I</code>.<br/>
+<br/>
+If you want the methods to just perform ASCII replacement, for example to convert an enum name, call <code>String#toUpperCase(Locale.US)</code> instead. If you really want to use the current locale, call <code>String#toUpperCase(Locale.getDefault())</code> instead.<br/><div class="moreinfo">More info: <a href="https://developer.android.com/reference/java/util/Locale.html#default_locale">https://developer.android.com/reference/java/util/Locale.html#default_locale</a>
+</div>To suppress this error, use the issue id "DefaultLocale" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">DefaultLocale</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Correctness</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 6/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationDefaultLocaleLink" onclick="reveal('explanationDefaultLocale');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="DefaultLocaleCardLink" onclick="hideid('DefaultLocaleCard');">
+Dismiss</button>            </div>
+            </div>
+          </section><a name="PrivateApi"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="PrivateApiCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Using Private APIs</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/java/cn/hishi/android/scrm/XposedInit.java">../../src/main/java/cn/hishi/android/scrm/XposedInit.java</a>:134</span>: <span class="message">Accessing internal APIs via reflection is not supported and may not work on all devices or in the future</span><br /><pre class="errorlines">
+<span class="lineno"> 131 </span>
+<span class="lineno"> 132 </span>        <span class="keyword">if</span> (Build.VERSION.SDK_INT &lt;= <span class="number">18</span>) {
+<span class="lineno"> 133 </span>            classGTLR = ActivityThread.<span class="keyword">class</span>;
+<span class="caretline"><span class="lineno"> 134 </span>            classResKey = <span class="warning">Class.forName(<span class="string">"android.app.ActivityThread$ResourcesKey"</span>)</span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 135 </span>            createResourceMethod = <span class="string">"getOrCreateResources"</span>;
+<span class="lineno"> 136 </span>        } <span class="keyword">else</span> <span class="keyword">if</span> (Build.VERSION.SDK_INT &lt; <span class="number">30</span>){
+<span class="lineno"> 137 </span>            classGTLR = Class.forName(<span class="string">"android.app.ResourcesManager"</span>);
+</pre>
+
+<span class="location"><a href="../../src/main/java/cn/hishi/android/scrm/XposedInit.java">../../src/main/java/cn/hishi/android/scrm/XposedInit.java</a>:137</span>: <span class="message">Accessing internal APIs via reflection is not supported and may not work on all devices or in the future</span><br /><pre class="errorlines">
+<span class="lineno"> 134 </span>            classResKey = Class.forName(<span class="string">"android.app.ActivityThread$ResourcesKey"</span>);
+<span class="lineno"> 135 </span>            createResourceMethod = <span class="string">"getOrCreateResources"</span>;
+<span class="lineno"> 136 </span>        } <span class="keyword">else</span> <span class="keyword">if</span> (Build.VERSION.SDK_INT &lt; <span class="number">30</span>){
+<span class="caretline"><span class="lineno"> 137 </span>            classGTLR = <span class="warning">Class.forName(<span class="string">"android.app.ResourcesManager"</span>)</span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 138 </span>            classResKey = Class.forName(<span class="string">"android.content.res.ResourcesKey"</span>);
+<span class="lineno"> 139 </span>            createResourceMethod = <span class="string">"getOrCreateResources"</span>;
+<span class="lineno"> 140 </span>        } <span class="keyword">else</span> {
+</pre>
+
+<span class="location"><a href="../../src/main/java/cn/hishi/android/scrm/XposedInit.java">../../src/main/java/cn/hishi/android/scrm/XposedInit.java</a>:138</span>: <span class="message">Accessing internal APIs via reflection is not supported and may not work on all devices or in the future</span><br /><pre class="errorlines">
+<span class="lineno"> 135 </span>            createResourceMethod = <span class="string">"getOrCreateResources"</span>;
+<span class="lineno"> 136 </span>        } <span class="keyword">else</span> <span class="keyword">if</span> (Build.VERSION.SDK_INT &lt; <span class="number">30</span>){
+<span class="lineno"> 137 </span>            classGTLR = Class.forName(<span class="string">"android.app.ResourcesManager"</span>);
+<span class="caretline"><span class="lineno"> 138 </span>            classResKey = <span class="warning">Class.forName(<span class="string">"android.content.res.ResourcesKey"</span>)</span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 139 </span>            createResourceMethod = <span class="string">"getOrCreateResources"</span>;
+<span class="lineno"> 140 </span>        } <span class="keyword">else</span> {
+<span class="lineno"> 141 </span>            classGTLR = Class.forName(<span class="string">"android.app.ResourcesManager"</span>);
+</pre>
+
+<span class="location"><a href="../../src/main/java/cn/hishi/android/scrm/XposedInit.java">../../src/main/java/cn/hishi/android/scrm/XposedInit.java</a>:141</span>: <span class="message">Accessing internal APIs via reflection is not supported and may not work on all devices or in the future</span><br /><pre class="errorlines">
+<span class="lineno"> 138 </span>            classResKey = Class.forName(<span class="string">"android.content.res.ResourcesKey"</span>);
+<span class="lineno"> 139 </span>            createResourceMethod = <span class="string">"getOrCreateResources"</span>;
+<span class="lineno"> 140 </span>        } <span class="keyword">else</span> {
+<span class="caretline"><span class="lineno"> 141 </span>            classGTLR = <span class="warning">Class.forName(<span class="string">"android.app.ResourcesManager"</span>)</span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 142 </span>            classResKey = Class.forName(<span class="string">"android.content.res.ResourcesKey"</span>);
+<span class="lineno"> 143 </span>            createResourceMethod = <span class="string">"createResources"</span>;
+<span class="lineno"> 144 </span>        }
+</pre>
+
+<span class="location"><a href="../../src/main/java/cn/hishi/android/scrm/XposedInit.java">../../src/main/java/cn/hishi/android/scrm/XposedInit.java</a>:142</span>: <span class="message">Accessing internal APIs via reflection is not supported and may not work on all devices or in the future</span><br /><pre class="errorlines">
+<span class="lineno"> 139 </span>            createResourceMethod = <span class="string">"getOrCreateResources"</span>;
+<span class="lineno"> 140 </span>        } <span class="keyword">else</span> {
+<span class="lineno"> 141 </span>            classGTLR = Class.forName(<span class="string">"android.app.ResourcesManager"</span>);
+<span class="caretline"><span class="lineno"> 142 </span>            classResKey = <span class="warning">Class.forName(<span class="string">"android.content.res.ResourcesKey"</span>)</span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 143 </span>            createResourceMethod = <span class="string">"createResources"</span>;
+<span class="lineno"> 144 </span>        }
+</pre>
+
+<span class="location"><a href="../../src/main/java/cn/hishi/android/scrm/XposedInit.java">../../src/main/java/cn/hishi/android/scrm/XposedInit.java</a>:406</span>: <span class="message">Accessing internal APIs via reflection is not supported and may not work on all devices or in the future</span><br /><pre class="errorlines">
+<span class="lineno"> 403 </span>
+<span class="lineno"> 404 </span>  ClassLoader mcl = <span class="keyword">new</span> PathClassLoader(apk, topClassLoader);
+<span class="lineno"> 405 </span>  <span class="keyword">try</span> {
+<span class="caretline"><span class="lineno"> 406 </span>      <span class="keyword">if</span> (<span class="warning">mcl.loadClass(INSTANT_RUN_CLASS)</span> != <span class="keyword">null</span>) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 407 </span>          Log.e(TAG, <span class="string">"  Cannot load module, please disable \"Instant Run\" in Android Studio."</span>);
+<span class="lineno"> 408 </span>          <span class="keyword">return</span> <span class="keyword">false</span>;
+<span class="lineno"> 409 </span>      }
+</pre>
+
+</div>
+<div class="metadata"><div class="explanation" id="explanationPrivateApi" style="display: none;">
+Using reflection to access hidden/private Android APIs is not safe; it will often not work on devices from other vendors, and it may suddenly stop working (if the API is removed) or crash spectacularly (if the API behavior changes, since there are no guarantees for compatibility).<br/><div class="moreinfo">More info: <a href="https://developer.android.com/preview/restrictions-non-sdk-interfaces">https://developer.android.com/preview/restrictions-non-sdk-interfaces</a>
+</div>To suppress this error, use the issue id "PrivateApi" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">PrivateApi</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Correctness</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 6/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationPrivateApiLink" onclick="reveal('explanationPrivateApi');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="PrivateApiCardLink" onclick="hideid('PrivateApiCard');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="Performance"></a>
+<a name="ObsoleteSdkInt"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="ObsoleteSdkIntCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Obsolete SDK_INT Version Check</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/java/android/app/AndroidAppHelper.java">../../src/main/java/android/app/AndroidAppHelper.java</a>:39</span>: <span class="message">Unnecessary; SDK_INT is never &lt; 26</span><br /><pre class="errorlines">
+<span class="lineno">  36 </span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">boolean</span> HAS_THEME_CONFIG_PARAMETER;
+<span class="lineno">  37 </span>
+<span class="lineno">  38 </span>    <span class="keyword">static</span> {
+<span class="caretline"><span class="lineno">  39 </span>        CLASS_RESOURCES_KEY = (<span class="warning">Build.VERSION.SDK_INT &lt; <span class="number">19</span></span>) ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  40 </span>              findClass(<span class="string">"android.app.ActivityThread$ResourcesKey"</span>, <span class="keyword">null</span>)
+<span class="lineno">  41 </span>            : findClass(<span class="string">"android.content.res.ResourcesKey"</span>, <span class="keyword">null</span>);
+</pre>
+
+<span class="location"><a href="../../src/main/java/android/app/AndroidAppHelper.java">../../src/main/java/android/app/AndroidAppHelper.java</a>:44</span>: <span class="message">Unnecessary; SDK_INT is always >= 26</span><br /><pre class="errorlines">
+<span class="lineno">  41 </span>            : findClass(<span class="string">"android.content.res.ResourcesKey"</span>, <span class="keyword">null</span>);
+<span class="lineno">  42 </span>
+<span class="lineno">  43 </span>        HAS_IS_THEMEABLE = findFieldIfExists(CLASS_RESOURCES_KEY, <span class="string">"mIsThemeable"</span>) != <span class="keyword">null</span>;
+<span class="caretline"><span class="lineno">  44 </span>        HAS_THEME_CONFIG_PARAMETER = HAS_IS_THEMEABLE &amp;&amp; <span class="warning">Build.VERSION.SDK_INT >= <span class="number">21</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  45 </span>            &amp;&amp; findMethodExactIfExists(<span class="string">"android.app.ResourcesManager"</span>, <span class="keyword">null</span>, <span class="string">"getThemeConfig"</span>) != <span class="keyword">null</span>;
+<span class="lineno">  46 </span>    }
+</pre>
+
+<span class="location"><a href="../../src/main/java/android/app/AndroidAppHelper.java">../../src/main/java/android/app/AndroidAppHelper.java</a>:50</span>: <span class="message">Unnecessary; SDK_INT is always >= 26</span><br /><pre class="errorlines">
+<span class="lineno">  47 </span>
+<span class="lineno">  48 </span>    <span class="annotation">@SuppressWarnings</span>({ <span class="string">"unchecked"</span>, <span class="string">"rawtypes"</span> })
+<span class="lineno">  49 </span>    <span class="keyword">private</span> <span class="keyword">static</span> Map&lt;Object, WeakReference> getResourcesMap(ActivityThread activityThread) {
+<span class="caretline"><span class="lineno">  50 </span>        <span class="keyword">if</span> (<span class="warning">Build.VERSION.SDK_INT >= <span class="number">24</span></span>) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  51 </span>            Object resourcesManager = getObjectField(activityThread, <span class="string">"mResourcesManager"</span>);
+<span class="lineno">  52 </span>            <span class="keyword">return</span> (Map) getObjectField(resourcesManager, <span class="string">"mResourceImpls"</span>);
+<span class="lineno">  53 </span>        } <span class="keyword">else</span> <span class="keyword">if</span> (Build.VERSION.SDK_INT >= <span class="number">19</span>) {
+</pre>
+
+<span class="location"><a href="../../src/main/java/android/app/AndroidAppHelper.java">../../src/main/java/android/app/AndroidAppHelper.java</a>:53</span>: <span class="message">Unnecessary; SDK_INT is always >= 26</span><br /><pre class="errorlines">
+<span class="lineno">  50 </span>        <span class="keyword">if</span> (Build.VERSION.SDK_INT >= <span class="number">24</span>) {
+<span class="lineno">  51 </span>            Object resourcesManager = getObjectField(activityThread, <span class="string">"mResourcesManager"</span>);
+<span class="lineno">  52 </span>            <span class="keyword">return</span> (Map) getObjectField(resourcesManager, <span class="string">"mResourceImpls"</span>);
+<span class="caretline"><span class="lineno">  53 </span>        } <span class="keyword">else</span> <span class="keyword">if</span> (<span class="warning">Build.VERSION.SDK_INT >= <span class="number">19</span></span>) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  54 </span>            Object resourcesManager = getObjectField(activityThread, <span class="string">"mResourcesManager"</span>);
+<span class="lineno">  55 </span>            <span class="keyword">return</span> (Map) getObjectField(resourcesManager, <span class="string">"mActiveResources"</span>);
+<span class="lineno">  56 </span>        } <span class="keyword">else</span> {
+</pre>
+
+<span class="location"><a href="../../src/main/java/android/app/AndroidAppHelper.java">../../src/main/java/android/app/AndroidAppHelper.java</a>:127</span>: <span class="message">Unnecessary; SDK_INT is always >= 26</span><br /><pre class="errorlines">
+<span class="lineno"> 124 </span>        }
+<span class="lineno"> 125 </span>
+<span class="lineno"> 126 </span>        Object resourcesKey;
+<span class="caretline"><span class="lineno"> 127 </span>        <span class="keyword">if</span> (<span class="warning">Build.VERSION.SDK_INT >= <span class="number">24</span></span>) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 128 </span>            CompatibilityInfo compatInfo = (CompatibilityInfo) newInstance(CompatibilityInfo.<span class="keyword">class</span>);
+<span class="lineno"> 129 </span>            setFloatField(compatInfo, <span class="string">"applicationScale"</span>, resources.hashCode());
+<span class="lineno"> 130 </span>            resourcesKey = createResourcesKey(resDir, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, Display.DEFAULT_DISPLAY, <span class="keyword">null</span>, compatInfo);
+</pre>
+
+<button class="mdl-button mdl-js-button mdl-button--primary" id="ObsoleteSdkIntDivLink" onclick="reveal('ObsoleteSdkIntDiv');" />+ 16 More Occurrences...</button>
+<div id="ObsoleteSdkIntDiv" style="display: none">
+<span class="location"><a href="../../src/main/java/android/app/AndroidAppHelper.java">../../src/main/java/android/app/AndroidAppHelper.java</a>:131</span>: <span class="message">Unnecessary; SDK_INT is never &lt; 26</span><br /><pre class="errorlines">
+<span class="lineno"> 128 </span>            CompatibilityInfo compatInfo = (CompatibilityInfo) newInstance(CompatibilityInfo.<span class="keyword">class</span>);
+<span class="lineno"> 129 </span>            setFloatField(compatInfo, <span class="string">"applicationScale"</span>, resources.hashCode());
+<span class="lineno"> 130 </span>            resourcesKey = createResourcesKey(resDir, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, Display.DEFAULT_DISPLAY, <span class="keyword">null</span>, compatInfo);
+<span class="caretline"><span class="lineno"> 131 </span>        } <span class="keyword">else</span> <span class="keyword">if</span> (<span class="warning">Build.VERSION.SDK_INT == <span class="number">23</span></span>) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 132 </span>            resourcesKey = createResourcesKey(resDir, Display.DEFAULT_DISPLAY, <span class="keyword">null</span>, resources.hashCode());
+<span class="lineno"> 133 </span>        } <span class="keyword">else</span> <span class="keyword">if</span> (Build.VERSION.SDK_INT >= <span class="number">19</span>) {
+<span class="lineno"> 134 </span>            resourcesKey = createResourcesKey(resDir, Display.DEFAULT_DISPLAY, <span class="keyword">null</span>, resources.hashCode(), <span class="keyword">null</span>);
+</pre>
+
+<span class="location"><a href="../../src/main/java/android/app/AndroidAppHelper.java">../../src/main/java/android/app/AndroidAppHelper.java</a>:133</span>: <span class="message">Unnecessary; SDK_INT is always >= 26</span><br /><pre class="errorlines">
+<span class="lineno"> 130 </span>            resourcesKey = createResourcesKey(resDir, <span class="keyword">null</span>, <span class="keyword">null</span>, <span class="keyword">null</span>, Display.DEFAULT_DISPLAY, <span class="keyword">null</span>, compatInfo);
+<span class="lineno"> 131 </span>        } <span class="keyword">else</span> <span class="keyword">if</span> (Build.VERSION.SDK_INT == <span class="number">23</span>) {
+<span class="lineno"> 132 </span>            resourcesKey = createResourcesKey(resDir, Display.DEFAULT_DISPLAY, <span class="keyword">null</span>, resources.hashCode());
+<span class="caretline"><span class="lineno"> 133 </span>        } <span class="keyword">else</span> <span class="keyword">if</span> (<span class="warning">Build.VERSION.SDK_INT >= <span class="number">19</span></span>) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 134 </span>            resourcesKey = createResourcesKey(resDir, Display.DEFAULT_DISPLAY, <span class="keyword">null</span>, resources.hashCode(), <span class="keyword">null</span>);
+<span class="lineno"> 135 </span>        } <span class="keyword">else</span> <span class="keyword">if</span> (Build.VERSION.SDK_INT >= <span class="number">17</span>) {
+<span class="lineno"> 136 </span>            resourcesKey = createResourcesKey(resDir, Display.DEFAULT_DISPLAY, <span class="keyword">null</span>, resources.hashCode());
+</pre>
+
+<span class="location"><a href="../../src/main/java/android/app/AndroidAppHelper.java">../../src/main/java/android/app/AndroidAppHelper.java</a>:135</span>: <span class="message">Unnecessary; SDK_INT is always >= 26</span><br /><pre class="errorlines">
+<span class="lineno"> 132 </span>            resourcesKey = createResourcesKey(resDir, Display.DEFAULT_DISPLAY, <span class="keyword">null</span>, resources.hashCode());
+<span class="lineno"> 133 </span>        } <span class="keyword">else</span> <span class="keyword">if</span> (Build.VERSION.SDK_INT >= <span class="number">19</span>) {
+<span class="lineno"> 134 </span>            resourcesKey = createResourcesKey(resDir, Display.DEFAULT_DISPLAY, <span class="keyword">null</span>, resources.hashCode(), <span class="keyword">null</span>);
+<span class="caretline"><span class="lineno"> 135 </span>        } <span class="keyword">else</span> <span class="keyword">if</span> (<span class="warning">Build.VERSION.SDK_INT >= <span class="number">17</span></span>) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 136 </span>            resourcesKey = createResourcesKey(resDir, Display.DEFAULT_DISPLAY, <span class="keyword">null</span>, resources.hashCode());
+<span class="lineno"> 137 </span>        } <span class="keyword">else</span> {
+<span class="lineno"> 138 </span>            resourcesKey = createResourcesKey(resDir, resources.hashCode());
+</pre>
+
+<span class="location"><a href="../../src/main/java/android/app/AndroidAppHelper.java">../../src/main/java/android/app/AndroidAppHelper.java</a>:142</span>: <span class="message">Unnecessary; SDK_INT is always >= 26</span><br /><pre class="errorlines">
+<span class="lineno"> 139 </span>        }
+<span class="lineno"> 140 </span>
+<span class="lineno"> 141 </span>        <span class="keyword">if</span> (resourcesKey != <span class="keyword">null</span>) {
+<span class="caretline"><span class="lineno"> 142 </span>            <span class="keyword">if</span> (<span class="warning">Build.VERSION.SDK_INT >= <span class="number">24</span></span>) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 143 </span>                Object resImpl = getObjectField(resources, <span class="string">"mResourcesImpl"</span>);
+<span class="lineno"> 144 </span>                getResourcesMap(thread).put(resourcesKey, <span class="keyword">new</span> WeakReference&lt;>(resImpl));
+<span class="lineno"> 145 </span>            } <span class="keyword">else</span> {
+</pre>
+
+<span class="location"><a href="../../src/main/java/android/content/res/XResources.java">../../src/main/java/android/content/res/XResources.java</a>:167</span>: <span class="message">Unnecessary; SDK_INT is always >= 26</span><br /><pre class="errorlines">
+<span class="lineno">  164 </span>            <span class="keyword">return</span> packageName;
+<span class="lineno">  165 </span>
+<span class="lineno">  166 </span>        PackageParser.PackageLite pkgInfo;
+<span class="caretline"><span class="lineno">  167 </span>        <span class="keyword">if</span> (<span class="warning">Build.VERSION.SDK_INT >= <span class="number">21</span></span>) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  168 </span>            <span class="keyword">try</span> {
+<span class="lineno">  169 </span>                pkgInfo = PackageParser.parsePackageLite(<span class="keyword">new</span> File(resDir), <span class="number">0</span>);
+<span class="lineno">  170 </span>            } <span class="keyword">catch</span> (PackageParserException e) {
+</pre>
+
+<span class="location"><a href="../../src/main/java/android/content/res/XResources.java">../../src/main/java/android/content/res/XResources.java</a>:248</span>: <span class="message">Unnecessary; SDK_INT is never &lt; 26</span><br /><pre class="errorlines">
+<span class="lineno">  245 </span>                XMLInstanceDetails details = (XMLInstanceDetails) param.getObjectExtra(EXTRA_XML_INSTANCE_DETAILS);
+<span class="lineno">  246 </span>                <span class="keyword">if</span> (details != <span class="keyword">null</span>) {
+<span class="lineno">  247 </span>                    LayoutInflatedParam liparam = <span class="keyword">new</span> LayoutInflatedParam(details.callbacks);
+<span class="caretline"><span class="lineno">  248 </span>                    ViewGroup group = (ViewGroup) param.args[(<span class="warning">Build.VERSION.SDK_INT &lt; <span class="number">23</span></span>) ? <span class="number">1</span> : <span class="number">2</span>];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  249 </span>                    liparam.view = group.getChildAt(group.getChildCount() - <span class="number">1</span>);
+<span class="lineno">  250 </span>                    liparam.resNames = details.resNames;
+<span class="lineno">  251 </span>                    liparam.variant = details.variant;
+</pre>
+
+<span class="location"><a href="../../src/main/java/android/content/res/XResources.java">../../src/main/java/android/content/res/XResources.java</a>:257</span>: <span class="message">Unnecessary; SDK_INT is never &lt; 26</span><br /><pre class="errorlines">
+<span class="lineno">  254 </span>                }
+<span class="lineno">  255 </span>            }
+<span class="lineno">  256 </span>        };
+<span class="caretline"><span class="lineno">  257 </span>        <span class="keyword">if</span> (<span class="warning">Build.VERSION.SDK_INT &lt; <span class="number">21</span></span>) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  258 </span>            findAndHookMethod(LayoutInflater.<span class="keyword">class</span>, <span class="string">"parseInclude"</span>, XmlPullParser.<span class="keyword">class</span>, View.<span class="keyword">class</span>,
+<span class="lineno">  259 </span>                    AttributeSet.<span class="keyword">class</span>, parseIncludeHook);
+<span class="lineno">  260 </span>        } <span class="keyword">else</span> <span class="keyword">if</span> (Build.VERSION.SDK_INT &lt; <span class="number">23</span>) {
+</pre>
+
+<span class="location"><a href="../../src/main/java/android/content/res/XResources.java">../../src/main/java/android/content/res/XResources.java</a>:260</span>: <span class="message">Unnecessary; SDK_INT is never &lt; 26</span><br /><pre class="errorlines">
+<span class="lineno">  257 </span>        <span class="keyword">if</span> (Build.VERSION.SDK_INT &lt; <span class="number">21</span>) {
+<span class="lineno">  258 </span>            findAndHookMethod(LayoutInflater.<span class="keyword">class</span>, <span class="string">"parseInclude"</span>, XmlPullParser.<span class="keyword">class</span>, View.<span class="keyword">class</span>,
+<span class="lineno">  259 </span>                    AttributeSet.<span class="keyword">class</span>, parseIncludeHook);
+<span class="caretline"><span class="lineno">  260 </span>        } <span class="keyword">else</span> <span class="keyword">if</span> (<span class="warning">Build.VERSION.SDK_INT &lt; <span class="number">23</span></span>) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  261 </span>            findAndHookMethod(LayoutInflater.<span class="keyword">class</span>, <span class="string">"parseInclude"</span>, XmlPullParser.<span class="keyword">class</span>, View.<span class="keyword">class</span>,
+<span class="lineno">  262 </span>                    AttributeSet.<span class="keyword">class</span>, <span class="keyword">boolean</span>.<span class="keyword">class</span>, parseIncludeHook);
+<span class="lineno">  263 </span>        } <span class="keyword">else</span> {
+</pre>
+
+<span class="location"><a href="../../src/main/java/android/content/res/XResources.java">../../src/main/java/android/content/res/XResources.java</a>:645</span>: <span class="message">Unnecessary; SDK_INT is always >= 26</span><br /><pre class="errorlines">
+<span class="lineno">  642 </span>            XmlResourceParser result = repRes.getAnimation(repId);
+<span class="lineno">  643 </span>
+<span class="lineno">  644 </span>            <span class="keyword">if</span> (!loadedFromCache) {
+<span class="caretline"><span class="lineno">  645 </span>                <span class="keyword">long</span> parseState = (<span class="warning">Build.VERSION.SDK_INT >= <span class="number">21</span></span>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  646 </span>                    ? getLongField(result, <span class="string">"mParseState"</span>)
+<span class="lineno">  647 </span>                    : getIntField(result, <span class="string">"mParseState"</span>);
+<span class="lineno">  648 </span>                rewriteXmlReferencesNative(parseState, <span class="keyword">this</span>, repRes);
+</pre>
+
+<span class="location"><a href="../../src/main/java/android/content/res/XResources.java">../../src/main/java/android/content/res/XResources.java</a>:959</span>: <span class="message">Unnecessary; SDK_INT is always >= 26</span><br /><pre class="errorlines">
+<span class="lineno">  956 </span>            result = repRes.getLayout(repId);
+<span class="lineno">  957 </span>
+<span class="lineno">  958 </span>            <span class="keyword">if</span> (!loadedFromCache) {
+<span class="caretline"><span class="lineno">  959 </span>                <span class="keyword">long</span> parseState = (<span class="warning">Build.VERSION.SDK_INT >= <span class="number">21</span></span>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  960 </span>                    ? getLongField(result, <span class="string">"mParseState"</span>)
+<span class="lineno">  961 </span>                    : getIntField(result, <span class="string">"mParseState"</span>);
+<span class="lineno">  962 </span>                rewriteXmlReferencesNative(parseState, <span class="keyword">this</span>, repRes);
+</pre>
+
+<span class="location"><a href="../../src/main/java/android/content/res/XResources.java">../../src/main/java/android/content/res/XResources.java</a>:1115</span>: <span class="message">Unnecessary; SDK_INT is always >= 26</span><br /><pre class="errorlines">
+<span class="lineno"> 1112 </span>            XmlResourceParser result = repRes.getXml(repId);
+<span class="lineno"> 1113 </span>
+<span class="lineno"> 1114 </span>            <span class="keyword">if</span> (!loadedFromCache) {
+<span class="caretline"><span class="lineno"> 1115 </span>                <span class="keyword">long</span> parseState = (<span class="warning">Build.VERSION.SDK_INT >= <span class="number">21</span></span>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 1116 </span>                    ? getLongField(result, <span class="string">"mParseState"</span>)
+<span class="lineno"> 1117 </span>                    : getIntField(result, <span class="string">"mParseState"</span>);
+<span class="lineno"> 1118 </span>                rewriteXmlReferencesNative(parseState, <span class="keyword">this</span>, repRes);
+</pre>
+
+<span class="location"><a href="../../src/main/java/cn/hishi/android/scrm/XposedInit.java">../../src/main/java/cn/hishi/android/scrm/XposedInit.java</a>:85</span>: <span class="message">Unnecessary; SDK_INT is always >= 26</span><br /><pre class="errorlines">
+<span class="lineno">  82 </span>      setStaticLongField(ZygoteInit.<span class="keyword">class</span>, <span class="string">"BOOT_START_TIME"</span>, XposedBridge.BOOT_START_TIME);
+<span class="lineno">  83 </span>  }
+<span class="lineno">  84 </span>  <span class="comment">// Samsung</span>
+<span class="caretline"><span class="lineno">  85 </span>  <span class="keyword">if</span> (<span class="warning">Build.VERSION.SDK_INT >= <span class="number">24</span></span>) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  86 </span>      Class&lt;?> zygote = findClass(<span class="string">"com.android.internal.os.Zygote"</span>, <span class="keyword">null</span>);
+<span class="lineno">  87 </span>      <span class="keyword">try</span> {
+<span class="lineno">  88 </span>          setStaticBooleanField(zygote, <span class="string">"isEnhancedZygoteASLREnabled"</span>, <span class="keyword">false</span>);
+</pre>
+
+<span class="location"><a href="../../src/main/java/cn/hishi/android/scrm/XposedInit.java">../../src/main/java/cn/hishi/android/scrm/XposedInit.java</a>:132</span>: <span class="message">Unnecessary; SDK_INT is never &lt; 26</span><br /><pre class="errorlines">
+<span class="lineno"> 129 </span>        <span class="keyword">final</span> ThreadLocal&lt;Object> latestResKey = <span class="keyword">new</span> ThreadLocal&lt;>();
+<span class="lineno"> 130 </span>        <span class="keyword">final</span> String createResourceMethod;
+<span class="lineno"> 131 </span>
+<span class="caretline"><span class="lineno"> 132 </span>        <span class="keyword">if</span> (<span class="warning">Build.VERSION.SDK_INT &lt;= <span class="number">18</span></span>) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 133 </span>            classGTLR = ActivityThread.<span class="keyword">class</span>;
+<span class="lineno"> 134 </span>            classResKey = Class.forName(<span class="string">"android.app.ActivityThread$ResourcesKey"</span>);
+<span class="lineno"> 135 </span>            createResourceMethod = <span class="string">"getOrCreateResources"</span>;
+</pre>
+
+<span class="location"><a href="../../src/main/java/cn/hishi/android/scrm/XposedInit.java">../../src/main/java/cn/hishi/android/scrm/XposedInit.java</a>:146</span>: <span class="message">Unnecessary; SDK_INT is always >= 26</span><br /><pre class="errorlines">
+<span class="lineno"> 143 </span>            createResourceMethod = <span class="string">"createResources"</span>;
+<span class="lineno"> 144 </span>        }
+<span class="lineno"> 145 </span>
+<span class="caretline"><span class="lineno"> 146 </span>        <span class="keyword">if</span> (<span class="warning">Build.VERSION.SDK_INT >= <span class="number">24</span></span>) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 147 </span>            hookAllMethods(classGTLR, createResourceMethod, <span class="keyword">new</span> XC_MethodHook() {
+<span class="lineno"> 148 </span>                <span class="annotation">@Override</span>
+<span class="lineno"> 149 </span>                <span class="keyword">protected</span> <span class="keyword">void</span> afterHookedMethod(MethodHookParam param) <span class="keyword">throws</span> Throwable {
+</pre>
+
+<span class="location"><a href="../../src/main/java/cn/hishi/android/scrm/XposedInit.java">../../src/main/java/cn/hishi/android/scrm/XposedInit.java</a>:204</span>: <span class="message">Unnecessary; SDK_INT is never &lt; 26</span><br /><pre class="errorlines">
+<span class="lineno"> 201 </span>  <span class="annotation">@SuppressWarnings</span>(<span class="string">"unchecked"</span>)
+<span class="lineno"> 202 </span>  Map&lt;Object, WeakReference&lt;Resources>> mActiveResources =
+<span class="lineno"> 203 </span>          (Map&lt;Object, WeakReference&lt;Resources>>) getObjectField(param.thisObject, <span class="string">"mActiveResources"</span>);
+<span class="caretline"><span class="lineno"> 204 </span>  Object lockObject = (<span class="warning">Build.VERSION.SDK_INT &lt;= <span class="number">18</span></span>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 205 </span>          ? getObjectField(param.thisObject, <span class="string">"mPackages"</span>) : param.thisObject;
+<span class="lineno"> 206 </span>
+<span class="lineno"> 207 </span>  <span class="keyword">synchronized</span> (lockObject) {
+</pre>
+
+<span class="location"><a href="../../src/main/java/cn/hishi/android/scrm/XposedInit.java">../../src/main/java/cn/hishi/android/scrm/XposedInit.java</a>:216</span>: <span class="message">Unnecessary; SDK_INT is always >= 26</span><br /><pre class="errorlines">
+<span class="lineno"> 213 </span>         }
+<span class="lineno"> 214 </span>     });
+<span class="lineno"> 215 </span>
+<span class="caretline"><span class="lineno"> 216 </span>     <span class="keyword">if</span> (<span class="warning">Build.VERSION.SDK_INT >= <span class="number">19</span></span>) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 217 </span>         <span class="comment">// This method exists only on CM-based ROMs</span>
+<span class="lineno"> 218 </span>         hookAllMethods(classGTLR, <span class="string">"getTopLevelThemedResources"</span>, <span class="keyword">new</span> XC_MethodHook() {
+<span class="lineno"> 219 </span>             <span class="annotation">@Override</span></pre>
+
+</div>
+</div>
+<div class="metadata"><div class="explanation" id="explanationObsoleteSdkInt" style="display: none;">
+This check flags version checks that are not necessary, because the <code>minSdkVersion</code> (or surrounding known API level) is already at least as high as the version checked for.<br/>
+<br/>
+Similarly, it also looks for resources in <code>-vNN</code> folders, such as <code>values-v14</code> where the version qualifier is less than or equal to the <code>minSdkVersion</code>, where the contents should be merged into the best folder.<br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "ObsoleteSdkInt" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">ObsoleteSdkInt</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Performance</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 6/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationObsoleteSdkIntLink" onclick="reveal('explanationObsoleteSdkInt');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="ObsoleteSdkIntCardLink" onclick="hideid('ObsoleteSdkIntCard');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="MissingIssues"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="MissingIssuesCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Disabled Checks</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+One or more issues were not run by lint, either 
+because the check is not enabled by default, or because 
+it was disabled with a command line flag or via one or 
+more <code>lint.xml</code> configuration files in the project directories.
+<div id="SuppressedIssues" style="display: none;"><br/><br/><div class="issue">
+<div class="id">AppLinksAutoVerifyError<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Ensures that app links are correctly set and associated with website.<br/><div class="moreinfo">More info: <a href="https://g.co/appindexing/applinks">https://g.co/appindexing/applinks</a>
+</div>To suppress this error, use the issue id "AppLinksAutoVerifyError" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">AppLinksAutoVerifyWarning<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Ensures that app links are correctly set and associated with website.<br/><div class="moreinfo">More info: <a href="https://g.co/appindexing/applinks">https://g.co/appindexing/applinks</a>
+</div>To suppress this error, use the issue id "AppLinksAutoVerifyWarning" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">BackButton<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+According to the Android Design Guide,<br/>
+<br/>
+"Other platforms use an explicit back button with label to allow the user to navigate up the application's hierarchy. Instead, Android uses the main action bar's app icon for hierarchical navigation and the navigation bar's back button for temporal navigation."<br/>
+This check is not very sophisticated (it just looks for buttons with the label "Back"), so it is disabled by default to not trigger on common scenarios like pairs of Back/Next buttons to paginate through screens.<br/><div class="moreinfo">More info: <a href="https://material.io/design/">https://material.io/design/</a>
+</div>To suppress this error, use the issue id "BackButton" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">ConvertToWebp<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+The WebP format is typically more compact than PNG and JPEG. As of Android 4.2.1 it supports transparency and lossless conversion as well. Note that there is a quickfix in the IDE which lets you perform conversion.<br/>
+<br/>
+Launcher icons must be in the PNG format.<br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "ConvertToWebp" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">DalvikOverride<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+The Dalvik virtual machine will treat a package private method in one class as overriding a package private method in its super class, even if they are in separate packages.<br/>
+<br/>
+If you really did intend for this method to override the other, make the method <code>protected</code> instead.<br/>
+<br/>
+If you did <b>not</b> intend the override, consider making the method private, or changing its name or signature.<br/>
+<br/>
+Note that this check is disabled be default, because ART (the successor to Dalvik) no longer has this behavior.<br/>To suppress this error, use the issue id "DalvikOverride" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">DuplicateStrings<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Duplicate strings can make applications larger unnecessarily.<br/>
+<br/>
+This lint check looks for duplicate strings, including differences for strings where the only difference is in capitalization. Title casing and all uppercase can all be adjusted in the layout or in code.<br/><div class="moreinfo">More info: <a href="https://developer.android.com/reference/android/widget/TextView.html#attr_android:inputType">https://developer.android.com/reference/android/widget/TextView.html#attr_android:inputType</a>
+</div>To suppress this error, use the issue id "DuplicateStrings" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">EasterEgg<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+An "easter egg" is code deliberately hidden in the code, both from potential users and even from other developers. This lint check looks for code which looks like it may be hidden from sight.<br/>To suppress this error, use the issue id "EasterEgg" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">ExpensiveAssertion<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+In Kotlin, assertions are not handled the same way as from the Java programming language. In particular, they're just implemented as a library call, and inside the library call the error is only thrown if assertions are enabled.<br/>
+<br/>
+This means that the arguments to the <code>assert</code> call will <b>always</b> be evaluated. If you're doing any computation in the expression being asserted, that computation will unconditionally be performed whether or not assertions are turned on. This typically turns into wasted work in release builds.<br/>
+<br/>
+This check looks for cases where the assertion condition is nontrivial, e.g. it is performing method calls or doing more work than simple comparisons on local variables or fields.<br/>
+<br/>
+You can work around this by writing your own inline assert method instead:<br/>
+
+<pre>
+@Suppress("INVISIBLE_REFERENCE", "INVISIBLE_MEMBER")
+inline fun assert(condition: () -> Boolean) {
+    if (_Assertions.ENABLED &amp;&amp; !condition()) {
+        throw AssertionError()
+    }
+}
+</pre>
+<br/>
+In Android, because assertions are not enforced at runtime, instead use this:<br/>
+
+<pre>
+inline fun assert(condition: () -> Boolean) {
+    if (BuildConfig.DEBUG &amp;&amp; !condition()) {
+        throw AssertionError()
+    }
+}
+</pre>
+<br/>To suppress this error, use the issue id "ExpensiveAssertion" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">FieldGetter<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Accessing a field within the class that defines a getter for that field is at least 3 times faster than calling the getter. For simple getters that do nothing other than return the field, you might want to just reference the local field directly instead.<br/>
+<br/>
+<b>NOTE</b>: As of Android 2.3 (Gingerbread), this optimization is performed automatically by Dalvik, so there is no need to change your code; this is only relevant if you are targeting older versions of Android.<br/><div class="moreinfo">More info: <a href="https://developer.android.com/training/articles/perf-tips#internal_get_set">https://developer.android.com/training/articles/perf-tips#internal_get_set</a>
+</div>To suppress this error, use the issue id "FieldGetter" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">GoogleAppIndexingApiWarning<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Adds URLs to get your app into the Google index, to get installs and traffic to your app from Google Search.<br/><div class="moreinfo">More info: <a href="https://g.co/AppIndexing/AndroidStudio">https://g.co/AppIndexing/AndroidStudio</a>
+</div>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "GoogleAppIndexingApiWarning" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">GoogleAppIndexingWarning<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Adds URLs to get your app into the Google index, to get installs and traffic to your app from Google Search.<br/><div class="moreinfo">More info: <a href="https://g.co/AppIndexing/AndroidStudio">https://g.co/AppIndexing/AndroidStudio</a>
+</div>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "GoogleAppIndexingWarning" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">IconExpectedSize<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+There are predefined sizes (for each density) for launcher icons. You should follow these conventions to make sure your icons fit in with the overall look of the platform.<br/><div class="moreinfo">More info: <a href="https://material.io/design/iconography/">https://material.io/design/iconography/</a>
+</div>To suppress this error, use the issue id "IconExpectedSize" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">ImplicitSamInstance<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Kotlin's support for SAM (single accessor method) interfaces lets you pass a lambda to the interface. This will create a new instance on the fly even though there is no explicit constructor call. If you pass one of these lambdas or method references into a method which (for example) stores or compares the object identity, unexpected results may happen.<br/>To suppress this error, use the issue id "ImplicitSamInstance" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">InvalidPackage<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+This check scans through libraries looking for calls to APIs that are not included in Android.<br/>
+<br/>
+When you create Android projects, the classpath is set up such that you can only access classes in the API packages that are included in Android. However, if you add other projects to your libs/ folder, there is no guarantee that those .jar files were built with an Android specific classpath, and in particular, they could be accessing unsupported APIs such as java.applet.<br/>
+<br/>
+This check scans through library jars and looks for references to API packages that are not included in Android and flags these. This is only an error if your code calls one of the library classes which wind up referencing the unsupported package.<br/>To suppress this error, use the issue id "InvalidPackage" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">KotlinPropertyAccess<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+For a method to be represented as a property in Kotlin, strict &#8220;bean&#8221;-style prefixing must be used.<br/>
+<br/>
+Accessor methods require a &#8216;get&#8217; prefix or for boolean-returning methods an &#8216;is&#8217; prefix can be used.<br/><div class="moreinfo">More info: <a href="https://android.github.io/kotlin-guides/interop.html#property-prefixes">https://android.github.io/kotlin-guides/interop.html#property-prefixes</a>
+</div>To suppress this error, use the issue id "KotlinPropertyAccess" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">LambdaLast<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+To improve calling this code from Kotlin,<br/>
+parameter types eligible for SAM conversion should be last.<br/><div class="moreinfo">More info: <a href="https://android.github.io/kotlin-guides/interop.html#lambda-parameters-last">https://android.github.io/kotlin-guides/interop.html#lambda-parameters-last</a>
+</div>To suppress this error, use the issue id "LambdaLast" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">LintImplPsiEquals<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+You should never compare two PSI elements for equality with <code>equals</code>;<br/>
+use <code>isEquivalentTo(PsiElement)</code> instead.<br/>To suppress this error, use the issue id "LintImplPsiEquals" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">LintImplUnexpectedDomain<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+This checks flags URLs to domains that have not been explicitly whitelisted for use as a documentation source.<br/>To suppress this error, use the issue id "LintImplUnexpectedDomain" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">LogConditional<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+The <code>BuildConfig</code> class provides a constant, <code>DEBUG</code>, which indicates whether the code is being built in release mode or in debug mode. In release mode, you typically want to strip out all the logging calls. Since the compiler will automatically remove all code which is inside a <code>if (false)</code> check, surrounding your logging calls with a check for <code>BuildConfig.DEBUG</code> is a good idea.<br/>
+<br/>
+If you <b>really</b> intend for the logging to be present in release mode, you can suppress this warning with a <code>@SuppressLint</code> annotation for the intentional logging calls.<br/>To suppress this error, use the issue id "LogConditional" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">MangledCRLF<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+On Windows, line endings are typically recorded as carriage return plus newline: \r\n.<br/>
+<br/>
+This detector looks for invalid line endings with repeated carriage return characters (without newlines). Previous versions of the ADT plugin could accidentally introduce these into the file, and when editing the file, the editor could produce confusing visual artifacts.<br/><div class="moreinfo">More info: <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=375421">https://bugs.eclipse.org/bugs/show_bug.cgi?id=375421</a>
+</div>To suppress this error, use the issue id "MangledCRLF" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">MinSdkTooLow<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+The value of the <code>minSdkVersion</code> property is too low and can be incremented without noticeably reducing the number of supported devices.<br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "MinSdkTooLow" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">NegativeMargin<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Margin values should be positive. Negative values are generally a sign that you are making assumptions about views surrounding the current one, or may be tempted to turn off child clipping to allow a view to escape its parent. Turning off child clipping to do this not only leads to poor graphical performance, it also results in wrong touch event handling since touch events are based strictly on a chain of parent-rect hit tests. Finally, making assumptions about the size of strings can lead to localization problems.<br/>To suppress this error, use the issue id "NegativeMargin" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">NewerVersionAvailable<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+This detector checks with a central repository to see if there are newer versions available for the dependencies used by this project. This is similar to the <code>GradleDependency</code> check, which checks for newer versions available in the Android SDK tools and libraries, but this works with any MavenCentral dependency, and connects to the library every time, which makes it more flexible but also <b>much</b> slower.<br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "NewerVersionAvailable" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">NoHardKeywords<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Do not use Kotlin&#8217;s hard keywords as the name of methods or fields.<br/>
+These require the use of backticks to escape when calling from Kotlin.<br/>
+Soft keywords, modifier keywords, and special identifiers are allowed.<br/>
+<br/>
+For example, Mockito&#8217;s <code>when</code> function requires backticks when used from Kotlin:<br/>
+<br/>
+    val callable = Mockito.mock(Callable::class.java)<br/>
+    Mockito.`when`(callable.call()).thenReturn(/* &#8230; */)<br/><div class="moreinfo">More info: <a href="https://android.github.io/kotlin-guides/interop.html#no-hard-keywords">https://android.github.io/kotlin-guides/interop.html#no-hard-keywords</a>
+</div>To suppress this error, use the issue id "NoHardKeywords" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">PermissionImpliesUnsupportedChromeOsHardware<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+The <code>&lt;uses-permission></code> element should not require a permission that implies an unsupported Chrome OS hardware feature. Google Play assumes that certain hardware related permissions indicate that the underlying hardware features are required by default. To fix the issue, consider declaring the corresponding uses-feature element with <code>required="false"</code> attribute.<br/><div class="moreinfo">More info: <a href="https://developer.android.com/topic/arc/manifest.html#implied-features">https://developer.android.com/topic/arc/manifest.html#implied-features</a>
+</div>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "PermissionImpliesUnsupportedChromeOsHardware" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">Registered<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Activities, services and content providers should be registered in the <code>AndroidManifest.xml</code> file using <code>&lt;activity></code>, <code>&lt;service></code> and <code>&lt;provider></code> tags.<br/>
+<br/>
+If your activity is simply a parent class intended to be subclassed by other "real" activities, make it an abstract class.<br/><div class="moreinfo">More info: <a href="https://developer.android.com/guide/topics/manifest/manifest-intro.html">https://developer.android.com/guide/topics/manifest/manifest-intro.html</a>
+</div>To suppress this error, use the issue id "Registered" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">RequiredSize<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+All views must specify an explicit <code>layout_width</code> and <code>layout_height</code> attribute. There is a runtime check for this, so if you fail to specify a size, an exception is thrown at runtime.<br/>
+<br/>
+It's possible to specify these widths via styles as well. GridLayout, as a special case, does not require you to specify a size.<br/>To suppress this error, use the issue id "RequiredSize" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">SelectableText<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+If a <code>&lt;TextView></code> is used to display data, the user might want to copy that data and paste it elsewhere. To allow this, the <code>&lt;TextView></code> should specify <code>android:textIsSelectable="true"</code>.<br/>
+<br/>
+This lint check looks for TextViews which are likely to be displaying data: views whose text is set dynamically. This value will be ignored on platforms older than API 11, so it is okay to set it regardless of your <code>minSdkVersion</code>.<br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "SelectableText" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">StopShip<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Using the comment <code>// STOPSHIP</code> can be used to flag code that is incomplete but checked in. This comment marker can be used to indicate that the code should not be shipped until the issue is addressed, and lint will look for these. In Gradle projects, this is only checked for non-debug (release) builds.<br/>
+<br/>
+In Kotlin, the <code>TODO()</code> method is also treated as a stop ship marker; you can use it to make incomplete code compile, but it will throw an exception at runtime and therefore should be fixed before shipping releases.<br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "StopShip" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">SyntheticAccessor<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+A private inner class which is accessed from the outer class will force the compiler to insert a synthetic accessor; this means that you are causing extra overhead. This is not important in small projects, but is important for large apps running up against the 64K method handle limit, and especially for <b>libraries</b> where you want to make sure your library is as small as possible for the cases where your library is used in an app running up against the 64K limit.<br/>To suppress this error, use the issue id "SyntheticAccessor" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">TypographyQuotes<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Straight single quotes and double quotes, when used as a pair, can be replaced by "curvy quotes" (or directional quotes). This can make the text more readable.<br/>
+<br/>
+Note that you should never use grave accents and apostrophes to quote, `like this'.<br/>
+<br/>
+(Also note that you should not use curvy quotes for code fragments.)<br/><div class="moreinfo">More info: <a href="https://en.wikipedia.org/wiki/Quotation_mark">https://en.wikipedia.org/wiki/Quotation_mark</a>
+</div>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "TypographyQuotes" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">UnknownNullness<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+To improve referencing this code from Kotlin, consider adding<br/>
+explicit nullness information here with either <code>@NonNull</code> or <code>@Nullable</code>.<br/>
+<br/>
+You can set the environment variable<br/>
+    <code>ANDROID_LINT_NULLNESS_IGNORE_DEPRECATED=true</code><br/>
+if you want lint to ignore classes and members that have been annotated with<br/>
+<code>@Deprecated</code>.<br/><div class="moreinfo">More info: <a href="https://android.github.io/kotlin-guides/interop.html#nullability-annotations">https://android.github.io/kotlin-guides/interop.html#nullability-annotations</a>
+</div>To suppress this error, use the issue id "UnknownNullness" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">UnpackedNativeCode<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+This app loads native libraries using <code>System.loadLibrary()</code>.<br/>
+<br/>
+Consider adding <code>android:extractNativeLibs="false"</code> to the <code>&lt;application></code> tag in AndroidManifest.xml. Starting with Android 6.0, this will make installation faster, the app will take up less space on the device and updates will have smaller download sizes.<br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "UnpackedNativeCode" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">UnsupportedChromeOsHardware<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+The <code>&lt;uses-feature></code> element should not require this unsupported Chrome OS hardware feature. Any uses-feature not explicitly marked with <code>required="false"</code> is necessary on the device to be installed on. Ensure that any features that might prevent it from being installed on a Chrome OS device are reviewed and marked as not required in the manifest.<br/><div class="moreinfo">More info: <a href="https://developer.android.com/topic/arc/manifest.html#incompat-entries">https://developer.android.com/topic/arc/manifest.html#incompat-entries</a>
+</div>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "UnsupportedChromeOsHardware" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">UnusedIds<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+This resource id definition appears not to be needed since it is not referenced from anywhere. Having id definitions, even if unused, is not necessarily a bad idea since they make working on layouts and menus easier, so there is not a strong reason to delete these.<br/>
+<br/>
+The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.<br/>
+<br/>
+You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests=true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests=true.<br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "UnusedIds" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">ValidActionsXml<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Ensures that an actions XML file is properly formed<br/>To suppress this error, use the issue id "ValidActionsXml" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">WrongThreadInterprocedural<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Searches for interprocedural call paths that violate thread annotations in the program. Tracks the flow of instantiated types and lambda expressions to increase accuracy across method boundaries.<br/><div class="moreinfo">More info: <a href="https://developer.android.com/guide/components/processes-and-threads.html#Threads">https://developer.android.com/guide/components/processes-and-threads.html#Threads</a>
+</div>To suppress this error, use the issue id "WrongThreadInterprocedural" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+</div>              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="SuppressedIssuesLink" onclick="reveal('SuppressedIssues');">
+List Missing Issues</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="MissingIssuesCardLink" onclick="hideid('MissingIssuesCard');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="SuppressInfo"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="SuppressCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Suppressing Warnings and Errors</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+Lint errors can be suppressed in a variety of ways:<br/>
+<br/>
+1. With a <code>@SuppressLint</code> annotation in the Java code<br/>
+2. With a <code>tools:ignore</code> attribute in the XML file<br/>
+3. With a //noinspection comment in the source code<br/>
+4. With ignore flags specified in the <code>build.gradle</code> file, as explained below<br/>
+5. With a <code>lint.xml</code> configuration file in the project<br/>
+6. With a <code>lint.xml</code> configuration file passed to lint via the --config flag<br/>
+7. With the --ignore flag passed to lint.<br/>
+<br/>
+To suppress a lint warning with an annotation, add a <code>@SuppressLint("id")</code> annotation on the class, method or variable declaration closest to the warning instance you want to disable. The id can be one or more issue id's, such as <code>"UnusedResources"</code> or <code>{"UnusedResources","UnusedIds"}</code>, or it can be <code>"all"</code> to suppress all lint warnings in the given scope.<br/>
+<br/>
+To suppress a lint warning with a comment, add a <code>//noinspection id</code> comment on the line before the statement with the error.<br/>
+<br/>
+To suppress a lint warning in an XML file, add a <code>tools:ignore="id"</code> attribute on the element containing the error, or one of its surrounding elements. You also need to define the namespace for the tools prefix on the root element in your document, next to the <code>xmlns:android</code> declaration:<br/>
+<code>xmlns:tools="http://schemas.android.com/tools"</code><br/>
+<br/>
+To suppress a lint warning in a <code>build.gradle</code> file, add a section like this:<br/>
+
+<pre>
+android {
+    lintOptions {
+        disable 'TypographyFractions','TypographyQuotes'
+    }
+}
+</pre>
+<br/>
+Here we specify a comma separated list of issue id's after the disable command. You can also use <code>warning</code> or <code>error</code> instead of <code>disable</code> to change the severity of issues.<br/>
+<br/>
+To suppress lint warnings with a configuration XML file, create a file named <code>lint.xml</code> and place it at the root directory of the module in which it applies.<br/>
+<br/>
+The format of the <code>lint.xml</code> file is something like the following:<br/>
+
+<pre>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;lint>
+    &lt;!-- Ignore everything in the test source set -->
+    &lt;issue id="all">
+        &lt;ignore path="\*/test/\*" />
+    &lt;/issue>
+
+    &lt;!-- Disable this given check in this project -->
+    &lt;issue id="IconMissingDensityFolder" severity="ignore" />
+
+    &lt;!-- Ignore the ObsoleteLayoutParam issue in the given files -->
+    &lt;issue id="ObsoleteLayoutParam">
+        &lt;ignore path="res/layout/activation.xml" />
+        &lt;ignore path="res/layout-xlarge/activation.xml" />
+        &lt;ignore regexp="(foo|bar)\.java" />
+    &lt;/issue>
+
+    &lt;!-- Ignore the UselessLeaf issue in the given file -->
+    &lt;issue id="UselessLeaf">
+        &lt;ignore path="res/layout/main.xml" />
+    &lt;/issue>
+
+    &lt;!-- Change the severity of hardcoded strings to "error" -->
+    &lt;issue id="HardcodedText" severity="error" />
+&lt;/lint>
+</pre>
+<br/>
+To suppress lint checks from the command line, pass the --ignore flag with a comma separated list of ids to be suppressed, such as:<br/>
+<code>$ lint --ignore UnusedResources,UselessLeaf /my/project/path</code><br/>
+<br/>
+For more information, see <a href="https://developer.android.com/studio/write/lint.html#config">https://developer.android.com/studio/write/lint.html#config</a><br/>
+
+            </div>
+            </div>
+          </section>    </div>
+  </main>
+</div>
+</body>
+</html>
